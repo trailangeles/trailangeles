@@ -20,7 +20,7 @@ body pre[class*="language-"] {
 }
 
 .fs-logo {
-  background-image: url(img/Forest_Service_logo.svg);
+  background-image: url(static/img/Forest_Service_logo.svg);
   display: block;
   height: 57px;
   width: 51px;
