@@ -18,3 +18,11 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+.fs-logo {
+  background-image: url(img/Forest_Service_logo.svg);
+  display: block;
+  height: 57px;
+  width: 51px;
+  background-size: 51px;
+}
