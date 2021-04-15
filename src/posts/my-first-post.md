@@ -1,5 +1,5 @@
 ---
-title: 🌲 This is my first post
+title: 🌲 NEW STUFF!
 description: This is my description edit.
 author: Surjith S M
 date: 2020-09-01
