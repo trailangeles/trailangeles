@@ -56,7 +56,7 @@ collections:
             widget: list
             collapsed: false
             fields:
-              - { label: Title, name: title, widget: string }
+              - { label: Title, name: name, widget: string }
               - { label: URL, name: url, widget: string }
               - { label: Description, name: desc, widget: string }
               - { label: Area, name: area, widget: string }
