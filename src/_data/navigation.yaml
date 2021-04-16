@@ -1,10 +1,10 @@
 ---
 items:
-  - text: Menu One
+  - text: Home
     url: "#"
-  - text: Menu Two
+  - text: Trails
     url: "#"
-  - text: Menu Three
+  - text: Volunteering
     url: "#"
-  - text: Blog
+  - text: About
     url: "/blog"
