@@ -1,10 +1,10 @@
 ---
 items:
   - text: Home
-    url: "#"
+    url: "/"
   - text: Trails
-    url: "#"
+    url: "/trails"
   - text: Volunteering
-    url: "#"
+    url: "/volunteers"
   - text: About
     url: "/blog"
