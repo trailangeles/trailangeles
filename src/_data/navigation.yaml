@@ -1,10 +1,9 @@
----
 items:
   - text: Home
-    url: "/"
+    url: /
   - text: Trails
-    url: "/trails"
-  - text: Volunteering
-    url: "/volunteers"
+    url: /trails
+  - text: Groups
+    url: /volunteers
   - text: About
-    url: "/blog"
+    url: /blog
