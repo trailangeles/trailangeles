@@ -55,8 +55,9 @@
     "contactName": "Ben White",
     "contactEmail": "bwootenwhite@hotmail.com",
     "website": "http://www.sgmtrailbuilders.org/",
-    "description": "Trail repair, construction, workshops, sign installation. Most of the trails are in the national monument",
-    "requirements": "No special skills required, open to everyone.",
+    "facebook": "https://www.facebook.com/SanGabrielMountainsTrailbuilders",
+    "description": "The primary efforts which the Trailbuilders perform involve hiking and nature trail restoration, repairs, and maintenance within the Crystal Lake Recreation Area, and the Mount Baldy area, and along the East and West Forks of the San Gabriel River. We perform other work within the Angeles National Forest as needed and scheduled by the U. S. Forest Service, including installing signs at trailheads, building foot bridges, repairing damage to Visitor Centers, removing spray paint vandalism, and other activities which are requested, however trail work consists of 90% or more of what the Trailbuilders do.",
+    "requirements": "Long-term SGMTB volunteers are expected to acquire signed formal agreements with the USFS District Ranger, and are expected to have First Aid medical training, however the Trailbuilders invite volunteers of all ages to join our trail efforts without formal training, we provide a morning meeting before we head to the work site, and we ask that all volunteers only do such work as they feel comfortable with, we do not expect volunteers to perform tasks they do not feel comfortable doing. At the same time, we provide a degree of training while working in the field, affording High School and College students, Girl Scouts and Boy Scouts, and everyone else, get introduced to methods and best practices. We hope that volunteers who come out from time to time acquire comfortable skills which allows them to mention their volunteer work on their employment resumes. We provide work hours for people who must perform Community Service, and we assist Boy Scout Eagle Scout candidates with potential projects.",
     "trails": [],
     "slug": "sgm-trailbuilders",
     "id": "242f2488-1e8c-4f78-8cee-ed92ccf002a8"
@@ -73,5 +74,19 @@
     "slug": "bearcanyontrailcrew",
     "id": "83864e8f-8699-4d32-9602-55a6f9949cb9",
     "photo": "groups/bearcanyontrailcrew.jpg"
+  },
+  {
+    "name": "Fisheries Resource Volunteer Corps",
+    "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+    "contactName": "Dave Baumgartner",
+    "contactEmail": "dabaumgartner@aol.com",
+    "website": "https://www.frvc.net",
+    "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
+    "description": "FRVC specializes in watershed projects which includes water quality, riparian restoration, aquatic organism studies and infrastructure projects, we monitor human impact activity, and provide education and advice to forest visitors among other various activities.  We do monitor 16 wild trout streams and rivers in the Angeles and San Bernardino NF's and I believe our work is relatively unique among other volunteer groups in the area.",
+    "requirements": "We offer a wide range of activities, some do require specialized skills and physical qualifications, while other activities do not.",
+    "trails": [],
+    "slug": "frvc",
+    "id": "cb9e2232-1aab-46b2-833e-598a4644088c",
+    "photo": "groups/frvc.jpg"
   }
 ]
