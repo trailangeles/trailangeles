@@ -1,0 +1,17 @@
+---
+layout: default
+pagination:
+    data: trails
+    size: 1
+    alias: trail
+permalink: "trails/{{ trail.slug }}/"
+---
+<div class="container">
+    <h1>{{ trail.name }}</h1>
+    <ol>
+        <li>Trail Name: {{ trail.name }}</li>
+        <li>Area: {{ trail.area }}</li>
+        <li>Trailhead: {{ trail.trailhead }}</li>
+        <li>Trailhead: {{ trail.trailheadName }}</li>
+    </ol>
+</div>

@@ -2,7 +2,7 @@
 
     {% if trails %}
         {% for item in trails %}
-            <a href="{{item.url}}" target="_blank" class="p-5 border border-gray-200 rounded hover:border-purple-400">
+            <a href="/trails/{{item.slug}}" target="_blank" class="p-5 border border-gray-200 rounded hover:border-purple-400">
                 <h3>{{item.name}} →</h3>
                 <h4>{{item.area}}</h4>
             </a>
