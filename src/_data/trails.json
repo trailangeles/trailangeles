@@ -1,0 +1,34 @@
+[
+    {
+      "name": "item1",
+      "area": "Area A",
+      "trailhead": "Lat, Long",
+      "trailheadName": "Trailhead Name",
+      "slug": "trail-1",
+      "id": "aa55e716-8d48-410a-9dd9-390f102aec2f"
+    },
+    {
+      "name": "item2",
+      "area": "Area A",
+      "trailhead": "Lat, Long",
+      "trailheadName": "Trailhead Name",
+      "slug": "trail-2",
+      "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
+    },
+    {
+      "name": "item3",
+      "area": "Area B",
+      "trailhead": "Lat, Long",
+      "trailheadName": "Trailhead Name",
+      "slug": "trail-3",
+      "id": "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+    },
+    {
+      "name": "item4",
+      "area": "Area B",
+      "trailhead": "Lat, Long",
+      "trailheadName": "Trailhead Name",
+      "slug": "trail-4",
+      "id": "ce9c87b9-1e60-4f0a-897a-59f50bb47d72"
+    }
+]

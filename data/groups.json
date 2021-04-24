@@ -1,0 +1,41 @@
+[
+  {
+    "name": "item1",
+    "area": "Area A",
+    "trails": [
+      "aa55e716-8d48-410a-9dd9-390f102aec2f",
+      "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
+    ],
+    "slug": "trail-1",
+    "id": "001"
+  },
+  {
+    "name": "item2",
+    "area": "Area A",
+    "trails": [
+      "aa55e716-8d48-410a-9dd9-390f102aec2f",
+      "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
+    ],
+    "slug": "trail-2",
+    "id": "002"
+  },
+  {
+    "name": "item3",
+    "area": "Area B",
+    "trails": [
+      "aa55e716-8d48-410a-9dd9-390f102aec2f",
+      "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
+    ],
+    "slug": "trail-3",
+    "id": "003"
+  },
+  {
+    "name": "item4",
+    "area": "Area B",
+    "trails": [
+      "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+    ],
+    "slug": "trail-4",
+    "id": "004"
+  }
+]
