@@ -1,13 +1,17 @@
 [
   {
-    "name": "item1",
-    "area": "Area A",
-    "trails": [
-      "aa55e716-8d48-410a-9dd9-390f102aec2f",
-      "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
-    ],
-    "slug": "trail-1",
-    "id": "001"
+    "name": "Angeles Volunteer Association",
+    "area": "db72d857-c701-41b6-8d2e-14012c550337",
+    "contactName": "Geric Johnson",
+    "contactEmail": "information@angelesvolunteers.org",
+    "website": "https://angelesvolunteers.org/av/",
+    "facebook": "https://www.facebook.com/CrystalLakeVisitorCenter",
+    "description": "We staff and maintain the Crystal Lake Visitor Center on weekends and holidays.  We staff the Azusa Gateway Center and the entrance to the forest on Highway 39 also on weekends and holidays.  We hold trash removal events, usually at the Crystal Lake Recreation Area, perform trail patrols so we can be current on trail conditions, arrange clean-up work at the lake and general maintenance around the campground areas.",
+    "requirements": "Our organization is open to the public, we hold monthly meetings on the third Tuesday of the month.  No special skill set is required.  We want our volunteers to be educated about the Crystal Lake Recreation Area and the San Gabriel Canyon environment.",
+    "trails": [],
+    "slug": "angeles-volunteer-association",
+    "id": "4ade48b0-fc7e-4ab4-ab5e-1c7ce5fd053b",
+    "photo": "groups/ava.png"
   },
   {
     "name": "item2",
