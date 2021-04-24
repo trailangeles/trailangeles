@@ -49,4 +49,29 @@
     "id": "98cb2b14-b4a0-4bd4-967f-4803e4e01a2c",
     "photo": "groups/lowelifes.jpg"
   },
+  {
+    "name": "San Gabriel Mountains Trail Builders",
+    "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+    "contactName": "Ben White",
+    "contactEmail": "bwootenwhite@hotmail.com",
+    "website": "http://www.sgmtrailbuilders.org/",
+    "description": "Trail repair, construction, workshops, sign installation. Most of the trails are in the national monument",
+    "requirements": "No special skills required, open to everyone.",
+    "trails": [],
+    "slug": "sgm-trailbuilders",
+    "id": "242f2488-1e8c-4f78-8cee-ed92ccf002a8"
+  },
+  {
+    "name": "Bear Canyon Trail Crew",
+    "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+    "contactName": "Alan Coles",
+    "contactEmail": "bearcanyontrailcrew@gmail.com",
+    "website": "https://sites.google.com/view/bearcanyontrailcrew/home",
+    "description": "Trail construction and repair. Bear Canyon Trail and other trails as necessary.",
+    "requirements": "No special skills required. Open to everyone.",
+    "trails": [],
+    "slug": "bearcanyontrailcrew",
+    "id": "83864e8f-8699-4d32-9602-55a6f9949cb9",
+    "photo": "groups/bearcanyontrailcrew.jpg"
+  }
 ]
