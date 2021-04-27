@@ -1,0 +1,15 @@
+---
+layout: default
+pagination:
+    data: groups
+    size: 1
+    alias: group
+permalink: "volunteer-groups/{{ group.slug }}/"
+---
+<div class="container">
+    <h1>{{ group.name }}</h1>
+    <ol>
+        <li>Trail Name: {{ group.name }}</li>
+        <li>Area: {{ trail.area }}</li>
+    </ol>
+</div>

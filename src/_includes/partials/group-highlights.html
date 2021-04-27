@@ -2,7 +2,7 @@
 
     {% if groups %}
         {% for group in groups.slice(0,4) %}
-            <a href="/trails/{{item.slug}}" target="_blank" class="p-5 border border-gray-200 rounded hover:border-purple-400">
+            <a href="/volunteer-groups/{{group.slug}}" target="_blank" class="p-5 border border-gray-200 rounded hover:border-purple-400">
                 <h3>{{group.name}} →</h3>
                 <h4>{{group.description}}</h4>
             </a>
