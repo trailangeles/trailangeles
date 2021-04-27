@@ -8,13 +8,9 @@ pagination:
   <h1>Find a volunteer group</h1>
   <ol>
   {%- for item in pagination.items %}
-    <li>{{ item.name }} - {{ item.area }} - Trails maintained:</li>
-    <ol>
-      {%- for item in item.trails %}
-        <li>{{ item }}</li>
-      {% endfor -%}
-    </ol>
+    <h3><a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a></h3><a href="/volunteer-groups/{{item.slug}}">Link</a></li>
     <br>
+    <p>{{ item.description }}</p>
   {% endfor -%}
   </ol>
 </div>
