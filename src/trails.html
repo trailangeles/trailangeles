@@ -6,9 +6,22 @@ pagination:
 ---
 <div class="container">
   <h1>Find a trail</h1>
-  <ol>
+  <table class="w-full border table-auto">
+    <thead class="border">
+      <tr class="border">
+        <td class="border">Name</td>
+        <td class="border">Trailhead</td>
+        <td class="border">Area</td>
+        <td class="border">Link</td>
+      </tr>
+    </thead>
   {%- for item in pagination.items %}
-    <li>{{ item.name }} - {{ item.trailheadName }} - {{ item.area }} + <a href="/trails/{{ item.slug }}">Link</a></li>
+    <tr class="border">
+      <td class="border">{{ item.name }}</td>
+      <td class="border">{{ item.trailheadName }}</td>
+      <td class="border">{{ item.area }}</td>
+      <td class="border"><a href="/trails/{{ item.slug }}">Link</a></td>
+    </tr>
   {% endfor -%}
-  </ol>
+  </table>
 </div>
