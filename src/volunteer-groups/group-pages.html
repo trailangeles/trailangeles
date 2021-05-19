@@ -6,10 +6,15 @@ pagination:
     alias: group
 permalink: "volunteer-groups/{{ group.slug }}/"
 ---
-<div class="container">
-    <h1>{{ group.name }}</h1>
+<div class="flex flex-col justify-center py-16 mx-auto bg-gray-200">
+    <div class="container">
+        <h2 class="text-green-800 uppercase border-b border-green-800">{{ group.name }}</h2>
     <ol>
-        <li>Trail Name: {{ group.name }}</li>
-        <li>Area: {{ trail.area }}</li>
+        <li>Group Name: {{ group.name }}</li>
+        <li>Area: {{ group.area }}</li>
+        <li>Description: {{ group.description }}</li>
+        <li>Requirements: {{ group.requirements }}</li>
+        <li>Contact: {{ group.contactName }}</li>
+        <li>Email: {{ group.contactEmail }}</li>
     </ol>
 </div>

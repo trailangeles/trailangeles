@@ -6,12 +6,14 @@ pagination:
     alias: trail
 permalink: "trails/{{ trail.slug }}/"
 ---
-<div class="container">
-    <h1>{{ trail.name }}</h1>
-    <ol>
-        <li>Trail Name: {{ trail.name }}</li>
-        <li>Area: {{ trail.area }}</li>
-        <li>Trailhead: {{ trail.trailhead }}</li>
-        <li>Trailhead: {{ trail.trailheadName }}</li>
-    </ol>
+<div class="flex flex-col justify-center py-16 mx-auto bg-gray-200">
+    <div class="container">
+        <h2 class="text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
+        <ol>
+            <li>Trail Name: {{ trail.name }}</li>
+            <li>Area: {{ trail.area }}</li>
+            <li>Trailhead: {{ trail.trailhead }}</li>
+            <li>Trailhead: {{ trail.trailheadName }}</li>
+        </ol>
+    </div>
 </div>

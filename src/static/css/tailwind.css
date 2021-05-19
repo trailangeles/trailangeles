@@ -30,3 +30,7 @@ body pre[class*="language-"] {
   width: 51px;
   background-size: 51px;
 }
+
+[data-href] { 
+  cursor: pointer; 
+}
