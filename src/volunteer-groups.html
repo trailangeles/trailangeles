@@ -5,13 +5,18 @@ pagination:
   size: 10
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
-  <h2 class="text-green-800 uppercase border-b border-green-800">Find a volunteer group</h2>  <div class="grid w-full grid-cols-1 gap-4 my-8 lg:grid-cols-3 lg:mx-0">
+  <h2 class="text-green-800 uppercase border-b border-green-800">Find a volunteer group</h2>  
+  <div class="grid w-full grid-cols-1 gap-4 my-8 lg:grid-cols-3 lg:mx-0">
     {% set background = cycler("bg-green-300", "bg-green-800") %}
     {%- for item in pagination.items %}
-    <div class="{{ background.next() }}">
-      <h3><a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a></h3><a href="/volunteer-groups/{{item.slug}}">Link</a></li>
+    <div class="{{ background.next() }} p-6">
+      <h3 class="uppercase">
+        <a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a>
+      </h3>
       <br>
       <p>{{ item.description | truncate(200) }}</p>
+      <br>
+      <a class="float-right p-2 font-semibold uppercase bg-yellow-300 rounded-full" href="/volunteer-groups/{{item.slug}}">Go</a></li>
     </div>
   {% endfor -%}
   </div>
