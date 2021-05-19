@@ -1,12 +1,15 @@
-<div class="grid w-full grid-cols-1 gap-4 px-4 my-8 lg:grid-cols-4 lg:mx-0">
-
+<div class="grid w-full grid-cols-1 my-8 lg:grid-cols-4 lg:mx-0">
     {% if trails %}
-        {% for item in trails %}
-            <a href="/trails/{{item.slug}}" target="_blank" class="p-5 border border-gray-200 rounded hover:border-purple-400">
-                <h3>{{item.name}} →</h3>
-                <h4>{{item.area}}</h4>
+        {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300", "bg-green-400") %}
+        {% for trail in trails.slice(0,4) %}
+            <a 
+                href="/trails/{{item.slug}}" 
+                target="_blank" 
+                class="p-5 lg:h-80 h-40 {{ background.next() }}"
+            >
+                <h3 class="uppercase">{{trail.name}}</h3>
+                <h4>{{trail.area}}</h4>
             </a>
         {% endfor %}
     {% endif %}
-
 </div>
