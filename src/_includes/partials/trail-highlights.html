@@ -1,7 +1,7 @@
 <div class="grid w-full grid-cols-1 my-8 lg:grid-cols-4 lg:mx-0">
     {% if trails %}
         {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300", "bg-green-400") %}
-        {% for trail in trails.slice(0,4) %}
+        {% for trail in trails.slice(0,3) %}
             <a 
                 href="/trails/{{item.slug}}" 
                 target="_blank" 
@@ -12,4 +12,11 @@
             </a>
         {% endfor %}
     {% endif %}
+    <a
+        href="/volunteer-groups/" 
+        target="_blank"
+        class="h-40 p-5 bg-green-900 lg:h-80"
+    >
+        <h4>View all trails</h4>
+    </a>
 </div>

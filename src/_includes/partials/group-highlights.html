@@ -1,7 +1,7 @@
 <div class="grid w-full grid-cols-1 mt-8 lg:grid-cols-4 lg:mx-0">
     {% if groups %}
-        {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300", "bg-green-400") %}
-        {% for group in groups.slice(0,4) %}
+        {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300") %}
+        {% for group in groups.slice(0,3) %}
             <a 
                 href="/volunteer-groups/{{group.slug}}" 
                 target="_blank"
@@ -11,5 +11,12 @@
                     <h4>{{group.description | truncate(100)}}</h4>
             </a>
         {% endfor %}
+        <a
+            href="/volunteer-groups/" 
+            target="_blank"
+            class="h-40 p-5 bg-green-900 lg:h-80"
+        >
+            <h4>View all groups</h4>
+        </a>
     {% endif %}
 </div>
