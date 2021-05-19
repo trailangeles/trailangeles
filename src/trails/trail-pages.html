@@ -6,14 +6,18 @@ pagination:
     alias: trail
 permalink: "trails/{{ trail.slug }}/"
 ---
-<div class="flex bg-gray-200 flex-stretch">
+<div class="flex bg-gray-100 flex-stretch">
     <div id="trail-map" style="height: 400px; width: 75%;"></div>
-    <div>
-        <div><h3>Subhead</h3></div>
-        <div><h3>Subhead</h3></div>
+    <div class="flex flex-col flex-grow flex-stretch">
+        <div class="flex-grow flex-shrink bg-green-800 flex-basis">
+            <h3>Trail stats:</h3>
+        </div>
+        <div class="flex-grow flex-shrink bg-green-700 flex-basis">
+            <h3>Groups that maintain this trail:</h3>
+        </div>
     </div>
 </div>
-<div class="flex flex-col justify-center py-16 mx-auto bg-gray-200">
+<div class="flex flex-col justify-center py-16 mx-auto bg-gray-100">
     <div class="container">
         <h2 class="text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
         <ol>

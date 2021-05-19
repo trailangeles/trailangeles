@@ -6,6 +6,18 @@ pagination:
     alias: group
 permalink: "volunteer-groups/{{ group.slug }}/"
 ---
+<div class="flex bg-gray-100 flex-stretch">
+    <div id="group-photo" class="bg-blue-500" style="height: 400px; width: 75%;"></div>
+    <div class="flex flex-col flex-grow flex-stretch">
+        <div class="flex-grow flex-shrink bg-yellow-800 flex-basis">
+            <h3>Group stats:</h3>
+        </div>
+        <div class="flex-grow flex-shrink bg-yellow-700 flex-basis">
+            <h3>Trails that this group maintains:</h3>
+        </div>
+    </div>
+</div>
+
 <div class="flex flex-col justify-center py-16 mx-auto bg-gray-200">
     <div class="container">
         <h2 class="text-green-800 uppercase border-b border-green-800">{{ group.name }}</h2>
