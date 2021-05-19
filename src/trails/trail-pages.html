@@ -1,11 +1,18 @@
 ---
-layout: default
+layout: map
 pagination:
     data: trails
     size: 1
     alias: trail
 permalink: "trails/{{ trail.slug }}/"
 ---
+<div class="flex bg-gray-200 flex-stretch">
+    <div id="trail-map" style="height: 400px; width: 75%;"></div>
+    <div>
+        <div><h3>Subhead</h3></div>
+        <div><h3>Subhead</h3></div>
+    </div>
+</div>
 <div class="flex flex-col justify-center py-16 mx-auto bg-gray-200">
     <div class="container">
         <h2 class="text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
@@ -17,3 +24,14 @@ permalink: "trails/{{ trail.slug }}/"
         </ol>
     </div>
 </div>
+
+<script>
+    const accessToken = '2c3M1Bp0ehxVeoW9DO9MGOUST8APNhggjSOBfWuB8nsEXi2nWZKzi1P7fp9G35eH';
+    const map = L.map('trail-map').setView([34.190163, -118.131317], 10);
+    L.tileLayer(
+      `https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?access-token=${accessToken}`, {
+        attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
+        maxZoom: 22
+      }
+    ).addTo(map);
+  </script>
