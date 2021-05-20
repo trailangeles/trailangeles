@@ -12,7 +12,6 @@
                 <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
             </svg>
         </button>
-
         <!--Menu-->
         <div class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
 
@@ -20,7 +19,12 @@
                 <ul class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">
                     {% for item in navigation.items %}
                         <li class="ml-3 nav__item">
-                            <a @click="isOpen = false" class="inline-block mx-2 font-bold text-white no-underline uppercase border-b-4 border-transparent text-ml hover:text-green-100 hover:border-green-100" href="{{ item.url }}">{{ item.text }}</a>
+                            <a
+                                @click="isOpen = false"
+                                class="inline-block mx-2 font-bold uppercase border-b-4 border-transparent text-ml hover:text-green-100 hover:border-green-100 {{ 'border-green-100 text-green-100' if path == item.text else 'text-white border-transparent' }} "
+                                href="{{ item.url }}">
+                                    {{ item.text }}
+                            </a>
                         </li>
                     {% endfor %}
                 </ul>
