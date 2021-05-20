@@ -31,6 +31,9 @@ body pre[class*="language-"] {
   background-size: 51px;
 }
 
-[data-href] { 
-  cursor: pointer; 
+.go-button {
+  height: 45px;
+  line-height: 32px;
+  text-align: center;
+  width: 45px;
 }

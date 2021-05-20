@@ -2,14 +2,14 @@
     {% if groups %}
         {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300") %}
         {% for group in groups.slice(0,3) %}
-            <a 
-                href="/volunteer-groups/{{group.slug}}" 
-                target="_blank"
+            <div 
                 class="p-5 lg:h-80 h-40 {{ background.next() }}"
             >
-                    <h3 class="uppercase">{{group.name}}</h3>
-                    <h4>{{group.description | truncate(100)}}</h4>
-            </a>
+                    <h3 class="text-2xl text-white uppercase">{{group.name}}</h3>
+                    <h4 class="text-white">{{group.description | truncate(100)}}</h4>
+                    <a class="float-right p-2 font-semibold uppercase bg-yellow-300 rounded-full go-button" href="/volunteer-groups/{{groups.slug}}">Go</a>
+            </div>
+            
         {% endfor %}
         <a
             href="/volunteer-groups/" 
@@ -18,9 +18,9 @@
         >
             <div class="self-center" style="margin-right: -3.75rem">
                 <div class="float-right w-10 overflow-hidden">
-                    <div class="origin-top-left transform rotate-45 bg-pink-400 h-14"></div>
+                    <div class="origin-top-left transform rotate-45 bg-yellow-300 h-14"></div>
                 </div>
-                <div class="float-right p-4 bg-pink-400">View all groups</div>
+                <div class="float-right p-4 text-2xl text-black bg-yellow-300">View All Groups</div>
             </div>
         </a>
     {% endif %}

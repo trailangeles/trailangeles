@@ -2,26 +2,23 @@
     {% if trails %}
         {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300", "bg-green-400") %}
         {% for trail in trails.slice(0,3) %}
-            <a 
-                href="/trails/{{trail.slug}}" 
-                target="_blank" 
-                class="p-5 lg:h-80 h-40 {{ background.next() }}"
-            >
-                <h3 class="uppercase">{{trail.name}}</h3>
-                <h4>{{trail.area}}</h4>
-            </a>
+            <div class="p-5 lg:h-80 h-40 {{ background.next() }}">
+                <h3 class="text-2xl text-white uppercase">{{trail.name}}</h3>
+                <h4 class="text-white">{{trail.area}}</h4>
+                <a class="float-right p-2 font-semibold text-white uppercase bg-yellow-600 rounded-full go-button" href="/trails/{{trail.slug}}">Go</a>
+            </div>
         {% endfor %}
     {% endif %}
     <a
-        href="/volunteer-groups/" 
+        href="/trails/" 
         target="_blank"
         class="flex justify-end h-40 p-5 bg-green-900 lg:h-80"
     >
         <div class="self-center" style="margin-right: -3.75rem">
             <div class="float-right w-10 overflow-hidden">
-                <div class="origin-top-left transform rotate-45 bg-pink-400 h-14"></div>
+                <div class="origin-top-left transform rotate-45 bg-yellow-600 h-14"></div>
             </div>
-            <div class="float-right p-4 bg-pink-400">View all trails</div>
+            <div class="float-right p-4 text-2xl text-white bg-yellow-600">View All Trails</div>
         </div>
     </a>
 </div>
