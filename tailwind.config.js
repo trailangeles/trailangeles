@@ -10,6 +10,9 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      'sans': ['Catamaran', 'sans-serif']
+    },
     extend: {
       colors: {},
     },
