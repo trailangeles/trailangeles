@@ -3,7 +3,7 @@
         {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300", "bg-green-400") %}
         {% for trail in trails.slice(0,3) %}
             <a 
-                href="/trails/{{item.slug}}" 
+                href="/trails/{{trail.slug}}" 
                 target="_blank" 
                 class="p-5 lg:h-80 h-40 {{ background.next() }}"
             >

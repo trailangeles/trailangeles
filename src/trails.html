@@ -13,7 +13,6 @@ path: Trails
         <td class="p-4 font-bold border-none">Name</td>
         <td class="p-4 font-bold border-none">Trailhead</td>
         <td class="p-4 font-bold border-none">Area</td>
-        <td class="p-4 font-bold border-none">Link</td>
       </tr>
     </thead>
   {% set background = cycler("bg-green-400", "bg-green-800") %}
@@ -22,7 +21,6 @@ path: Trails
       <td class="p-4 border-none cursor-pointer ">{{ item.name }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.trailheadName }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.area }}</td>
-      <td class="p-4 border-none cursor-pointer "><a href="/trails/{{ item.slug }}">Link</a></td>
     </tr>
   {% endfor -%}
   </table>
