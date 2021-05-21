@@ -1,13 +1,13 @@
 <div class="grid w-full grid-cols-1 mt-8 lg:grid-cols-4 lg:mx-0">
     {% if groups %}
-        {% set background = cycler("bg-green-100", "bg-green-200", "bg-green-300") %}
+        {% set background = cycler("bg-green-900", "bg-green-700", "bg-green-600") %}
         {% for group in groups.slice(0,3) %}
             <div 
                 class="p-5 lg:h-80 h-40 {{ background.next() }}"
             >
-                    <h3 class="text-2xl text-white uppercase">{{group.name}}</h3>
+                    <h3 class="text-2xl font-extrabold text-white uppercase">{{group.name}}</h3>
                     <h4 class="text-white">{{group.description | truncate(100)}}</h4>
-                    <a class="float-right p-2 font-semibold uppercase bg-yellow-300 rounded-full go-button" href="/volunteer-groups/{{groups.slug}}">Go</a>
+                    <a class="float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{groups.slug}}">Go</a>
             </div>
             
         {% endfor %}
@@ -18,9 +18,9 @@
         >
             <div class="self-center" style="margin-right: -3.75rem">
                 <div class="float-right w-10 overflow-hidden">
-                    <div class="origin-top-left transform rotate-45 bg-yellow-300 h-14"></div>
+                    <div class="text-2xl text-green-900 origin-top-left transform rotate-45 bg-yellow-200 h-14"></div>
                 </div>
-                <div class="float-right p-4 text-2xl text-black bg-yellow-300">View All Groups</div>
+                <div class="float-right p-4 text-2xl text-green-900 bg-yellow-200">View All Groups</div>
             </div>
         </a>
     {% endif %}

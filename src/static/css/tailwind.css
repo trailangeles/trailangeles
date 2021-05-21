@@ -16,13 +16,6 @@ h3 {
   @apply text-lg font-bold;
 }
 
-/* Syntax Highlighting*/
-
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
-}
-
 .fs-logo {
   background-image: url(/static/img/Forest_Service_logo.svg);
   display: block;
@@ -32,8 +25,8 @@ body pre[class*="language-"] {
 }
 
 .go-button {
-  height: 45px;
-  line-height: 32px;
+  height: 70px;
   text-align: center;
-  width: 45px;
+  width: 70px;
+  line-height: 56px;
 }
