@@ -26,6 +26,7 @@ module.exports = {
         200: '#FFE67B', // button
         500: '#E27B38' // ticker, button
       },
+      transparent: 'transparent',
       white: '#fff'
     },
     container: {
