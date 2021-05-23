@@ -1,5 +1,5 @@
 <div class="w-full bg-gray-900">
-    <nav class="container flex flex-wrap items-center justify-center p-10 mx-auto lg:justify-between lg:px-0" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
+    <nav class="container flex flex-wrap items-center justify-center px-1 py-10 mx-auto lg:justify-between lg:px-0" x-data="{ isOpen: false }" @keydown.escape="isOpen = false">
         <!--Logo etc-->
         <div class="flex items-center">
             <a href="/" class="text-lg font-bold text-indigo-500 fs-logo"></a>
@@ -18,7 +18,7 @@
             {% if navigation.items %}
                 <ul class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">
                     {% for item in navigation.items %}
-                        <li class="ml-3 nav__item">
+                        <li class="py-3 lg:py-0 lg:ml-3 nav__item">
                             <a
                                 @click="isOpen = false"
                                 class="inline-block mx-2 font-bold text-xl uppercase border-b-4 text-ml hover:text-yellow-50 hover:border-yellow-50 focus:text-yellow-50 focus:border-yellow-50 {{ 'border-yellow-50 text-yellow-50' if path == item.text else 'text-white border-transparent' }} "
