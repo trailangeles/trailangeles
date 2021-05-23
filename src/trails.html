@@ -6,19 +6,12 @@ pagination:
 path: Trails
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
-  <h2 class="text-4xl font-extrabold text-green-800 uppercase border-b border-green-800">Find a trail</h2>  
+  <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a trail</h2>  
   <table class="w-full my-8 border-none table-auto">
-    <thead class="border-none">
-      <tr class="border-none">
-        <td class="p-4 font-bold border-none">Name</td>
-        <td class="p-4 font-bold border-none">Trailhead</td>
-        <td class="p-4 font-bold border-none">Area</td>
-      </tr>
-    </thead>
-  {% set background = cycler("bg-green-400", "bg-green-800") %}
+  {% set background = cycler("bg-green-800", "bg-green-400") %}
   {%- for item in pagination.items %}
     <tr onclick="window.location='/trails/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
-      <td class="p-4 border-none cursor-pointer ">{{ item.name }}</td>
+      <td class="p-4 font-extrabold border-none cursor-pointer">{{ item.name }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.trailheadName }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.area }}</td>
     </tr>

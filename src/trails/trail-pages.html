@@ -10,20 +10,20 @@ path: Trails
 <div class="flex bg-gray-100 flex-stretch">
     <div id="trail-map" style="height: 400px; width: 75%;"></div>
     <div class="flex flex-col flex-grow flex-stretch">
-        <div class="flex-grow flex-shrink bg-green-800 flex-basis">
-            <h3>Trail stats/status:</h3>
+        <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
+            <h3 class="font-black text-white uppercase">Trail stats/status:</h3>
         </div>
-        <div class="flex-grow flex-shrink bg-green-700 flex-basis">
-            <h3>Groups that maintain this trail:</h3>
+        <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
+            <h3 class="font-black text-white uppercase">Groups that maintain this trail:</h3>
         </div>
-        <div class="flex-grow flex-shrink bg-green-800 flex-basis">
-            <h3>How to get there:</h3>
+        <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
+            <h3 class="font-black text-white uppercase">How to get there:</h3>
         </div>
     </div>
 </div>
 <div class="flex flex-col justify-center py-16 mx-auto bg-gray-100">
     <div class="container">
-        <h2 class="text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
+        <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
         <ol>
             <li>Trail Name: {{ trail.name }}</li>
             <li>Area: {{ trail.area }}</li>
