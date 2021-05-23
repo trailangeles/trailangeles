@@ -8,7 +8,7 @@ path: Volunteer Groups
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a volunteer group</h2>  
   <div class="grid w-full grid-cols-1 gap-4 my-8 lg:grid-cols-3 lg:mx-0">
-    {% set background = cycler("bg-green-800", "bg-green-300") %}
+    {% set background = cycler("bg-green-900", "bg-green-700") %}
     {%- for item in pagination.items %}
     <div class="{{ background.next() }} p-8">
       <h3 class="text-2xl font-black text-white uppercase">
@@ -17,7 +17,7 @@ path: Volunteer Groups
       <br>
       <p class="text-white">{{ item.description | truncate(200) }}</p>
       <br>
-      <a class="float-right p-2 text-2xl font-extrabold text-green-800 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
+      <a class="float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
     </div>
   {% endfor -%}
   </div>

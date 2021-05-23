@@ -8,7 +8,7 @@ path: Trails
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a trail</h2>  
   <table class="w-full my-8 border-none table-auto">
-  {% set background = cycler("bg-green-800", "bg-green-400") %}
+  {% set background = cycler("bg-green-900", "bg-green-700") %}
   {%- for item in pagination.items %}
     <tr onclick="window.location='/trails/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ item.name }}</td>
