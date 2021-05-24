@@ -1,3 +1,13 @@
 {
-  "body": "test 123"
+  "body": "test 123",
+  "trails": [
+    {
+      "name": "Altadena Crest Trail",
+      "area": "Area A",
+      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-460.546875,33.1375512]}",
+      "trailheadName": "Trailhead 1",
+      "slug": "altadena-crest-trail",
+      "id": "aa55e716-8d48-410a-9dd9-390f102aec2f"
+    }
+  ]
 }
