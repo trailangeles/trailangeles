@@ -2,7 +2,7 @@
 layout: default
 pagination:
   data: groups
-  size: 10
+  size: 6
 path: Volunteer Groups
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
@@ -10,14 +10,21 @@ path: Volunteer Groups
   <div class="grid w-full grid-cols-1 gap-4 my-8 lg:grid-cols-3 lg:mx-0">
     {% set background = cycler("bg-green-900", "bg-green-700") %}
     {%- for item in pagination.items %}
-    <div class="{{ background.next() }} p-8">
-      <h3 class="text-2xl font-black text-white uppercase">
-        <a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a>
-      </h3>
-      <br>
-      <p class="text-white">{{ item.description | truncate(200) }}</p>
-      <br>
-      <a class="float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
+    <div class="{{ background.next() }}">
+      {% if item.photo != nil %}
+        <img src="/static/img/{{item.photo}}">
+      {% else %}
+        <div class="h-40 bg-yellow-500"></div>
+      {% endif %}
+      <div class="p-8">
+        <h3 class="text-2xl font-black text-white uppercase">
+          <a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a>
+        </h3>
+        <br>
+        <p class="text-white">{{ item.description | truncate(200) }}</p>
+        <br>
+        <a class="float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
+      </div>
     </div>
   {% endfor -%}
   </div>
