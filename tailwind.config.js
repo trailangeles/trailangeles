@@ -33,6 +33,14 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: '2rem',
+        sm: '2rem',
+        md: '2rem',
+        lg: '3rem',
+        xl: '2rem',
+        '2xl': '3rem'
+      }
     },
     fontFamily: {
       'sans': ['Catamaran', 'sans-serif']
