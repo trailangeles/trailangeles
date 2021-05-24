@@ -3,7 +3,7 @@
     "name": "Altadena Crest Trail",
     "area": "Area A",
     "trailhead": "Lat, Long",
-    "trailheadName": "Trailhead Name",
+    "trailheadName": "Trailhead 1",
     "slug": "trail-1",
     "id": "aa55e716-8d48-410a-9dd9-390f102aec2f"
   },
@@ -11,7 +11,7 @@
     "name": "Echo Mountain Trail",
     "area": "Area A",
     "trailhead": "Lat, Long",
-    "trailheadName": "Trailhead Name",
+    "trailheadName": "Trailhead 1",
     "slug": "trail-2",
     "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82"
   },
@@ -19,7 +19,7 @@
     "name": "Mt. Wilson Trail",
     "area": "Area B",
     "trailhead": "Lat, Long",
-    "trailheadName": "Trailhead Name",
+    "trailheadName": "Trailhead 3",
     "slug": "trail-3",
     "id": "2439fce1-7df6-46b0-b65a-b13d4486b52b"
   },
@@ -27,7 +27,7 @@
     "name": "Brown Mountain Trail",
     "area": "Area B",
     "trailhead": "Lat, Long",
-    "trailheadName": "Trailhead Name",
+    "trailheadName": "Trailhead 4",
     "slug": "trail-4",
     "id": "ce9c87b9-1e60-4f0a-897a-59f50bb47d72"
   }
