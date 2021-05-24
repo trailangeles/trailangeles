@@ -47,19 +47,6 @@ collections:
             fields:
               - { label: Title, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Trails"
-        name: "trails"
-        file: "src/_data/trails.json"
-        fields:
-          - label: Trails
-            name: trails
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Title, name: name, widget: string }
-              - { label: URL, name: slug, widget: string }
-              - { label: Trailhead, name: trailhead, widget: string }
-              - { label: Area, name: area, widget: string }
       - label: "Quick Links"
         name: "links"
         file: "src/_data/quicklinks.yaml"
