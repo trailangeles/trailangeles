@@ -72,3 +72,5 @@ collections:
         fields:
           - { label: Alert Text, name: text, widget: string }
           - { label: Alert Status, name: status, widget: boolean }
+          - { label: Alert Link, name: string, widget: string }
+          - { label: Alert Link Status, name: linkStatus, widget: boolean }
