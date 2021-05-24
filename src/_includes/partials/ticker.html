@@ -1,5 +1,7 @@
-<div class="bg-yellow-500">
-  <div class="container lg:px-0">
-    <h3 class="py-4 text-white uppercase ">⚠️ Trail status announcement ticker...</h3>
+{% if alert.status === true %}
+  <div class="bg-yellow-500">
+    <div class="container lg:px-0">
+      <h3 class="py-4 text-white uppercase ">⚠️ {{ alert.text }} {{ alert.status }} </h3>
+    </div>
   </div>
-</div>
+{% endif %}
