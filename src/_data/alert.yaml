@@ -1,2 +1,3 @@
-text: Alert text sample sample sample
+---
+text: "Sample Alert"
 status: true

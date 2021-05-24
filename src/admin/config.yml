@@ -66,3 +66,9 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: Author, name: author, widget: string }
           - { label: URL, name: url, widget: string }
+      - label: "Alert"
+        name: "alert"
+        file: "src/_data/alert.yaml"
+        fields:
+          - { label: Alert Text, name: text, widget: string }
+          - { label: Alert Status, name: status, widget: boolean }

@@ -12,6 +12,7 @@
                 <path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
             </svg>
         </button>
+
         <!--Menu-->
         <div class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.away="isOpen = false" x-show.transition="true">
 
@@ -28,9 +29,7 @@
                         </li>
                     {% endfor %}
                 </ul>
-
             {% endif %}
         </div>
     </nav>
 </div>
-{% include "./ticker.html" %}
