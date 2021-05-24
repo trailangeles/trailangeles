@@ -2,7 +2,7 @@
 layout: default
 pagination:
   data: groups
-  size: 6
+  size: 12
 path: Volunteer Groups
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
@@ -14,18 +14,33 @@ path: Volunteer Groups
       {% if item.photo != nil %}
         <img src="/static/img/{{item.photo}}">
       {% else %}
-        <div class="h-40 bg-yellow-500"></div>
+        <div class="bg-yellow-500 h-80"></div>
       {% endif %}
-      <div class="p-8">
+      <div class="flex flex-col justify-between p-8">
         <h3 class="text-2xl font-black text-white uppercase">
           <a href="/volunteer-groups/{{item.slug}}">{{ item.name }}</a>
         </h3>
         <br>
         <p class="text-white">{{ item.description | truncate(200) }}</p>
         <br>
-        <a class="float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
+        <a class="self-end float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
       </div>
     </div>
   {% endfor -%}
   </div>
+  
+  {% if pagination.items.size > 12 %}
+    <nav aria-labelledby="my-pagination">
+      <h2 id="my-pagination">This is my Pagination</h2>
+      <ol>
+        <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li>
+        <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
+    {%- for pageEntry in pagination.pages %}
+        <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+    {%- endfor %}
+        <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+        <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
+      </ol>
+    </nav>
+  {% endif %}
 </div>
