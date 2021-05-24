@@ -74,3 +74,26 @@ collections:
           - { label: Alert Status, name: status, widget: boolean }
           - { label: Alert Link, name: string, widget: string }
           - { label: Alert Link Status, name: linkStatus, widget: boolean }
+  - label: "Trails Data"
+    name: "test"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/test.json"
+        label: "Trails Test"
+        name: "test"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Trails
+            name: trails
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Area, name: area, widget: string }
+              - { label: Trailhead, name: trailhead, widget: map }
+              - { label: Trailhead Name, name: trailheadName, widget: string }
+              - { label: Slug, name: slug, widget: string }
+              - { label: ID, name: id, widget: string }
