@@ -12,7 +12,7 @@ path: Volunteer Groups
     {%- for item in pagination.items %}
     <div class="{{ background.next() }}">
       {% if item.photo != nil %}
-        <img src="/static/img/{{item.photo}}">
+        <img src="{{item.photo}}">
       {% else %}
         <div class="bg-yellow-500 h-80"></div>
       {% endif %}
