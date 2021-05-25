@@ -17,6 +17,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // add console log tool
+  eleventyConfig.addFilter('log', value => {
+    console.log(value)
+  })
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 
