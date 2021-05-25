@@ -57,11 +57,16 @@ collections:
           - label: Organizations
             name: organizations
             widget: list
-            collapsed: false
+            collapsed: true
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Contact Name, name: contactName, widget: string }
               - { label: Contact Email, name: contactEmail, widget: string }
+              - { 
+                  label: Photo, 
+                  name: photo, 
+                  widget: file
+                }
               - { label: Website, name: website, widget: string }
               - { label: Facebook, name: facebook, widget: string, required: false }
               - { label: Instagram, name: instagram, widget: string, required: false }
