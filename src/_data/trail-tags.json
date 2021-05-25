@@ -1,0 +1,12 @@
+{
+  "trail-tag": [
+    {
+      "name": "Open",
+      "slug": "open"
+    },
+    {
+      "name": "Closed",
+      "slug": "closed"
+    }
+  ]
+}
