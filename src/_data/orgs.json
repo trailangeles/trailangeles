@@ -1,0 +1,18 @@
+{
+  "organizations": [
+    {
+      "name": "Lowelifes Respectable Citizens' Club",
+      "slug": "lowelifes-respectable-citizens-club",
+      "contactName": "Rob Pettersen",
+      "trails": [
+        "ce9c87b9-1e60-4f0a-897a-59f50bb47d72",
+        "aa55e716-8d48-410a-9dd9-390f102aec2f"
+      ],
+      "requirements": "Volunteers need to be physically fit and otherwise prepared for physical labor in backcountry areas. Our work days are open to the public, depending on space.",
+      "instagram": "https://www.instagram.com/lowelifesrcc/",
+      "website": "https://www.lowelifesrcc.org",
+      "contactEmail": "board@lowelifesrcc.org",
+      "description": "Trail work: restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will move on to other trails in the Forest."
+    }
+  ]
+}
