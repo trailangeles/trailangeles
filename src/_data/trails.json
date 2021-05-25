@@ -31,6 +31,14 @@
       "slug": "trail-4",
       "id": "ce9c87b9-1e60-4f0a-897a-59f50bb47d72",
       "area": "ALT"
+    },
+    {
+      "name": "Rubio Canyon Trail",
+      "area": "ALT",
+      "trailheadName": "Rubio Canyon Trailhead",
+      "slug": "rubio-canyon",
+      "id": "123",
+      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-90.4009037,19.104469]}"
     }
   ]
 }
