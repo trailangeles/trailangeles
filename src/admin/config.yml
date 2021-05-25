@@ -42,6 +42,44 @@ collections:
               - { label: Trailhead Name, name: trailheadName, widget: string }
               - { label: Slug, name: slug, widget: string }
               - { label: ID, name: id, widget: string }
+  - label: "Orgs Data"
+    name: "orgs"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/orgs.json"
+        label: "Organizations"
+        name: "organizations"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Organizations
+            name: organizations
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Contact Name, name: contactName, widget: string }
+              - { label: Contact Email, name: contactEmail, widget: string }
+              - { label: Website, name: website, widget: string }
+              - { label: Facebook, name: facebook, widget: string, required: false }
+              - { label: Instagram, name: instagram, widget: string, required: false }
+              - { label: Description, name: description, widget: text, required: false }
+              - { label: Requirements, name: requirements, widget: text, required: false }
+              - { label: Slug, name: slug, widget: string, required: true }
+              - {
+                  label: Trails,
+                  name: trails,
+                  widget: relation,
+                  collection: trails,
+                  file: 'trails',
+                  valueField: trails.*.id,
+                  displayFields: [trails.*.name],
+                  searchFields: [trails.*.name],
+                  multiple: true,
+                  required: false,
+                }
   - label: "Settings"
     name: "settings"
     editor:
