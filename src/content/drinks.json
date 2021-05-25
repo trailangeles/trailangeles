@@ -1,0 +1,14 @@
+{
+  "drinks": [
+    {
+      "name": "Drink 1",
+      "price": 12,
+      "type": "red wine"
+    },
+    {
+      "name": "Drink 2",
+      "price": 10,
+      "type": "beer"
+    }
+  ]
+}
