@@ -79,7 +79,7 @@ collections:
                   widget: relation,
                   collection: trails,
                   file: 'trails',
-                  valueField: trails.*.id,
+                  valueField: trails.*.slug,
                   displayFields: [trails.*.name],
                   searchFields: [trails.*.name],
                   multiple: true,
