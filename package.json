@@ -24,6 +24,7 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1"
   }
