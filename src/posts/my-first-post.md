@@ -1,7 +1,7 @@
 ---
 title: 🌲 NEW STUFF!
 description: This is my description edit.
-author: Surjith S M
+author: Samsquanch
 date: 2020-09-01
 tags:
   - left
