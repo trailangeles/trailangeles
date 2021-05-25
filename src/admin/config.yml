@@ -1,16 +1,15 @@
 backend:
   # Use netlify identity as backend
-  name: git-gateway
+  name: github
   branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+  open_authoring: true
+  repo: maxogden/trailangeles
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: true
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 collections:
   - label: "Trails Data"
     name: "trails"
