@@ -4,6 +4,7 @@ backend:
   branch: master
   open_authoring: true
   repo: maxogden/trailangeles
+  auth_scope: repo
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
