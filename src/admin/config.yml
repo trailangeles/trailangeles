@@ -32,7 +32,7 @@ collections:
               - { label: Name, name: name, widget: string }
               -
                 label: "Area"
-                name: "areas"
+                name: "area"
                 widget: "select"
                 options:
                   - { label: "Altadena", value: "ALT" }
