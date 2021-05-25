@@ -7,8 +7,13 @@ pagination:
 permalink: "trails/{{ trail.slug }}/"
 path: Trails
 ---
-<div class="flex bg-gray-100 flex-stretch">
-    <div id="trail-map" style="height: 400px; width: 75%;"></div>
+<div class="flex w-full">
+    <div class="flex bg-gray-100 flex-stretch" style="width: 75%">
+        <div class="w-full">
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
+        </div>
+    </div>
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
             <h3 class="font-black text-white uppercase">Trail stats/status:</h3>
@@ -32,14 +37,11 @@ path: Trails
         </ol>
     </div>
 </div>
-
 <script>
-    const accessToken = '2c3M1Bp0ehxVeoW9DO9MGOUST8APNhggjSOBfWuB8nsEXi2nWZKzi1P7fp9G35eH';
-    const map = L.map('trail-map').setView([34.190163, -118.131317], 10);
-    L.tileLayer(
-      `https://tile.jawg.io/jawg-terrain/{z}/{x}/{y}.png?access-token=${accessToken}`, {
-        attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank" class="jawg-attrib">&copy; <b>Jawg</b>Maps</a> | <a href="https://www.openstreetmap.org/copyright" title="OpenStreetMap is open data licensed under ODbL" target="_blank" class="osm-attrib">&copy; OSM contributors</a>',
-        maxZoom: 22
-      }
-    ).addTo(map);
-  </script>
+    // customize the center for each trail separately
+    var map = L.map('map').setView([34.20486, -118.12827], 16);
+    var gl = L.mapboxGL({
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
+    }).addTo(map);
+</script>
