@@ -6,5 +6,17 @@
     {
       "name": "Area Two"
     }
+  ],
+  "areas": [
+    {
+      "name": "Crystal Lake",
+      "slug": "crystal-lake",
+      "id": "db72d857-c701-41b6-8d2e-14012c550337"
+    },
+    {
+      "name": "Altadena",
+      "slug": "altadena",
+      "id": "bc6b9cff-92cc-4322-bbe5-82528b8867cf"
+    }
   ]
 }
