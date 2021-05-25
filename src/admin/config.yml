@@ -105,17 +105,3 @@ collections:
         create: true
         options: ["Tags", "created", "from", "config.yml"]
 
-      - file: "src/_data/areas.json"
-        label: "Areas"
-        name: "areas"
-        widget: "object"
-        collapsed: false
-        fields:
-          - label: Areas
-            name: areas
-            widget: list
-            collapsed: true
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Slug, name: slug, widget: string }
-              - { label: ID, name: id, widget: string }
