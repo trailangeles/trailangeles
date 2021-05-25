@@ -75,14 +75,14 @@ collections:
           - { label: Alert Link, name: string, widget: string }
           - { label: Alert Link Status, name: linkStatus, widget: boolean }
   - label: "Trails Data"
-    name: "test"
+    name: "trails"
     extension: "json"
     editor:
       preview: true
     files:
-      - file: "src/_data/test.json"
-        label: "Trails Test"
-        name: "test"
+      - file: "src/_data/trails.json"
+        label: "Trails"
+        name: "trails"
         widget: "object"
         collapsed: false
         fields:
