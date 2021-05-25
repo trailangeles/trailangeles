@@ -21,7 +21,9 @@ path: Volunteer Groups
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Trails that this group maintains:</h3>
-            <p>{{ group.trails }}</p>
+            {%- for trail in group.trails %}
+                <li><a href='/trails/{{trail}}'>{{ trail }}</a></li>
+            {% endfor -%}
         </div>
     </div>
 </div>
