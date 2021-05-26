@@ -6,7 +6,10 @@
       "trailheadName": "Trailhead 1",
       "slug": "altadena-crest-trail",
       "id": "aa55e716-8d48-410a-9dd9-390f102aec2f",
-      "area": "ALT"
+      "area": "ALT",
+      "pois": [
+        "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2"
+      ]
     },
     {
       "name": "Echo Mountain Trail",
