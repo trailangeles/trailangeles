@@ -12,6 +12,27 @@ public_folder: "/static/img"
 local_backend: true
 publish_mode: editorial_workflow
 collections:
+  - label: "Points Of Interest"
+    name: "pois"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/pois.json"
+        label: "Pois"
+        name: "pois"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: POIs
+            name: pois
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Location, name: location, widget: map }
+              - { label: Description, name: description, widget: string }
+              - { label: ID, name: id, widget: string }
   - label: "Trails Data"
     name: "trails"
     extension: "json"
@@ -42,6 +63,18 @@ collections:
               - { label: Trailhead Name, name: trailheadName, widget: string }
               - { label: Slug, name: slug, widget: string }
               - { label: ID, name: id, widget: string }
+              - {
+                  label: POIs,
+                  name: pois,
+                  widget: relation,
+                  collection: pois,
+                  file: 'pois',
+                  valueField: pois.*.id,
+                  displayFields: [pois.*.name],
+                  searchFields: [pois.*.name],
+                  multiple: true,
+                  required: false,
+                }
   - label: "Orgs Data"
     name: "orgs"
     extension: "json"
