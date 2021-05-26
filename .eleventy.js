@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
 
   // add console log tool
   eleventyConfig.addFilter('log', value => {
-    console.log(value)
+    console.log('[11ty log]', value)
   })
 
   // Syntax Highlighting for Code blocks

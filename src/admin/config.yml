@@ -31,7 +31,7 @@ collections:
               - { label: Location, name: location, widget: map }
               - { label: Description, name: description, widget: string }
               - { label: ID, name: id, widget: string }
-              - { label: Mapbox Maki Icon Name, name: maki, widget: string }
+              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false }
   - label: "Trails Data"
     name: "trails"
     extension: "json"
@@ -58,8 +58,6 @@ collections:
                   - { label: "Altadena", value: "ALT" }
                   - { label: "Backcountry", value: "BACK" }
                   - { label: "Sierra Madre", value: "SM" }
-              - { label: Trailhead, name: trailhead, widget: map }
-              - { label: Trailhead Name, name: trailheadName, widget: string }
               - { label: Slug, name: slug, widget: string }
               - { label: ID, name: id, widget: string }
               - {

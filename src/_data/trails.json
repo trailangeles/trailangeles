@@ -2,8 +2,6 @@
   "trails": [
     {
       "name": "Altadena Crest Trail",
-      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-460.546875,33.1375512]}",
-      "trailheadName": "Trailhead 1",
       "slug": "altadena-crest-trail",
       "id": "aa55e716-8d48-410a-9dd9-390f102aec2f",
       "area": "ALT",
@@ -14,24 +12,18 @@
     },
     {
       "name": "Echo Mountain Trail",
-      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-460.546875,33.1375512]}",
-      "trailheadName": "Trailhead 1",
       "slug": "trail-2",
       "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82",
       "area": "ALT"
     },
     {
       "name": "Mt. Wilson Trail",
-      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-460.546875,33.1375512]}",
-      "trailheadName": "Trailhead 3",
       "slug": "trail-3",
       "id": "2439fce1-7df6-46b0-b65a-b13d4486b52b",
       "area": "SM"
     },
     {
       "name": "Brown Mountain Trail",
-      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-460.546875,33.1375512]}",
-      "trailheadName": "Trailhead 4",
       "slug": "trail-4",
       "id": "ce9c87b9-1e60-4f0a-897a-59f50bb47d72",
       "area": "ALT"
@@ -39,10 +31,8 @@
     {
       "name": "Rubio Canyon Trail",
       "area": "ALT",
-      "trailheadName": "Rubio Canyon Trailhead",
       "slug": "rubio-canyon",
-      "id": "123",
-      "trailhead": "{\"type\":\"Point\",\"coordinates\":[-90.4009037,19.104469]}"
+      "id": "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4"
     }
   ]
 }
