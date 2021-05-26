@@ -8,11 +8,11 @@ permalink: "volunteer-groups/{{ group.slug }}/"
 path: Volunteer Groups
 ---
 <div class="flex bg-gray-100 flex-stretch">
-    <div id="group-photo" class="bg-blue-500" style="height: 400px; width: 75%;">
+    <div id="group-photo" class="w-9/12 bg-blue-500 h-96">
     {% if group.photo != nil %}
-        <img src="{{group.photo}}">
+        <img class="object-cover w-full h-96" src="{{group.photo}}">
     {% else %}
-        <div class="bg-yellow-500 h-80"></div>
+        <div class="bg-yellow-500 h-96"></div>
     {% endif %}
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
