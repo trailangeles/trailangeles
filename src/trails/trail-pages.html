@@ -32,16 +32,36 @@ path: Trails
         <ol>
             <li>Trail Name: {{ trail.name }}</li>
             <li>Area: {{ trail.area }}</li>
-            <li>Trailhead: {{ trail.trailhead }}</li>
             <li>Trailhead: {{ trail.trailheadName }}</li>
         </ol>
     </div>
 </div>
 <script>
     // customize the center for each trail separately
-    var map = L.map('map').setView([34.20486, -118.12827], 16);
+    var map = L.map('map').setView([34.20486, -118.12827], 16)
     var gl = L.mapboxGL({
         attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
         style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
-    }).addTo(map);
+    }).addTo(map)
+
+    let marker, icon
+    let markers = []
+    {% for trailpoi in trail.pois %}
+    {% for poi in pois.pois %}
+    {% if trailpoi === poi.id %}
+    icon = L.icon({
+        iconUrl: '/static/img/icons/{{poi.maki or "marker"}}-15.svg',
+        iconSize: [30, 30]
+    })
+    parsed = JSON.parse('{{ poi.location | safe }}')
+    marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
+        .bindPopup("<b>{{ poi.name }}</b><br>{{poi.description}}")
+        .addTo(map)
+    markers.push(marker)
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    let group = new L.featureGroup(markers)
+    map.fitBounds(group.getBounds().pad(0.5))
+    // {{ trail.trailhead }}
 </script>
