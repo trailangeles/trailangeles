@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: map
 pagination:
   data: trails.trails
   size: 10
@@ -7,6 +7,11 @@ path: Trails
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a trail</h2>  
+  <div class="flex bg-gray-100 flex-stretch" style="width: 100%; margin-bottom: 30px;">
+    <div class="w-full">
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </div>
+  </div>
   <table class="w-full my-8 border-none table-auto">
   {% set background = cycler("bg-green-900", "bg-green-700") %}
   {%- for item in pagination.items %}
@@ -18,3 +23,35 @@ path: Trails
   {% endfor -%}
   </table>
 </div>
+
+<script>
+  // customize the center for each trail separately
+  var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
+  var gl = L.mapboxGL({
+      attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+      style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
+  }).addTo(map)
+
+  let marker, icon
+  let markers = []
+  {% for trail in trails.trails %}
+  {{ trail | log}}
+  {% for trailpoi in trail.pois %}
+  {% for poi in pois.pois %}
+  {% if trailpoi === poi.id %}
+  icon = L.icon({
+      iconUrl: '/static/img/icons/{{poi.maki or "marker"}}-15.svg',
+      iconSize: [30, 30]
+  })
+  parsed = JSON.parse('{{ poi.location | safe }}')
+  marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
+      .bindPopup("<b>{{ poi.name }}</b><br>{{poi.description}}")
+      .addTo(map)
+  markers.push(marker)
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endfor %}
+  let group = new L.featureGroup(markers)
+  map.fitBounds(group.getBounds().pad(0.5))
+</script>

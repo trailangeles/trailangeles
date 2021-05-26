@@ -52,7 +52,6 @@ path: Trails
         iconUrl: '/static/img/icons/{{poi.maki or "marker"}}-15.svg',
         iconSize: [30, 30]
     })
-    {{poi.maki | log}}
     parsed = JSON.parse('{{ poi.location | safe }}')
     marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
         .bindPopup("<b>{{ poi.name }}</b><br>{{poi.description}}")
@@ -63,5 +62,4 @@ path: Trails
     {% endfor %}
     let group = new L.featureGroup(markers)
     map.fitBounds(group.getBounds().pad(0.5))
-    // {{ trail.trailhead }}
 </script>
