@@ -1,0 +1,10 @@
+{
+  "pois": [
+    {
+      "name": "Cobb Estate",
+      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1306434,34.2039697]}",
+      "description": "You can hike here",
+      "id": "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2"
+    }
+  ]
+}
