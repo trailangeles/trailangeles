@@ -10,7 +10,8 @@
       "name": "Echo Mountain",
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1203544,34.2110036]}",
       "description": "Hike up to some ruins",
-      "id": "04b75f95-a8bc-45c7-971f-518236204792"
+      "id": "04b75f95-a8bc-45c7-971f-518236204792",
+      "maki": "mountain"
     }
   ]
 }
