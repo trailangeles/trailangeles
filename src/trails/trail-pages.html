@@ -62,4 +62,16 @@ path: Trails
     {% endfor %}
     let group = new L.featureGroup(markers)
     map.fitBounds(group.getBounds().pad(0.5))
+
+    // for inspecting
+    let mgl = gl._glMap
+
+    run = (e) => {
+    let features = mgl.queryRenderedFeatures(mgl.project([e.latlng.lng, e.latlng.lat]))
+        console.log(features)
+    }
+
+    map.on('click', (e) => {
+        run(e)
+    })
 </script>

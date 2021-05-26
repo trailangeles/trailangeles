@@ -29,7 +29,7 @@ path: Trails
   var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
   var gl = L.mapboxGL({
       attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
-      style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
+      style: 'https://api.maptiler.com/maps/364415f4-df4a-4442-9916-a7e8d323bffc/style.json?key=VK9en7fqcN8VTzfv5LVe'
   }).addTo(map)
 
   let marker, icon
@@ -54,4 +54,16 @@ path: Trails
   {% endfor %}
   let group = new L.featureGroup(markers)
   map.fitBounds(group.getBounds().pad(0.5))
+
+  // for inspecting
+  let mgl = gl._glMap
+
+  run = (e) => {
+  let features = mgl.queryRenderedFeatures(mgl.project([e.latlng.lng, e.latlng.lat]))
+      console.log(features)
+  }
+
+  map.on('click', (e) => {
+      run(e)
+  })
 </script>
