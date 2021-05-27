@@ -8,8 +8,10 @@
     <body>
         <!-- Include the script that builds the page and powers Netlify CMS -->
         <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-
-        <!-- Netlify Identity Widget -->
         <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script src="/static/js/netlify-cms-widget-simple-uuid.js"></script>
+        <script type="text/javascript">
+            CMS.registerWidget('id', IDWidget.default.IdControl, IDWidget.default.IdPreview);
+        </script>
     </body>
 </html>

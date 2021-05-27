@@ -1,5 +1,5 @@
 {
-  "pois": [
+  "places": [
     {
       "name": "Cobb Estate",
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1306434,34.2039697]}",

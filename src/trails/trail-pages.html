@@ -41,16 +41,16 @@ path: Trails
 
     let marker, icon
     let markers = []
-    {% for trailpoi in trail.pois %}
-    {% for poi in pois.pois %}
-    {% if trailpoi === poi.id %}
+    {% for trailplace in trail.places %}
+    {% for place in places.places %}
+    {% if trailplace === place.id %}
     icon = L.icon({
-        iconUrl: '/static/img/icons/{{poi.maki or "marker"}}-15.svg',
+        iconUrl: '/static/img/icons/{{place.maki or "marker"}}-15.svg',
         iconSize: [30, 30]
     })
-    parsed = JSON.parse('{{ poi.location | safe }}')
+    parsed = JSON.parse('{{ place.location | safe }}')
     marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
-        .bindPopup("<b>{{ poi.name }}</b><br>{{poi.description}}")
+        .bindPopup("<b>{{ place.name }}</b><br>{{place.description}}")
         .addTo(map)
     markers.push(marker)
     {% endif %}

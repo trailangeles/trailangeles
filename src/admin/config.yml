@@ -10,28 +10,29 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Points Of Interest"
-    name: "pois"
+  - label: "Places"
+    name: "places"
     extension: "json"
     editor:
       preview: true
     files:
-      - file: "src/_data/pois.json"
-        label: "Pois"
-        name: "pois"
+      - file: "src/_data/places.json"
+        label: "Places"
+        name: "places"
         widget: "object"
+        hint: "test"
         collapsed: false
         fields:
-          - label: POIs
-            name: pois
+          - label: Places
+            name: places
             widget: list
             collapsed: false
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Location, name: location, widget: map }
               - { label: Description, name: description, widget: string }
-              - { label: ID, name: id, widget: string }
-              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false }
+              - { label: ID, name: id, widget: id }
+              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
   - label: "Trails Data"
     name: "trails"
     extension: "json"
@@ -59,16 +60,18 @@ collections:
                   - { label: "Backcountry", value: "BACK" }
                   - { label: "Sierra Madre", value: "SM" }
               - { label: Slug, name: slug, widget: string }
-              - { label: ID, name: id, widget: string }
+              - { label: ID, name: id, widget: id }
+              - { label: OsmWayId, name: osmwayid, widget: string, required: false, hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds" }
+              - { label: OsmTags, name: osmtags, widget: hidden, required: false }
               - {
-                  label: POIs,
-                  name: pois,
+                  label: Places,
+                  name: places,
                   widget: relation,
-                  collection: pois,
-                  file: 'pois',
-                  valueField: pois.*.id,
-                  displayFields: [pois.*.name],
-                  searchFields: [pois.*.name],
+                  collection: places,
+                  file: 'places',
+                  valueField: places.*.id,
+                  displayFields: [places.*.name],
+                  searchFields: [places.*.name],
                   multiple: true,
                   required: false,
                 }
