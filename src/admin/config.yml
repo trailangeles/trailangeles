@@ -74,6 +74,7 @@ collections:
                   searchFields: [places.*.name],
                   multiple: true,
                   required: false,
+                  hint: "List of places associated with this trail. They will show up on the trail map"
                 }
   - label: "Orgs Data"
     name: "orgs"
@@ -117,6 +118,20 @@ collections:
                   searchFields: [trails.*.name],
                   multiple: true,
                   required: false,
+                  hint: "List of trails this organization maintains. They will show up on the organization page"
+                }
+              - {
+                  label: Places,
+                  name: places,
+                  widget: relation,
+                  collection: places,
+                  file: 'places',
+                  valueField: places.*.id,
+                  displayFields: [places.*.name],
+                  searchFields: [places.*.name],
+                  multiple: true,
+                  required: false,
+                  hint: "List of places this organization maintains. They will show up on the organization page"
                 }
   - label: "Settings"
     name: "settings"
