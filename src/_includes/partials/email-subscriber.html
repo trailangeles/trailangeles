@@ -1,4 +1,14 @@
 <div class="flex flex-col lg:flex-row lg:self-end lg:justify-end">
-  <input class="p-3" type="email" id="email" name="email" placeholder="E-mail address">
-  <button type="button" class="p-3 text-left text-green-800 bg-yellow-200 lg:text-center">Subscribe</button>
+  <form
+  action="https://buttondown.email/api/emails/embed-subscribe/trailangeles"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/trailangeles', 'popupwindow')"
+  class="embeddable-buttondown-form"
+>
+    <input type="email" class="p-3" name="email" id="bd-email" placeholder="Enter your email"/>
+    <input type="hidden" value="1" name="embed" />
+    <input type="submit" class="p-3 text-left text-green-800 bg-yellow-200 lg:text-center" value="Subscribe" />
+  </form>
 </div>
+
