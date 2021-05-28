@@ -8,31 +8,36 @@
       "places": [
         "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
         "04b75f95-a8bc-45c7-971f-518236204792"
-      ]
+      ],
+      "status": true
     },
     {
       "name": "Echo Mountain Trail",
       "slug": "trail-2",
       "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82",
-      "area": "ALT"
+      "area": "ALT",
+      "status": true
     },
     {
       "name": "Mt. Wilson Trail",
       "slug": "trail-3",
       "id": "2439fce1-7df6-46b0-b65a-b13d4486b52b",
-      "area": "SM"
+      "area": "SM",
+      "status": false
     },
     {
       "name": "Brown Mountain Trail",
       "slug": "trail-4",
       "id": "ce9c87b9-1e60-4f0a-897a-59f50bb47d72",
-      "area": "ALT"
+      "area": "ALT",
+      "status": true
     },
     {
       "name": "Rubio Canyon Trail",
       "area": "ALT",
       "slug": "rubio-canyon",
-      "id": "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4"
+      "id": "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4",
+      "status": true
     }
   ]
 }
