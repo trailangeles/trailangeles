@@ -88,6 +88,11 @@ h3 {
   -webkit-tap-highlight-color: transparent;
 }
 
+.glide__slide img {
+  height: 400px;
+  object-fit: cover;
+}
+
 .glide__slide a {
   user-select: none;
   -webkit-user-drag: none;
