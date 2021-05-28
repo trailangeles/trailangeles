@@ -17,7 +17,7 @@ path: Trails
   {%- for item in pagination.items %}
     <tr onclick="window.location='/trails/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ item.name }}</td>
-      <td class="p-4 border-none cursor-pointer ">{{ item.trailheadName }}</td>
+      <td class="p-4 border-none cursor-pointer ">{{ "Open" if item.status === true else "Closed" }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.area }}</td>
     </tr>
   {% endfor -%}
