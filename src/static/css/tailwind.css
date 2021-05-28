@@ -19,9 +19,23 @@ h3 {
 .fs-logo {
   background-image: url(/static/img/Forest_Service_logo.svg);
   display: block;
-  height: 57px;
-  width: 51px;
-  background-size: 51px;
+  height: 120px;
+  width: 120px;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nfa-logo {
+  background-image: url(/static/img/nfa.png);
+  display: block;
+  height: 120px;
+  width: 120px;
+  background-size: 106px;
+  background-color: white;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .go-button {

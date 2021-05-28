@@ -7,6 +7,13 @@ pagination:
 permalink: "trails/{{ trail.slug }}/"
 path: Trails
 ---
+
+<div class="flex flex-col justify-center p-8 mx-auto bg-gray-100">
+    <div class="container">
+        <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
+    </div>
+</div>
+
 <div class="flex w-full">
     <div class="flex bg-gray-100 flex-stretch" style="width: 75%">
         <div class="w-full">
@@ -15,22 +22,26 @@ path: Trails
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
-            <h3 class="font-black text-white uppercase">Trail stats/status:</h3>
+            <h3 class="font-black text-white uppercase">Trail status: OPEN/CLOSED</h3>
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
-            <h3 class="font-black text-white uppercase">Groups that maintain this trail:</h3>
+            <h3 class="font-black text-white uppercase">This trail is maintained by:</h3>
+            <li class="text-white"> Group 1</li>
+            <li class="text-white"> Group 2</li>
+            <li class="text-white"> Group 3</li>
+        </div>
+        <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
+            <h3 class="font-black text-white uppercase">Trail data:</h3>
+            <table class="text-white">
+                <tr><td>Length:</td><td> X Miles</td></tr>
+                <tr><td>Surface:</td><td> Dirt</td></tr>
+                <tr><td>Open to:</td><td> Hike / Bike / Horse</td></tr>
+            </table>
         </div>
     </div>
 </div>
-<div class="flex flex-col justify-center py-16 mx-auto bg-gray-100">
-    <div class="container">
-        <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
-        <ol>
-            <li>Trail Name: {{ trail.name }}</li>
-            <li>Area: {{ trail.area }}</li>
-        </ol>
-    </div>
-</div>
+
+
 <script>
     // customize the center for each trail separately
     var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
