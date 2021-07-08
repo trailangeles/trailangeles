@@ -106,7 +106,7 @@ h3 {
 .glide__arrow {
   position: absolute;
   display: block;
-  top: 60%;
+  top: 44%;
   z-index: 2;
   text-transform: uppercase;
   opacity: 1;
@@ -119,28 +119,28 @@ h3 {
 }
 
 .glide__arrow--left:hover {
-  border-right: 45px solid white; 
+  border-right: 25px solid white; 
 }
 
 .glide__arrow--right:hover {
-  border-left: 45px solid white; 
+  border-left: 25px solid white; 
 }
 
 .glide__arrow--left {
-  right: 5.5em;
+  right: 4.5em;
   width: 0; 
   height: 0; 
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent; 
-  border-right: 45px solid #FFE67B; 
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent; 
+  border-right: 25px solid #FFE67B; 
 }
 
 .glide__arrow--right {
   width: 0; 
   height: 0; 
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
-  border-left: 45px solid #FFE67B;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 25px solid #FFE67B;
   right: 2em;
 }
 
