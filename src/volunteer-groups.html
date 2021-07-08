@@ -13,7 +13,7 @@ path: Volunteer Groups
     <div class="{{ background.next() }}">
       {% if item.photo != nil %}
         <a href="/volunteer-groups/{{item.slug}}" alt="{{item.name}}">
-          <img src="{{item.photo}}">
+          <img src="{{item.photo}}" style="height: 160px; width: 100%; object-fit: cover;">
         </a>
       {% else %}
         <div class="bg-yellow-500 h-80"></div>
