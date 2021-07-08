@@ -49,6 +49,14 @@ h3 {
   background-position: center;
 }
 
+.subscriber-background {
+  background-image: url(/static/img/trees-sun.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 28%;
+  background-position-x: calc(100% - 2rem);
+}
+
 .go-button {
   height: 45px;
   text-align: center;
