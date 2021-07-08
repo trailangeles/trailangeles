@@ -3,16 +3,21 @@
     {% set orgs = orgs.organizations %}
         {% set background = cycler("bg-green-900", "bg-green-700", "bg-green-600") %}
         {% for org in orgs.slice(0,3) %}
-            <div class="p-5 h-60 lg:h-80 {{ background.next() }} flex flex-col justify-between">
-                <h3 class="text-base font-extrabold tracking-wide text-white uppercase">{{org.name}}</h3>
-                <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{org.description | truncate(100)}}</h4>
-                <a class="self-end float-right p-1 text-xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{org.slug}}">Go</a>
+            <div>
+                <a href="/volunteer-groups/{{org.slug}}" alt="{{org.name}}">
+                    <img style="height: 160px; width: 100%; object-fit: cover;" src="{{org.photo}}">
+                </a>
+                <div class="p-5 h-60 lg:h-50 {{ background.next() }} flex flex-col justify-between">
+                    <h3 class="text-base font-extrabold tracking-wide text-white uppercase">{{org.name}}</h3>
+                    <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{org.description | truncate(100)}}</h4>
+                    <a class="self-end float-right p-1 text-xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{org.slug}}">Go</a>
+                </div>
             </div>
         {% endfor %}
         <a
             href="/volunteer-groups/" 
             target="_blank"
-            class="flex justify-start lg:justify-end lg:p-5 lg:bg-green-900 lg:h-80"
+            class="flex justify-start lg:justify-end lg:p-5 lg:bg-green-900 lg:h-50"
         >
             <div class="self-center" style="margin-right: -3.75rem">
                 <div class="float-right w-10 overflow-hidden">
