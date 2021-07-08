@@ -26,6 +26,19 @@ h3 {
   background-position: center;
 }
 
+.nfa-logo {
+  background-image: url(/static/img/nfa.png);
+  display: block;
+  height: 110px;
+  width: 110px;
+  background-size: 100%;
+  background-color: white;
+  border-radius: 50%;
+  border: 7px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .ta-logo {
   background-image: url(/static/img/logo.svg);
   display: block;
