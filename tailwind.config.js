@@ -43,7 +43,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      'sans': ['Catamaran', 'sans-serif']
+      'sans': ['Catamaran', 'sans-serif'],
+      'serif': ['Merriweather', 'serif']
     },
     extend: {
       colors: {},

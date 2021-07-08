@@ -5,7 +5,7 @@
         {% for org in orgs.slice(0,3) %}
             <div class="p-5 h-60 lg:h-80 {{ background.next() }} flex flex-col justify-between">
                 <h3 class="text-2xl font-extrabold text-white uppercase">{{org.name}}</h3>
-                <h4 class="text-white">{{org.description | truncate(100)}}</h4>
+                <h4 class="font-serif font-light leading-6 tracking-wide text-white">{{org.description | truncate(100)}}</h4>
                 <a class="self-end float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{org.slug}}">Go</a>
             </div>
         {% endfor %}
