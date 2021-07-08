@@ -3,8 +3,8 @@
         {% set background = cycler("bg-green-900", "bg-green-700", "bg-green-600") %}
         {% for trail in trails.trails.slice(0,3) %}
             <div class="p-5 h-60 lg:h-80 {{ background.next() }} flex flex-col justify-between">
-                <h3 class="text-2xl font-extrabold text-white uppercase">{{trail.name}}</h3>
-                <a class="self-end float-right p-2 text-2xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="/trails/{{trail.slug}}">Go</a>
+                <h3 class="text-base font-extrabold tracking-wide text-white uppercase">{{trail.name}}</h3>
+                <a class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="/trails/{{trail.slug}}">Go</a>
             </div>
         {% endfor %}
     {% endif %}
@@ -17,7 +17,7 @@
             <div class="float-right w-10 overflow-hidden">
                 <div class="origin-top-left transform rotate-45 bg-yellow-500 h-14"></div>
             </div>
-            <div class="float-right p-3 text-2xl text-white bg-yellow-500">View All Trails</div>
+            <div class="float-right p-3 text-lg text-white bg-yellow-500">View All Trails</div>
         </div>
     </a>
 </div>
