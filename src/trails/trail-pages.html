@@ -8,9 +8,15 @@ permalink: "trails/{{ trail.slug }}/"
 path: Trails
 ---
 
-<div class="flex flex-col justify-center p-8 mx-auto bg-gray-100">
-    <div class="container">
-        <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">{{ trail.name }}</h2>
+<div class="flex flex-col justify-center mx-auto bg-gray-100">
+    <div class="container mx-auto">
+        <div class="w-3/4 py-10 mx-auto">
+            <h2 class="pb-6 text-4xl font-black text-green-800 uppercase">{{ trail.name }}</h2>
+            <h4><strong>Last Updated:</strong> July 8, 2021</h4><br><br>
+            <ol>
+                <li class="font-serif leading-loose"><strong>Description:</strong> Information about this trail and the latest developments.</li><br>
+            </ol>
+        </div>
     </div>
 </div>
 
@@ -43,6 +49,19 @@ path: Trails
                 <tr><td>Open to:</td><td> Hike / Bike / Horse</td></tr>
             </table>
         </div>
+    </div>
+</div>
+
+<div class="bg-green-700">
+    <div class="container flex justify-between py-8">
+        <div class="flex">
+            <h3 class="self-start text-xl font-extrabold text-white uppercase">Resources</h3>
+            <ul class="self-stretch pl-10 text-white list-disc list-inside">
+                <li>Title of a Long Specific Resource Guide</li>
+                <li>Title of a Long Specific Resource Guide</li>
+            </ul>
+        </div>
+        <button class="self-end p-3 px-8 leading-7 tracking-wide text-left text-green-800 bg-yellow-200 flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
 

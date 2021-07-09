@@ -24,10 +24,10 @@ path: Volunteer Groups
         </h3>
         <br>
           <a href="/volunteer-groups/{{item.slug}}" alt="{{item.name}}">
-            <p class="text-white">{{ item.description | truncate(200) }}</p>
+            <p class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{ item.description | truncate(200) }}</p>
           </a>
         <br>
-        <a class="self-end float-right p-2 text-2xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
+        <a class="self-end float-right p-1 text-xl font-extrabold text-green-900 uppercase bg-yellow-200 rounded-full go-button" href="/volunteer-groups/{{item.slug}}">Go</a></li>
       </div>
     </div>
   {% endfor -%}
