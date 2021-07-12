@@ -12,8 +12,8 @@
       
         <div class="w-full lg:text-right lg:w-1/2">
           <ul class="py-5 text-xl text-center text-white lg:py-0 lg:text-right">
-            <li class="font-black tracking-wide uppercase hover:text-yellow-50"><a href="/blog">About us</a></li>
-            <li class="font-black tracking-wide uppercase hover:text-yellow-50"><a href="/blog">FAQ</a></li>
+            <li><a class="font-black tracking-wide uppercase hover:text-yellow-50 {{ ' text-yellow-50' if path == 'About' else 'text-white border-transparent' }}" href="/blog">About</a></li>
+            <li><a class="font-black tracking-wide uppercase hover:text-yellow-50 {{ ' text-yellow-50' if path == 'FAQ' else 'text-white border-transparent' }}" href="/blog">FAQ</a></li>
           </ul>
         </div>
       
