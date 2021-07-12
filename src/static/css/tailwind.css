@@ -52,9 +52,20 @@ h3 {
 .subscriber-background {
   background-image: url(/static/img/trees-sun.svg);
   background-repeat: no-repeat;
-  background-position-y: top;
-  background-size: 28%;
-  background-position-x: calc(100% - 2rem);
+}
+
+@media (min-width: 1024px) {
+  .subscriber-background {
+    background-position-y: top;
+    background-size: 28%;
+    background-position-x: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .subscriber-background {
+    background-position-x: calc(100% - 2rem);
+  }
 }
 
 .go-button {
