@@ -32,8 +32,10 @@ path: Volunteer Groups
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">About this group:</h3>
-            <li>📬 <a class="text-white" href="mailto:{{ group.contactEmail }}">Email</a></li>
-            <li>🖥 <a class="text-white" href="{{ group.website }}">Website</a></li>
+            <ul class="text-white list-disc list-inside">
+                <li>📬 <a class="text-white" href="mailto:{{ group.contactEmail }}">Email</a></li>
+                <li>🖥 <a class="text-white" href="{{ group.website }}">Website</a></li>
+            </ul>
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Trails/Areas maintained:</h3>
