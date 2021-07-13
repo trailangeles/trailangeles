@@ -49,6 +49,24 @@ h3 {
   background-position: center;
 }
 
+.facebook-logo,
+.instagram-logo {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;  
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook-logo {
+  background-image: url(/static/img/social-media/fb.svg);
+}
+
+.instagram-logo {
+  background-image: url(/static/img/social-media/ig.svg);
+}
+
 .subscriber-background {
   background-image: url(/static/img/trees-sun.svg);
   background-repeat: no-repeat;
