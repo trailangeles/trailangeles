@@ -215,3 +215,22 @@ h3 {
 .glide--carousel {
   position: relative;
 }
+
+.glide__content_top,
+.glide__content_bottom {
+  position: absolute;
+  color: white;
+}
+
+.glide__content_top *,
+.glide__content_bottom * {
+  padding-left: 2rem;
+}
+
+.glide__content_top {
+  top: 3rem;
+}
+
+.glide__content_bottom {
+  bottom: 3rem;
+}
