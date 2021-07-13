@@ -21,8 +21,8 @@ path: Volunteer Groups
     </div>
 </div>
 
-<div class="flex bg-gray-100 flex-stretch">
-    <div id="group-photo" class="w-9/12 bg-blue-500 h-96">
+<div class="flex flex-col bg-gray-100 flex-stretch md:flex-row">
+    <div id="group-photo" class="w-full bg-blue-500 md:w-9/12 h-96">
     {% if group.photo != nil %}
         <img class="object-cover w-full h-96" src="{{group.photo}}">
     {% else %}
@@ -47,14 +47,14 @@ path: Volunteer Groups
 </div>
 
 <div class="bg-green-700">
-    <div class="container flex justify-between py-8">
-        <div class="flex">
-            <h3 class="self-start text-xl font-extrabold text-white uppercase">Resources</h3>
-            <ul class="self-stretch pl-10 text-white list-disc list-inside">
+    <div class="container flex flex-col justify-between py-8 md:flex-row">
+        <div class="flex flex-col md:flex-row">
+            <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">Resources</h3>
+            <ul class="self-stretch pb-4 text-white md:pl-10 md:list-disc md:list-inside">
                 <li>Title of a Long Specific Resource Guide</li>
                 <li>Title of a Long Specific Resource Guide</li>
             </ul>
         </div>
-        <button class="self-end p-3 px-8 leading-7 tracking-wide text-left text-green-800 bg-yellow-200 flex-end font-extralight lg:text-center">Suggest an Edit</button>
+        <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-green-800 bg-yellow-200 md:self-end flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
