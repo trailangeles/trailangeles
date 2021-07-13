@@ -5,8 +5,10 @@ pagination:
   size: 12
 path: Volunteer Groups
 ---
-<div class="container flex flex-col justify-center py-16 mx-auto">
-  <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a volunteer group</h2>  
+<div class="container flex flex-col justify-center pt-8 mx-auto lg:pt-16">
+  <h2 class="text-3xl font-black text-green-800 uppercase border-b border-green-800 lg:text-5xl">Find a volunteer group</h2>  
+</div>
+<div class="md:container">
   <div class="grid w-full grid-cols-1 gap-4 my-8 lg:grid-cols-3 lg:mx-0">
     {% set background = cycler("bg-green-900", "bg-green-700") %}
     {%- for item in pagination.items %}
@@ -32,6 +34,7 @@ path: Volunteer Groups
     </div>
   {% endfor -%}
   </div>
+</div>  
   
   {% if pagination.items.size > 12 %}
     <nav aria-labelledby="my-pagination">
