@@ -220,12 +220,50 @@ h3 {
 .glide__content_bottom {
   position: absolute;
   color: white;
-}
-
-.glide__content_top *,
-.glide__content_bottom * {
+  width: 100%;
   padding-left: 2rem;
 }
+
+@media (min-width: 640px) {
+  .glide__content_top,
+  .glide__content_bottom {
+    max-width: 640px;
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .glide__content_top,
+  .glide__content_bottom {
+    max-width: 768px;
+    padding-left: 8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .glide__content_top,
+  .glide__content_bottom {
+    max-width: 1024px;
+    padding-left: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .glide__content_top,
+  .glide__content_bottom {
+    max-width: 1280px;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .glide__content_top,
+  .glide__content_bottom {
+    max-width: 1536px;
+    padding-left: 3rem;
+  }
+}
+
 
 .glide__content_top {
   top: 3rem;
