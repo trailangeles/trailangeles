@@ -1,7 +1,7 @@
 {% if alert.status === true %}
   <div class="bg-yellow-500">
     <div class="container lg:px-0">
-      <h3 class="py-4 font-medium leading-8 tracking-wide text-white uppercase ">
+      <h3 class="py-4 font-medium leading-tight tracking-wide text-white uppercase ">
         ⚠️ {{ alert.text }}
         {% if alert.linkStatus === true %}
           <a href="{{ alert.link }}">Read more</a>
