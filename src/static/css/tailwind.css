@@ -5,15 +5,20 @@
 /*Your Custom CSS Goes here*/
 
 h1 {
-  @apply text-4xl lg:text-7xl;
+  @apply text-4xl font-black lg:text-7xl;
 }
 
 h2 {
-  @apply text-3xl font-bold;
+  @apply font-black uppercase;
+  font-size: 2.25rem;
+  letter-spacing: 0.16px;
 }
 
 h3 {
-  @apply text-lg font-bold;
+  @apply font-black uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.16px;
+  line-height: 18px;
 }
 
 .fs-logo {
@@ -91,6 +96,12 @@ h3 {
   text-align: center;
   width: 45px;
   line-height: 40px;
+}
+
+.offset-underline {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 0.4em;
 }
 
 .glide {
