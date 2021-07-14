@@ -1,7 +1,7 @@
 items:
   - text: Home
     url: /
-  - text: Trails & Places
+  - text: Trails
     url: /trails
   - text: Volunteer Groups
     url: /volunteer-groups
