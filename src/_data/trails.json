@@ -48,7 +48,8 @@
     {
       "status": true,
       "name": "San Gabriel River, West Fork",
-      "area": "BACK"
+      "area": "BACK",
+      "slug": "west-fork-san-gabriel-river"
     },
     {
       "status": true,
