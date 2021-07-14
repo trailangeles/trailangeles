@@ -39,9 +39,11 @@ path: Volunteer Groups
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Trails/Areas maintained:</h3>
-            {%- for trail in group.trails %}
-                <li><a href='/trails/{{trail}}'>{{ trail }}</a></li>
-            {% endfor -%}
+            <ul class="text-white list-disc list-inside">
+                {%- for trail in group.trails %}
+                    <li><a href='/trails/{{trail}}'>{{ trail }}</a></li>
+                {% endfor -%}
+            </ul>
         </div>
     </div>
 </div>
