@@ -3,7 +3,11 @@ module.exports = {
     mode: "all",
     content: ["./**/*.html"],
     options: {
-      whitelist: [],
+      whitelist: [
+        'glide--swipeable',
+        'glide--dragging',
+        'glide--carousel'
+      ],
     },
   },
   theme: {
