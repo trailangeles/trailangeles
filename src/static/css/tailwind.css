@@ -65,11 +65,11 @@ h3 {
 }
 
 .facebook-logo {
-  background-image: url(/static/img/social-media/fb.svg);
+  background-image: url(/static/img/social/fb.svg);
 }
 
 .instagram-logo {
-  background-image: url(/static/img/social-media/ig.svg);
+  background-image: url(/static/img/social/ig.svg);
 }
 
 .subscriber-background {
@@ -205,10 +205,6 @@ h3 {
   border-bottom: 25px solid transparent;
   border-left: 25px solid #FFE67B;
   right: 2em;
-}
-
-.glide__arrow--disabled {
-  opacity: 0.33;
 }
 
 .glide--swipeable {
