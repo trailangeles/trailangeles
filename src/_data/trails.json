@@ -38,6 +38,23 @@
       "slug": "rubio-canyon",
       "id": "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4",
       "status": true
+    },
+    {
+      "status": true,
+      "name": "San Gabriel River, East Fork",
+      "area": "BACK",
+      "slug": "east-fork-san-gabriel-river"
+    },
+    {
+      "status": true,
+      "name": "San Gabriel River, West Fork",
+      "area": "BACK"
+    },
+    {
+      "status": true,
+      "name": "Haramokngna American Indian Cultural Center",
+      "area": "BACK",
+      "slug": "haramokngna-american-indian-cultural-center"
     }
   ]
 }
