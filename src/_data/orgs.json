@@ -1,6 +1,21 @@
 {
   "organizations": [
     {
+      "facebook": "https://www.facebook.com/East-Forks-Golden-Preservation-270602207058655/",
+      "name": "East Forks Golden Preservation",
+      "slug": "east-forks-golden-preservation",
+      "contactName": "Joel Glen",
+      "trails": [
+        "east-fork-san-gabriel-river"
+      ],
+      "requirements": "- Bring water, clothes you don't mind getting wet and dirty. \n- We will provide snacks and lunch for all volunteers to who pre-register.",
+      "photo": "/static/img/east-fork-preservation.jpg",
+      "instagram": "https://www.instagram.com/eastforksgoldenpreservation/",
+      "website": "https://www.instagram.com/eastforksgoldenpreservation/",
+      "contactEmail": "contact@lanatureforall.org",
+      "description": "Using gloves, bags, and trash grabbers, we pick up trash around the Oaks Picnic Area and along the East Fork River. We weigh and toss after. So far we picked up 8,505 pounds of trash off our beautiful San Gabriel Mountains. Save the date-Sunday, July 25: https://www.eventbrite.com/e/sunday-july-25th-oaks-picnic-area-cleanup-tickets-161988561147\n\nLearn more: https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/"
+    },
+    {
       "name": "Lowelifes Respectable Citizens' Club",
       "slug": "lowelifes-respectable-citizens-club",
       "contactName": "Rob Pettersen",
