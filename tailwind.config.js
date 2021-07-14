@@ -4,9 +4,6 @@ module.exports = {
     content: ["./**/*.html"],
     options: {
       whitelist: [
-        'glide--swipeable',
-        'glide--dragging',
-        'glide--carousel'
       ],
     },
   },
