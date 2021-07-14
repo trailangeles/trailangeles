@@ -14,7 +14,9 @@ path: Trails
             <h2 class="pb-6 text-3xl font-black text-green-800 uppercase md:text-4xl">{{ trail.name }}</h2>
             <h4><strong>Last Updated:</strong> July 8, 2021</h4><br><br>
             <ol>
-                <li class="font-serif leading-loose"><strong>Description:</strong> Information about this trail and the latest developments.</li><br>
+                <li class="font-serif leading-loose"><strong>Description:</strong> The Altadena Crest Trail runs east to west in Altadena.</li><br>
+                <li class="font-serif leading-loose"><strong>Advocacy:</strong> The Altadena Crest Trail Restoration Working Group advocates and organizes for this trail and meets once a month on Zoom. Learn more here: <a href="https://altadenatrails.org/">https://altadenatrails.org/</a>.</li><br>
+                <li class="font-serif leading-loose"><strong>Support this Trail:</strong> (link to advocacy group / non-profit donation site)</li><br>
             </ol>
         </div>
     </div>
@@ -28,9 +30,9 @@ path: Trails
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
-            <h3 class="font-black text-white uppercase">Trail status</h3>
+            <h3 class="font-black text-white uppercase">Trail status:</h3>
             {% if trail.status === true %}
-            <h3 class="text-white">Open</h3>
+            <h3 class="text-yellow-200">Open</h3>
             {% else %}
             <h3 class="text-yellow-200">Closed</h3>
             {% endif %}
