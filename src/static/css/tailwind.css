@@ -231,8 +231,16 @@ h3 {
 .glide__content_bottom {
   position: absolute;
   color: white;
-  width: 100%;
+  width: inherit;
   padding-left: 2rem;
+}
+
+@media (max-width: 640px) {
+  .glide__content_top h2,
+  .glide__content_bottom h2 {
+    line-height: 2rem;
+    padding-top: 1rem;
+  }
 }
 
 @media (min-width: 640px) {
