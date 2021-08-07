@@ -260,3 +260,7 @@ h3 {
 .hidden {
   display: none;
 }
+
+.selected-filter {
+  background-color: rgb(255, 230, 123);
+}
