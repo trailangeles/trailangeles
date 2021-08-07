@@ -11,12 +11,11 @@ path: Trails
 <div class="flex flex-col justify-center mx-auto bg-gray-100">
     <div class="container mx-auto">
         <div class="w-3/4 py-10 mx-auto">
-            <h2 class="pb-6 text-3xl font-black text-green-800 uppercase md:text-4xl">{{ trail.name }}</h2>
-            <h4><strong>Last Updated:</strong> July 8, 2021</h4><br><br>
+            <h2 class="pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">{{ trail.name }}</h2>
+            <h5 class="pb-6 font-black text-green-900 uppercase">Last Updated 00/00/00</h5>
             <ol>
-                <li class="font-serif leading-loose"><strong>Description:</strong> The Altadena Crest Trail runs east to west in Altadena.</li><br>
-                <li class="font-serif leading-loose"><strong>Advocacy:</strong> The Altadena Crest Trail Restoration Working Group advocates and organizes for this trail and meets once a month on Zoom. Learn more here: <a href="https://altadenatrails.org/">https://altadenatrails.org/</a>.</li><br>
-                <li class="font-serif leading-loose"><strong>Support this Trail:</strong> (link to advocacy group / non-profit donation site)</li><br>
+                <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail runs east to west in Altadena.</li><br>
+                <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail Restoration Working Group advocates and organizes for this trail and meets once a month on Zoom. Learn more here: <a href="https://altadenatrails.org/">https://altadenatrails.org/</a>.</li><br>
             </ol>
         </div>
     </div>
@@ -29,29 +28,19 @@ path: Trails
         </div>
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
-        <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
-            <h3 class="font-black text-white uppercase">Trail status:</h3>
-            {% if trail.status === true %}
-            <h3 class="text-yellow-200">Open</h3>
-            {% else %}
-            <h3 class="text-yellow-200">Closed</h3>
-            {% endif %}
-        </div>
         <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
-            <h3 class="font-black text-white uppercase">This trail is maintained by:</h3>
-            <ul class="text-white list-disc list-inside">
-                <li class="text-white"> Group 1</li>
-                <li class="text-white"> Group 2</li>
-                <li class="text-white"> Group 3</li>
-            </ul>
+            <h3 class="text-white">
+                Status:
+                {% if trail.status === true %}
+                <span class="text-yellow-200">Open</span>
+                {% else %}
+                <span class="text-yellow-200">Closed</span>
+                {% endif %}
+            </h3>
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
-            <h3 class="font-black text-white uppercase">Trail data:</h3>
-            <table class="text-white">
-                <tr><td>Length:</td><td> X Miles</td></tr>
-                <tr><td>Surface:</td><td> Dirt</td></tr>
-                <tr><td>Open to:</td><td> Hike / Bike / Horse</td></tr>
-            </table>
+            <h3 class="font-black text-white uppercase">Maintained by:</h3>
+            <p class="text-white">Group 1, Group 2, Group 3</p>
         </div>
     </div>
 </div>
@@ -60,12 +49,16 @@ path: Trails
     <div class="container flex flex-col justify-between py-8 md:flex-row">
         <div class="flex flex-col md:flex-row">
             <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">More about this Trail</h3>
-            <ul class="self-stretch pb-4 text-white md:pl-10 md:list-disc md:list-inside">
-                <li><a href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
-                <li><a href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+            <ul class="self-stretch pb-4 text-white md:pl-10 md:list-inside">
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
             </ul>
         </div>
-        <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white bg-yellow-500 md:self-end flex-end font-extralight lg:text-center">Suggest an Edit</button>
+        <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white bg-yellow-500 md:align-top flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
 

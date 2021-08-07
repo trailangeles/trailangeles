@@ -11,11 +11,10 @@ path: Volunteer Groups
 <div class="bg-gray-200">
     <div class="container mx-auto">
         <div class="w-3/4 py-10 mx-auto">
-            <h2 class="pb-6 text-3xl font-black text-green-800 uppercase md:text-4xl">Volunteer with {{ group.name }}</h2>
-            <h4><strong>Last Updated:</strong> July 8, 2021</h4><br><br>
+            <h2 class="pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">Volunteer with {{ group.name }}</h2>
             <ol>
-                <li class="font-serif leading-loose"><strong>Description:</strong> {{ group.description }}</li><br>
-                <li class="font-serif leading-loose"><strong>Requirements:</strong> {{ group.requirements }}</li>
+                <li class="font-serif leading-loose text-green-900">{{ group.description }}</li><br>
+                <li class="font-serif leading-loose text-green-900">{{ group.requirements }}</li>
             </ol>
         </div>
     </div>
@@ -31,19 +30,14 @@ path: Volunteer Groups
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink p-4 bg-green-700 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">About this group:</h3>
-            <ul class="text-white list-disc list-inside">
-                <li>📬 <a class="text-white" href="mailto:{{ group.contactEmail }}">Email</a></li>
-                <li>🖥 <a class="text-white" href="{{ group.website }}">Website</a></li>
+            <h3 class="text-xl font-extrabold text-white uppercase">{{group.name}}</h3>
+            <ul class="text-white">
+                <li><span>Contact: <a class="text-white" href="mailto:{{ group.contactEmail }}">Name Name</a></li>
+                <li><span>Website: <a class="text-white" href="{{ group.website }}">Website</a></span></li>
             </ul>
         </div>
         <div class="flex-grow flex-shrink p-4 bg-green-800 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">Trails/Areas maintained:</h3>
-            <ul class="text-white list-disc list-inside">
-                {%- for trail in group.trails %}
-                    <li><a href='/trails/{{trail}}'>{{ trail }}</a></li>
-                {% endfor -%}
-            </ul>
+            <h3 class="text-xl font-extrabold text-white uppercase">Trails we maintain:</h3><span class="text-white">Trail Name 1, Trail Name 2, Trail Name 3</span>
         </div>
     </div>
 </div>
@@ -52,11 +46,14 @@ path: Volunteer Groups
     <div class="container flex flex-col justify-between py-8 md:flex-row">
         <div class="flex flex-col md:flex-row">
             <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">Resources</h3>
-            <ul class="self-stretch pb-4 text-white md:pl-10 md:list-disc md:list-inside">
-                <li><a href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
-                <li><a href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+            <ul class="self-stretch pb-4 text-white md:pl-10">
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li><li><a href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
             </ul>
         </div>
-        <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white bg-yellow-500 md:self-end flex-end font-extralight lg:text-center">Suggest an Edit</button>
+        <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white align-baseline bg-yellow-500 flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
