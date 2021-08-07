@@ -8,7 +8,7 @@
                     <img style="height: 160px; width: 100%; object-fit: cover;" src="/static/img/trails/{{ testImage.next() }}">
                 </a>
                 <div class="p-5 h-48 lg:h-60 {{ background.next() }} flex flex-col justify-between">
-                    <h3 class="text-base font-extrabold tracking-wide text-white uppercase">{{trail.name}}</h3>
+                    <h3 class="font-extrabold tracking-wide text-white uppercase">{{trail.name}}</h3>
                     <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">Trail description goes here | Region Name - Trail Type - Hook up to back-end</h4>
                     <a class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="/trails/{{trail.slug}}">Go</a>
                 </div>
