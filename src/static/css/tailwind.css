@@ -20,6 +20,26 @@ h3 {
   line-height: 24px;
 }
 
+.yellow-triangle-corner {
+  width: 0;
+  height: 0;
+  border-top: 117px solid #ffe67b;
+  border-right: 117px solid transparent;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.orange-triangle-corner {
+  width: 0;
+  height: 0;
+  border-top: 117px solid #e27c37;
+  border-right: 117px solid transparent;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 .fs-logo {
   background-image: url(/static/img/Forest_Service_logo.svg);
   display: block;
