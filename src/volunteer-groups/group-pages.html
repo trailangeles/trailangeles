@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: map
 pagination:
     data: orgs.organizations
     size: 1
@@ -19,18 +19,21 @@ path: Volunteer Groups
                 <li class="font-serif leading-loose text-green-900">{{ group.description }}</li><br>
                 <li class="font-serif leading-loose text-green-900">{{ group.requirements }}</li>
             </ol>
+            <div id="group-photo" class="w-full mb-12 bg-blue-500 md:w-9/12 h-96">
+                {% if group.photo != nil %}
+                    <img class="object-cover w-full h-96" src="{{group.photo}}">
+                {% else %}
+                    <div class="w-full bg-yellow-500 h-96"></div>
+                {% endif %}
+            </div>
         </div>
     </div>
     </div>
 </div>
 
-<div class="flex flex-col bg-gray-100 flex-stretch md:flex-row">
-    <div id="group-photo" class="w-full bg-blue-500 md:w-9/12 h-96">
-    {% if group.photo != nil %}
-        <img class="object-cover w-full h-96" src="{{group.photo}}">
-    {% else %}
-        <div class="bg-yellow-500 h-96"></div>
-    {% endif %}
+<div class="flex flex-col mt-2 bg-gray-100 flex-stretch md:flex-row">
+    <div class="w-full">
+        <div id="map" style="height: 400px; width: 100%;"></div>
     </div>
     <div class="flex flex-col flex-grow flex-stretch">
         <div class="flex-grow flex-shrink bg-green-700 p-7 flex-basis">
@@ -61,3 +64,45 @@ path: Volunteer Groups
         <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white align-baseline bg-yellow-500 flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
+
+
+<script>
+    // customize the center for each trail separately
+    var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
+    var gl = L.mapboxGL({
+        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
+    }).addTo(map)
+
+    let marker, icon
+    let markers = []
+    {% for trailplace in trail.places %}
+    {% for place in places.places %}
+    {% if trailplace === place.id %}
+    icon = L.icon({
+        iconUrl: '/static/img/icons/{{place.maki or "marker"}}-15.svg',
+        iconSize: [30, 30]
+    })
+    parsed = JSON.parse('{{ place.location | safe }}')
+    marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
+        .bindPopup("<b>{{ place.name }}</b><br>{{place.description}}")
+        .addTo(map)
+    markers.push(marker)
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    let group = new L.featureGroup(markers)
+    map.fitBounds(group.getBounds().pad(0.5))
+
+    // for inspecting
+    let mgl = gl._glMap
+
+    run = (e) => {
+    let features = mgl.queryRenderedFeatures(mgl.project([e.latlng.lng, e.latlng.lat]))
+        console.log(features)
+    }
+
+    map.on('click', (e) => {
+        run(e)
+    })
+</script>

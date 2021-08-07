@@ -19,11 +19,25 @@ path: Trails
                 <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail runs east to west in Altadena.</li><br>
                 <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail Restoration Working Group advocates and organizes for this trail and meets once a month on Zoom. Learn more here: <a href="https://altadenatrails.org/">https://altadenatrails.org/</a>.</li><br>
             </ol>
+            <div id="group-photo" class="w-full bg-blue-500 md:w-9/12 h-96">
+                {% if trail.photo != nil %}
+                    <img class="object-cover w-full h-96" src="{{trail.photo}}">
+                {% else %}
+                    <div class="w-full bg-yellow-500 h-96"></div>
+                {% endif %}
+            </div>
         </div>
+    </div>
+    <div id="group-photo" class="w-full mb-12 bg-blue-500 h-96">
+        {% if trail.photo != nil %}
+            <img class="object-cover w-full h-96" src="{{trail.photo}}">
+        {% else %}
+            <div class="w-full bg-yellow-500 h-96"></div>
+        {% endif %}
     </div>
 </div>
 
-<div class="flex flex-col w-full md:flex-row">
+<div class="flex flex-col w-full mt-10 md:flex-row">
     <div class="flex w-full bg-gray-100 flex-stretch md:w-3/4">
         <div class="w-full">
             <div id="map" style="height: 400px; width: 100%;"></div>
