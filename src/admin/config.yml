@@ -10,6 +10,26 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - label: "Sortable Filters"
+    name: "filters"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/sortablefilters.json"
+        label: "Sortable Filters"
+        name: "filters"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Sortable Filters
+            name: filters
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: string }
+              - { label: ID, name: id, widget: id }
   - label: "Places"
     name: "places"
     extension: "json"
@@ -20,7 +40,6 @@ collections:
         label: "Places"
         name: "places"
         widget: "object"
-        hint: "test"
         collapsed: false
         fields:
           - label: Places
@@ -76,6 +95,19 @@ collections:
                   multiple: true,
                   required: false,
                   hint: "List of places associated with this trail. They will show up on the trail map"
+                }
+              - {
+                  label: Sortable Filters,
+                  name: filters,
+                  widget: relation,
+                  collection: filters,
+                  file: 'filters',
+                  valueField: filters.*.id,
+                  displayFields: [filters.*.name],
+                  searchFields: [filters.*.name],
+                  multiple: true,
+                  required: false,
+                  hint: "List of tags for this trail that users can filter with in the UI"
                 }
   - label: "Orgs Data"
     name: "orgs"
@@ -133,6 +165,19 @@ collections:
                   multiple: true,
                   required: false,
                   hint: "List of places this organization maintains. They will show up on the organization page"
+                }
+              - {
+                  label: Sortable Filters,
+                  name: filters,
+                  widget: relation,
+                  collection: filters,
+                  file: 'filters',
+                  valueField: filters.*.id,
+                  displayFields: [filters.*.name],
+                  searchFields: [filters.*.name],
+                  multiple: true,
+                  required: false,
+                  hint: "List of tags for this group that users can filter with in the UI"
                 }
   - label: "Settings"
     name: "settings"

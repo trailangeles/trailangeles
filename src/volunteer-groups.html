@@ -9,27 +9,18 @@ path: Volunteer Groups
   <h2 class="text-3xl font-black text-green-800 uppercase border-b border-green-800 lg:text-5xl">Find a volunteer group</h2>  
 </div>
 <div class="container flex flex-col items-start pt-8 pb-4 lg:flex-row">
-    <button style="flex-basis: 25%" class="px-8 py-3 mr-6 text-lg font-medium leading-7 tracking-wide text-green-800 bg-yellow-200">Clear All Filters</button>
+    <button style="flex-basis: 25%" class="px-8 py-3 mr-6 text-lg font-medium leading-7 tracking-wide text-green-800 bg-yellow-200">Choose Filters</button>
   <ul>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">beginner-friendly</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">training required</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">gear provided</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">hiking</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">mountain biking</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">rivers and creeks</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">trash pick-up</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">graffiti pick-up</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">indoors</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">student-friendly</li>   
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">weekends</li>
-    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50">weekdays</li>
+    {%- for filter in sortablefilters.filters %}
+    <li style="font-size: 15px" class="inline-block px-4 py-1 my-1 mr-2 tracking-wide text-gray-800 bg-gray-200 rounded cursor-pointer lg:mx-2 hover:bg-yellow-50 sortable-filter" data-id={{filter.id}}>{{filter.name}}</li>
+    {% endfor -%}
   </ul>
 </div>
 <div class="md:container">
   <div class="grid w-full grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-3 lg:mx-0">
     {% set background = cycler("bg-green-900", "bg-green-700") %}
     {%- for item in pagination.items %}
-    <div class="{{ background.next() }}">
+    <div class="volunteer-group {{ background.next() }}" {%- for filter in item.filters %}data-{{filter}}=true{% endfor -%}>
       {% if item.photo != nil %}
         <a href="/volunteer-groups/{{item.slug}}" alt="{{item.name}}">
           <img src="{{item.photo}}" style="height: 160px; width: 100%; object-fit: cover;">
@@ -68,3 +59,34 @@ path: Volunteer Groups
     </nav>
   {% endif %}
 </div>
+
+<script type="text/javascript">
+  function hasClass(ele, cls) {
+    return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'))
+  }
+
+  function addClass(ele, cls) {
+    if (!hasClass(ele, cls)) ele.className += " " + cls
+  }
+
+  function removeClass(ele, cls) {
+    if (hasClass(ele, cls)) {
+      const reg = new RegExp('(\\s|^)' + cls + '(\\s|$)')
+      ele.className = ele.className.replace(reg, ' ')
+    }
+  }
+
+  const filters = document.querySelectorAll('.sortable-filter')
+
+  filters.forEach((filter) => {
+    filter.addEventListener('click', (e) => {
+      const id = e.target.getAttribute('data-id')
+      const groups = document.querySelectorAll('.volunteer-group')
+      groups.forEach((group) => {
+        const groupId = group.getAttribute('data-' + id)
+        if (!groupId) addClass(group, 'hidden')
+        else removeClass(group, 'hidden')
+      })
+    })
+  })
+</script>
