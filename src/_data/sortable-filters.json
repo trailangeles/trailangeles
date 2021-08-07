@@ -4,6 +4,26 @@
       "id": "a5bebb50-f7af-11eb-b748-fde728692812",
       "name": "beginner-friendly",
       "description": "Good for those wanting to go on their first volunteer outing, no special skills required"
+    },
+    {
+      "id": "ec8a5bc0-f7af-11eb-b748-fde728692812",
+      "name": "training-required",
+      "description": "This activity requires some special skills or training"
+    },
+    {
+      "id": "fb4f7c80-f7af-11eb-b748-fde728692812",
+      "name": "gear-provided",
+      "description": "You won't need to bring any special equipment"
+    },
+    {
+      "id": "0977c100-f7b0-11eb-b748-fde728692812",
+      "name": "Hiking",
+      "description": "Involves work on a hiking trail"
+    },
+    {
+      "id": "1bb5b4d0-f7b0-11eb-b748-fde728692812",
+      "name": "mountain-biking",
+      "description": "Involves work on a mountain biking trail"
     }
   ]
 }
