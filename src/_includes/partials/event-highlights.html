@@ -1,0 +1,26 @@
+<div class="grid w-full grid-cols-1 my-4 lg:my-10 lg:mb-8 lg:grid-cols-4 lg:mx-0">
+  {% if events.events %}
+      {% set background = cycler("bg-green-900", "bg-green-700", "bg-green-600") %}
+      {% for event in events.events.slice(0,3) %}
+          <div class="pt-2 lg:p-0">
+              <div class="p-5 h-48 lg:h-60 {{ background.next() }} flex flex-col justify-between">
+                  <h3 class="font-extrabold tracking-wide text-white uppercase">{{event.name}}</h3>
+                  <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{event.description}}</h4>
+                  <a class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="{{event.link}}">Go</a>
+              </div>
+          </div>
+      {% endfor %}
+  {% endif %}
+  <a
+      href="/events/" 
+      target="_blank"
+      class="flex justify-start lg:justify-end lg:p-5 lg:bg-green-900 lg:h-50"
+  >
+      <div class="self-center" style="margin-right: -3.75rem">
+          <div class="float-right w-10 overflow-hidden">
+              <div class="origin-top-left transform rotate-45 bg-yellow-500"  style="height: 52px"></div>
+          </div>
+          <div class="float-right px-6 py-3 text-lg font-medium leading-7 tracking-wide text-white bg-yellow-500">View All Events</div>
+      </div>
+  </a>
+</div>

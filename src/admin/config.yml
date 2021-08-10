@@ -179,6 +179,28 @@ collections:
                   required: false,
                   hint: "List of tags for this group that users can filter with in the UI"
                 }
+  - label: "Events"
+    name: "events"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/events.json"
+        label: "Events"
+        name: "events"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Events
+            name: events
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Date, name: date, widget: datetime }
+              - { label: Description, name: description, widget: string }
+              - { label: Link, name: link, widget: string }
+              - { label: ID, name: id, widget: id }
   - label: "Settings"
     name: "settings"
     editor:
