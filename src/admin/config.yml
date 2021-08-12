@@ -10,34 +10,14 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Sortable Filters"
-    name: "filters"
+  - label: "Places and Orgs"
+    name: "places-and-orgs"
     extension: "json"
     editor:
       preview: true
     files:
-      - file: "src/_data/sortablefilters.json"
-        label: "Sortable Filters"
-        name: "filters"
-        widget: "object"
-        collapsed: false
-        fields:
-          - label: Sortable Filters
-            name: filters
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Description, name: description, widget: string }
-              - { label: ID, name: id, widget: id }
-  - label: "Points"
-    name: "points"
-    extension: "json"
-    editor:
-      preview: true
-    files:
-      - file: "src/_data/points.json"
-        label: "Points"
+      - label: "Points"
+        file: "src/_data/points.json"
         name: "points"
         widget: "object"
         collapsed: false
@@ -52,14 +32,8 @@ collections:
               - { label: Description, name: description, widget: string }
               - { label: ID, name: id, widget: id }
               - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
-  - label: "Places Data"
-    name: "places"
-    extension: "json"
-    editor:
-      preview: true
-    files:
-      - file: "src/_data/places.json"
-        label: "Places"
+      - label: "Places"
+        file: "src/_data/places.json"
         name: "places"
         widget: "object"
         collapsed: false
@@ -109,14 +83,8 @@ collections:
                   required: false,
                   hint: "List of tags for this place that users can filter with in the UI"
                 }
-  - label: "Orgs Data"
-    name: "orgs"
-    extension: "json"
-    editor:
-      preview: true
-    files:
-      - file: "src/_data/orgs.json"
-        label: "Organizations"
+      - label: "Organizations"
+        file: "src/_data/orgs.json"
         name: "organizations"
         widget: "object"
         collapsed: false
@@ -166,12 +134,26 @@ collections:
                   required: false,
                   hint: "List of tags for this group that users can filter with in the UI"
                 }
-  - label: "Events"
-    name: "events"
+  - label: "Events and Filters"
+    name: "advanced"
     extension: "json"
     editor:
       preview: true
     files:
+      - file: "src/_data/sortablefilters.json"
+        label: "Sortable Filters"
+        name: "filters"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Sortable Filters
+            name: filters
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: string }
+              - { label: ID, name: id, widget: id }
       - file: "src/_data/events.json"
         label: "Events"
         name: "events"
