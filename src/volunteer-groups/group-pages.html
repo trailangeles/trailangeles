@@ -14,7 +14,7 @@ path: Volunteer Groups
     <div class="container mx-auto">
         <div class="w-3/4 py-10 mx-auto">
             <h2 class="pt-6 pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">Volunteer with {{ group.name }}</h2>
-            <h5 class="pt-10 pb-10 font-black text-green-900 uppercase">Last Updated 00/00/00</h5>
+            <!-- <h5 class="pt-10 pb-10 font-black text-green-900 uppercase">Last Updated 00/00/00</h5> -->
             <ol>
                 <li class="font-serif leading-loose text-green-900">{{ group.description }}</li><br>
                 <li class="font-serif leading-loose text-green-900">{{ group.requirements }}</li>
@@ -39,12 +39,17 @@ path: Volunteer Groups
         <div class="flex-grow flex-shrink bg-green-700 p-7 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">{{group.name}}</h3>
             <ul class="text-white">
-                <li><span>Contact: <a class="text-white" href="mailto:{{ group.contactEmail }}">Name Name</a></li>
-                <li><span>Website: <a class="text-white" href="{{ group.website }}">Website</a></span></li>
+                <li><span>E-mail: <a class="text-white" href="mailto:{{ group.contactEmail }}">{{group.contactName}}</a></li>
+                <li><a class="text-white" href="{{ group.website }}">Website</a></li>
+                <li><a class="text-white" href="{{ group.instagram }}">Instagram</a></li>
+                <li><a class="text-white" href="{{ group.facebook }}">Facebook</a></li>
             </ul>
         </div>
         <div class="flex-grow flex-shrink bg-green-800 p-7 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">Trails we maintain:</h3><span class="text-white">Trail Name 1, Trail Name 2, Trail Name 3</span>
+            <h3 class="text-xl font-extrabold text-white uppercase">Areas maintained</h3>
+                {% for trail in group.trails %}
+                    <a class="text-white" href="/trails/{{trail}}">{{ trail | formatSlug }}</span>
+                {% endfor -%}
         </div>
     </div>
 </div>

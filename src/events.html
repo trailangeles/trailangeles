@@ -7,11 +7,6 @@ path: Upcoming Events
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Upcoming volunteer events</h2>  
-  <div class="flex w-full mt-3 bg-gray-100 flex-stretch">
-    <div class="w-full">
-      <iframe src="https://calendar.google.com/calendar/embed?src=5oiuma82djr6s694sil28m1bas%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-  </div>
   <table class="w-full my-8 border-none table-auto">
   {% set background = cycler("bg-green-900", "bg-green-700") %}
   {%- for event in events.events %}
@@ -25,4 +20,9 @@ path: Upcoming Events
     </tr>
   {% endfor -%}
   </table>
+  <div class="flex w-full mt-3 bg-gray-100 flex-stretch">
+    <div class="w-full">
+      <iframe src="https://calendar.google.com/calendar/embed?src=5oiuma82djr6s694sil28m1bas%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
 </div>
