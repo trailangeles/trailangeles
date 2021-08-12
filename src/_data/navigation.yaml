@@ -7,3 +7,6 @@ items:
     url: /volunteer-groups
   - text: Trails
     url: /trails
+  - text: About
+    url: /about
+
