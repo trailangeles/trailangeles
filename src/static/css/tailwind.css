@@ -41,11 +41,11 @@ h3 {
 }
 
 .fs-logo {
-  background-image: url(/static/img/Forest_Service_logo.svg);
+  background-image: url(/static/img/usfs_partner_logo.jpg);
   display: block;
   height: 120px;
   width: 120px;
-  background-size: 100px;
+  background-size: 110px;
   background-repeat: no-repeat;
   background-position: center;
 }
