@@ -34,6 +34,9 @@
       "instagram": "https://www.instagram.com/lowelifesrcc/",
       "website": "https://www.lowelifesrcc.org",
       "id": "98cb2b14-b4a0-4bd4-967f-4803e4e01a2c",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
       "contactEmail": "board@lowelifesrcc.org",
       "description": "Trail work: restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will move on to other trails in the Forest."
     },
@@ -62,6 +65,9 @@
       "photo": "/static/img/31-DSC05780.jpg",
       "website": "http://www.sgmtrailbuilders.org/",
       "id": "242f2488-1e8c-4f78-8cee-ed92ccf002a8",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
       "contactEmail": "bwootenwhite@hotmail.com",
       "description": "The primary efforts which the Trailbuilders perform involve hiking and nature trail restoration, repairs, and maintenance within the Crystal Lake Recreation Area, and the Mount Baldy area, and along the East and West Forks of the San Gabriel River. We perform other work within the Angeles National Forest as needed and scheduled by the U. S. Forest Service, including installing signs at trailheads, building foot bridges, repairing damage to Visitor Centers, removing spray paint vandalism, and other activities which are requested, however trail work consists of 90% or more of what the Trailbuilders do."
     },
@@ -75,6 +81,9 @@
       "photo": "/static/img/screenshot_20210521_101530.jpg",
       "website": "trailangeles.netlify.app/",
       "id": "fc702e7d-62a3-430c-a18b-92d52e84997a",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
       "contactEmail": "outrspcklr@att.net",
       "description": "Trail maintenance on Mt Lowe East and West Trails, Muir Peak Trail, Colby Canyon Trail, South San Gabriel Peak Trail, North San Gabriel Peak Trail (sometimes called Bill Reilly Trail)"
     },
