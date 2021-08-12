@@ -5,8 +5,9 @@
           <div class="pt-2 lg:p-0">
               <div class="p-5 h-48 lg:h-60 {{ background.next() }} flex flex-col justify-between">
                   <h3 class="font-extrabold tracking-wide text-white uppercase">{{event.name}}</h3>
+                  <h3 class="font-bold tracking-wide text-white uppercase">{{event.date}}</h3>
                   <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{event.description}}</h4>
-                  <a class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="{{event.link}}">Go</a>
+                  <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="{{event.link}}">Go</a>
               </div>
           </div>
       {% endfor %}
