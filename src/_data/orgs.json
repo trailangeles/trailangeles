@@ -126,6 +126,24 @@
       "id": "83864e8f-8699-4d32-9602-55a6f9949cb9",
       "contactEmail": "bearcanyontrailcrew@gmail.com",
       "description": "Trail construction and repair. Bear Canyon Trail and other trails as necessary."
+    },
+    {
+      "facebook": "https://www.instagram.com/mwbaorg/",
+      "name": "Mt. Wilson Bicycling Association",
+      "slug": "mt-wilson-bicycling-association",
+      "contactName": "Jay Marion",
+      "trails": [
+        "mt-wilson-trail"
+      ],
+      "requirements": "Requires a mountain bike.",
+      "photo": "/static/img/20141221-dsc00601.jpg",
+      "instagram": "https://www.facebook.com/groups/MWBAorg/",
+      "website": "https://mwba.org/",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "board@mwba.org",
+      "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. "
     }
   ]
 }
