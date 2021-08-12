@@ -5,7 +5,7 @@
       "name": "East Fork's Golden Preservation",
       "slug": "east-forks-golden-preservation",
       "contactName": "Joel Glen",
-      "trails": [
+      "places": [
         "east-fork-san-gabriel-river"
       ],
       "requirements": "- Bring water, clothes you don't mind getting wet and dirty. \n- We will provide snacks and lunch for all volunteers to who pre-register.",
@@ -22,7 +22,7 @@
       "name": "Lowelifes Respectable Citizens' Club",
       "slug": "lowelifes-respectable-citizens-club",
       "contactName": "Rob Pettersen",
-      "trails": [
+      "places": [
         "trail-2",
         "trail-3",
         "rubio-canyon",
@@ -46,7 +46,7 @@
       "slug": "frvc",
       "contactName": "Dave Baumgartner",
       "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "trails": [],
+      "places": [],
       "requirements": "We offer a wide range of activities, some do require specialized skills and physical qualifications, while other activities do not.",
       "photo": "/static/img/groups/frvc.jpg",
       "website": "https://www.frvc.net",
@@ -60,7 +60,7 @@
       "slug": "sgm-trailbuilders",
       "contactName": "Ben White",
       "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "trails": [],
+      "places": [],
       "requirements": "Long-term SGMTB volunteers are expected to acquire signed formal agreements with the USFS District Ranger, and are expected to have First Aid medical training, however the Trailbuilders invite volunteers of all ages to join our trail efforts without formal training, we provide a morning meeting before we head to the work site, and we ask that all volunteers only do such work as they feel comfortable with, we do not expect volunteers to perform tasks they do not feel comfortable doing. At the same time, we provide a degree of training while working in the field, affording High School and College students, Girl Scouts and Boy Scouts, and everyone else, get introduced to methods and best practices. We hope that volunteers who come out from time to time acquire comfortable skills which allows them to mention their volunteer work on their employment resumes. We provide work hours for people who must perform Community Service, and we assist Boy Scout Eagle Scout candidates with potential projects.",
       "photo": "/static/img/31-DSC05780.jpg",
       "website": "http://www.sgmtrailbuilders.org/",
@@ -76,7 +76,7 @@
       "slug": "jpl-trailbuilders",
       "contactName": "Kathie Reilly",
       "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "trails": [],
+      "places": [],
       "requirements": "Our events are open to the public",
       "photo": "/static/img/screenshot_20210521_101530.jpg",
       "website": "trailangeles.netlify.app/",
@@ -93,7 +93,7 @@
       "slug": "angeles-volunteer-association",
       "contactName": "Geric Johnson",
       "area": "db72d857-c701-41b6-8d2e-14012c550337",
-      "trails": [],
+      "places": [],
       "requirements": "Our organization is open to the public, we hold monthly meetings on the third Tuesday of the month.  No special skill set is required.  We want our volunteers to be educated about the Crystal Lake Recreation Area and the San Gabriel Canyon environment.",
       "photo": "/static/img/groups/ava.png",
       "website": "https://angelesvolunteers.org/av/",
@@ -106,7 +106,7 @@
       "slug": "americas-great-outdoors",
       "contactName": "Jane Baumgartner",
       "area": "1731165a-8448-49b9-a324-46f3ba0acf7d",
-      "trails": [],
+      "places": [],
       "requirements": "Open to the Public, no need for specialized skills. High School age or higher. Under age 18 to be accompanied by an adult.",
       "photo": "/static/img/IMG_20191130_105302.jpg",
       "website": "trailangeles.netlify.app/",
@@ -119,7 +119,7 @@
       "slug": "bearcanyontrailcrew",
       "contactName": "Alan Coles",
       "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "trails": [],
+      "places": [],
       "requirements": "No special skills required. Open to everyone.",
       "photo": "/static/img/groups/bearcanyontrailcrew.jpg",
       "website": "https://sites.google.com/view/bearcanyontrailcrew/home",
@@ -132,7 +132,7 @@
       "name": "Mt. Wilson Bicycling Association",
       "slug": "mt-wilson-bicycling-association",
       "contactName": "Jay Marion",
-      "trails": [
+      "places": [
         "mt-wilson-trail"
       ],
       "requirements": "Requires a mountain bike.",

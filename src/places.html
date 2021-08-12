@@ -1,9 +1,9 @@
 ---
 layout: map
 pagination:
-  data: trails.trails
+  data: places.places
   size: 10
-path: Trails
+path: Places
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a trail, creek & more</h2>  
@@ -15,7 +15,7 @@ path: Trails
   <table class="w-full my-8 border-none table-auto">
   {% set background = cycler("bg-green-900", "bg-green-700") %}
   {%- for item in pagination.items %}
-    <tr onclick="window.location='/trails/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
+    <tr onclick="window.location='/places/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ item.name }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ "Open" if item.status === true else "Closed" }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ item.area }}</td>
@@ -25,7 +25,7 @@ path: Trails
 </div>
 
 <script>
-  // customize the center for each trail separately
+  // customize the center for each place separately
   var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
   var gl = L.mapboxGL({
       attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
@@ -34,19 +34,19 @@ path: Trails
 
   let marker, icon
   let markers = []
-  {% for trail in trails.trails %}
-  {{ trail | log}}
-  {% for trailplace in trail.places %}
   {% for place in places.places %}
-  {% if trailplace === place.id %}
+  {% for trailpoint in place.points %}
+  {% for point in points.points %}
+  // {{point}}
+  {% if trailpoint === point.id %}
   icon = L.icon({
-      iconUrl: '/static/img/icons/{{place.maki or "marker"}}-15.svg',
-      iconSize: [30, 30]
+    iconUrl: '/static/img/icons/{{point.maki or "marker"}}-15.svg',
+    iconSize: [30, 30]
   })
-  parsed = JSON.parse('{{ place.location | safe }}')
+  parsed = JSON.parse('{{ point.location | safe }}')
   marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
-      .bindPopup("<b>{{ place.name }}</b><br>{{place.description}}")
-      .addTo(map)
+    .bindPopup("<b>{{ point.name }}</b><br>{{point.description}}")
+    .addTo(map)
   markers.push(marker)
   {% endif %}
   {% endfor %}
@@ -60,10 +60,10 @@ path: Trails
 
   run = (e) => {
   let features = mgl.queryRenderedFeatures(mgl.project([e.latlng.lng, e.latlng.lat]))
-      console.log(features)
+    console.log(features)
   }
 
   map.on('click', (e) => {
-      run(e)
+    run(e)
   })
 </script>

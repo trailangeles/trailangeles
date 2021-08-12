@@ -30,7 +30,29 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Description, name: description, widget: string }
               - { label: ID, name: id, widget: id }
-  - label: "Places"
+  - label: "Points"
+    name: "points"
+    extension: "json"
+    editor:
+      preview: true
+    files:
+      - file: "src/_data/points.json"
+        label: "Points"
+        name: "points"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Points
+            name: points
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Location, name: location, widget: map }
+              - { label: Description, name: description, widget: string }
+              - { label: ID, name: id, widget: id }
+              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
+  - label: "Places Data"
     name: "places"
     extension: "json"
     editor:
@@ -44,28 +66,6 @@ collections:
         fields:
           - label: Places
             name: places
-            widget: list
-            collapsed: false
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Location, name: location, widget: map }
-              - { label: Description, name: description, widget: string }
-              - { label: ID, name: id, widget: id }
-              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
-  - label: "Trails Data"
-    name: "trails"
-    extension: "json"
-    editor:
-      preview: true
-    files:
-      - file: "src/_data/trails.json"
-        label: "Trails"
-        name: "trails"
-        widget: "object"
-        collapsed: false
-        fields:
-          - label: Trails
-            name: trails
             widget: list
             collapsed: false
             fields:
@@ -84,17 +84,17 @@ collections:
               - { label: OsmTags, name: osmtags, widget: hidden, required: false }
               - {label: "Open/Closed Status", name: "status", widget: "boolean", required: true, default: true}
               - {
-                  label: Places,
-                  name: places,
+                  label: Points,
+                  name: points,
                   widget: relation,
-                  collection: places,
-                  file: 'places',
-                  valueField: places.*.id,
-                  displayFields: [places.*.name],
-                  searchFields: [places.*.name],
+                  collection: points,
+                  file: 'points',
+                  valueField: points.*.id,
+                  displayFields: [points.*.name],
+                  searchFields: [points.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of places associated with this trail. They will show up on the trail map"
+                  hint: "List of points associated with this place. They will show up on the place map"
                 }
               - {
                   label: Sortable Filters,
@@ -107,7 +107,7 @@ collections:
                   searchFields: [filters.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of tags for this trail that users can filter with in the UI"
+                  hint: "List of tags for this place that users can filter with in the UI"
                 }
   - label: "Orgs Data"
     name: "orgs"
@@ -141,25 +141,12 @@ collections:
               - { label: Requirements, name: requirements, widget: text, required: false }
               - { label: Slug, name: slug, widget: string, required: true }
               - {
-                  label: Trails,
-                  name: trails,
-                  widget: relation,
-                  collection: trails,
-                  file: 'trails',
-                  valueField: trails.*.slug,
-                  displayFields: [trails.*.name],
-                  searchFields: [trails.*.name],
-                  multiple: true,
-                  required: false,
-                  hint: "List of trails this organization maintains. They will show up on the organization page"
-                }
-              - {
                   label: Places,
                   name: places,
                   widget: relation,
                   collection: places,
                   file: 'places',
-                  valueField: places.*.id,
+                  valueField: places.*.slug,
                   displayFields: [places.*.name],
                   searchFields: [places.*.name],
                   multiple: true,
@@ -257,10 +244,3 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-

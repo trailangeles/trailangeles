@@ -1,11 +1,11 @@
 ---
 layout: map
 pagination:
-    data: trails.trails
+    data: places.places
     size: 1
-    alias: trail
-permalink: "trails/{{ trail.slug }}/"
-path: Trails
+    alias: place
+permalink: "places/{{ place.slug }}/"
+path: Places
 ---
 
 <div class="bg-white">
@@ -13,15 +13,15 @@ path: Trails
     </div>
     <div class="container mx-auto">
         <div class="w-3/4 py-10 mx-auto">
-            <h2 class="pt-6 pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">{{ trail.name }}</h2>
+            <h2 class="pt-6 pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">{{ place.name }}</h2>
             <h5 class="pt-10 pb-10 font-black text-green-900 uppercase">Last Updated 00/00/00</h5>
             <ol>
                 <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail runs east to west in Altadena.</li><br>
                 <li class="font-serif leading-loose text-green-900">The Altadena Crest Trail Restoration Working Group advocates and organizes for this trail and meets once a month on Zoom. Learn more here: <a href="https://altadenatrails.org/">https://altadenatrails.org/</a>.</li><br>
             </ol>
             <div id="group-photo" class="w-full bg-blue-500 md:w-9/12 h-96">
-                {% if trail.photo != nil %}
-                    <img class="object-cover w-full h-96" src="{{trail.photo}}">
+                {% if place.photo != nil %}
+                    <img class="object-cover w-full h-96" src="{{place.photo}}">
                 {% else %}
                     <div class="w-full bg-yellow-500 h-96"></div>
                 {% endif %}
@@ -29,8 +29,8 @@ path: Trails
         </div>
     </div>
     <div id="group-photo" class="w-full mb-12 bg-blue-500 h-96">
-        {% if trail.photo != nil %}
-            <img class="object-cover w-full h-96" src="{{trail.photo}}">
+        {% if place.photo != nil %}
+            <img class="object-cover w-full h-96" src="{{place.photo}}">
         {% else %}
             <div class="w-full bg-yellow-500 h-96"></div>
         {% endif %}
@@ -47,7 +47,7 @@ path: Trails
         <div class="flex-grow flex-shrink bg-green-700 p-7 flex-basis">
             <h3 class="text-white">
                 Status:
-                {% if trail.status === true %}
+                {% if place.status === true %}
                 <span class="text-yellow-200">Open</span>
                 {% else %}
                 <span class="text-yellow-200">Closed</span>
@@ -64,7 +64,7 @@ path: Trails
 <div class="bg-green-700">
     <div class="container flex flex-col justify-between py-8 md:flex-row">
         <div class="flex flex-col md:flex-row">
-            <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">More about this Trail</h3>
+            <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">More about this Place</h3>
             <ul class="self-stretch pb-4 text-white md:pl-10 md:list-inside">
                 <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
                 <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
@@ -89,7 +89,7 @@ path: Trails
 
     let marker, icon
     let markers = []
-    {% for trailplace in trail.places %}
+    {% for trailplace in place.places %}
     {% for place in places.places %}
     {% if trailplace === place.id %}
     icon = L.icon({

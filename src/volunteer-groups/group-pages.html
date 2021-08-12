@@ -47,8 +47,8 @@ path: Volunteer Groups
         </div>
         <div class="flex-grow flex-shrink bg-green-800 p-7 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Areas maintained</h3>
-                {% for trail in group.trails %}
-                    <a class="text-white" href="/trails/{{trail}}">{{ trail | formatSlug }}</span>
+                {% for place in group.places %}
+                    <a class="text-white" href="/places/{{place}}">{{ place | formatSlug }}</span>
                 {% endfor -%}
         </div>
     </div>
@@ -81,7 +81,7 @@ path: Volunteer Groups
 
     let marker, icon
     let markers = []
-    {% for trailplace in trail.places %}
+    {% for trailplace in place.places %}
     {% for place in places.places %}
     {% if trailplace === place.id %}
     icon = L.icon({
