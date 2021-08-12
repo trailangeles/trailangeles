@@ -22,6 +22,14 @@ module.exports = function (eleventyConfig) {
     return new Date(Date.parse(dateObj)).toDateString();
   });
 
+  // human readable trail name from slug
+  eleventyConfig.addFilter("formatSlug", (slug) => {
+    var words = slug.split("-");
+    return words.map(function(word) {
+      return word.charAt(0).toUpperCase() + word.substring(1).toLowerCase();
+    }).join(' ');
+  });
+
   // add console log tool
   eleventyConfig.addFilter('log', value => {
     console.log('[11ty log]', value)
