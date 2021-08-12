@@ -312,3 +312,8 @@ h3 {
     padding-left: 3rem;
   }
 }
+
+.places-table tr:hover {
+  background-color: #FFE67B;
+  color: #02502F;
+}

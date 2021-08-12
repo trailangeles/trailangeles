@@ -7,21 +7,21 @@ path: Trails
 ---
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Find a trail, creek & more</h2>  
-  <div class="flex w-full mt-3 bg-gray-100 flex-stretch">
-    <div class="w-full">
-        <div id="map" class="w-full h-96"></div>
+  <div class="flex w-full mt-3 flex-stretch">
+    <div class="w-2/3">
+        <div id="map" class="w-full h-full"></div>
+    </div>
+    <div class="w-1/3">
+      <table class="w-full border-none table-auto places-table">
+        {% set background = cycler("bg-green-900", "bg-green-700") %}
+        {%- for item in pagination.items %}
+          <tr onclick="window.location='/trails/{{item.slug}}'" class="border-none text-white {{ background.next() }}">
+            <td class="p-4 font-extrabold border-none cursor-pointer hover:yellow-100 ">{{ item.name }}</td>
+          </tr>
+        {% endfor -%}
+        </table>
     </div>
   </div>
-  <table class="w-full my-8 border-none table-auto">
-  {% set background = cycler("bg-green-900", "bg-green-700") %}
-  {%- for item in pagination.items %}
-    <tr onclick="window.location='/trails/{{item.slug}}'" class="hover:bg-yellow-100 cursor-pointer border-none text-white {{ background.next() }}">
-      <td class="p-4 font-extrabold border-none cursor-pointer">{{ item.name }}</td>
-      <td class="p-4 border-none cursor-pointer ">{{ "Open" if item.status === true else "Closed" }}</td>
-      <td class="p-4 border-none cursor-pointer ">{{ item.area }}</td>
-    </tr>
-  {% endfor -%}
-  </table>
 </div>
 
 <script>
