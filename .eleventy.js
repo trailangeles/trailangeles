@@ -17,6 +17,11 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  // human readable date from string
+  eleventyConfig.addFilter("formatDate", (dateObj) => {
+    return new Date(Date.parse(dateObj)).toDateString();
+  });
+
   // add console log tool
   eleventyConfig.addFilter('log', value => {
     console.log('[11ty log]', value)

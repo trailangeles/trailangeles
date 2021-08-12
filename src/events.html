@@ -9,7 +9,7 @@ path: Upcoming Events
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Upcoming volunteer events</h2>  
   <div class="flex w-full mt-3 bg-gray-100 flex-stretch">
     <div class="w-full">
-        <div id="map" class="w-full h-96"></div>
+      <iframe src="https://calendar.google.com/calendar/embed?src=5oiuma82djr6s694sil28m1bas%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
   </div>
   <table class="w-full my-8 border-none table-auto">
@@ -17,12 +17,11 @@ path: Upcoming Events
   {%- for event in events.events %}
     <tr class="border-none text-white {{ background.next() }}">
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.name }}</td>
-      <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.date }}</td>
+      <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.date | formatDate }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ event.description }}</td>
       <td class="p-4 border-none cursor-pointer">
         <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full hover:bg-yellow-200 go-button" href="{{event.link}}">Go</a>
       </td>
-
     </tr>
   {% endfor -%}
   </table>
