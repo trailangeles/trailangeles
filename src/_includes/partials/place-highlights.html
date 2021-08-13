@@ -7,9 +7,8 @@
                 <a href="/places/{{place.slug}}" alt="{{place.name}}">
                     <img style="height: 160px; width: 100%; object-fit: cover;" src="/static/img/places/{{ testImage.next() }}">
                 </a>
-                <div class="p-5 h-48 lg:h-60 {{ background.next() }} flex flex-col justify-between">
+                <div class="p-5 h-40 lg:h-40 {{ background.next() }} flex flex-col justify-between">
                     <h3 class="font-extrabold tracking-wide text-white uppercase">{{place.name}}</h3>
-                    <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">Place description goes here | Region Name - Place Type - Hook up to back-end</h4>
                     <a class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full go-button" href="/places/{{place.slug}}">Go</a>
                 </div>
             </div>
