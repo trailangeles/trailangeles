@@ -5,8 +5,8 @@ items:
     url: /events
   - text: Volunteer Groups
     url: /volunteer-groups
-  - text: Trails
-    url: /trails
+  - text: Places
+    url: /places
   - text: About
     url: /blog
 
