@@ -40,15 +40,15 @@ path: Volunteer Groups
             <h3 class="text-xl font-extrabold text-white uppercase">{{group.name}}</h3>
             <ul class="text-white">
                 <li><span>E-mail: <a class="text-white" href="mailto:{{ group.contactEmail }}">{{group.contactName}}</a></li>
-                <li><a class="text-white" href="{{ group.website }}">Website</a></li>
-                <li><a class="text-white" href="{{ group.instagram }}">Instagram</a></li>
-                <li><a class="text-white" href="{{ group.facebook }}">Facebook</a></li>
+                <li><a class="text-white underline hover:no-underline" href="{{ group.website }}">Website</a></li>
+                <li><a class="text-white underline hover:no-underline" href="{{ group.instagram }}">Instagram</a></li>
+                <li><a class="text-white underline hover:no-underline" href="{{ group.facebook }}">Facebook</a></li>
             </ul>
         </div>
         <div class="flex-grow flex-shrink bg-green-800 p-7 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">Areas maintained</h3>
+            <h3 class="text-xl font-extrabold text-white uppercase">Places maintained</h3>
                 {% for place in group.places %}
-                    <a class="text-white" href="/places/{{place}}">{{ place | formatSlug }}</span>
+                    <a class="text-white" href="/places/{{place}}">{{ place | formatSlug }}</span>{% if loop.last %}{% else %}, {% endif %}
                 {% endfor -%}
         </div>
     </div>
