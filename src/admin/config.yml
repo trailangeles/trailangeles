@@ -61,7 +61,7 @@ collections:
                   label: Points,
                   name: points,
                   widget: relation,
-                  collection: points,
+                  collection: places-and-orgs,
                   file: 'points',
                   valueField: points.*.id,
                   displayFields: [points.*.name],
@@ -74,7 +74,7 @@ collections:
                   label: Sortable Filters,
                   name: filters,
                   widget: relation,
-                  collection: filters,
+                  collection: events-and-filters,
                   file: 'filters',
                   valueField: filters.*.id,
                   displayFields: [filters.*.name],
@@ -112,7 +112,7 @@ collections:
                   label: Places,
                   name: places,
                   widget: relation,
-                  collection: places,
+                  collection: places-and-orgs,
                   file: 'places',
                   valueField: places.*.slug,
                   displayFields: [places.*.name],
@@ -125,7 +125,7 @@ collections:
                   label: Sortable Filters,
                   name: filters,
                   widget: relation,
-                  collection: filters,
+                  collection: events-and-filters,
                   file: 'filters',
                   valueField: filters.*.id,
                   displayFields: [filters.*.name],
@@ -135,7 +135,7 @@ collections:
                   hint: "List of tags for this group that users can filter with in the UI"
                 }
   - label: "Events and Filters"
-    name: "advanced"
+    name: "events-and-filters"
     extension: "json"
     editor:
       preview: true
