@@ -18,7 +18,9 @@ path: Places
                 {% if place.photo != nil %}
                     <img class="object-cover w-full h-96" src="{{place.photo}}">
                 {% else %}
-                    <div class="w-full bg-yellow-500 h-96"></div>
+                    <div class="w-full bg-yellow-500 h-96">
+                        <h3 class="center">Under Construction</h3>
+                    </div>
                 {% endif %}
             </div>
         </div>
@@ -60,12 +62,7 @@ path: Places
         <div class="flex flex-col md:flex-row">
             <h3 class="self-start pb-4 text-xl font-extrabold text-white uppercase">More about this Place</h3>
             <ul class="self-stretch pb-4 text-white md:pl-10 md:list-inside">
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Nature for All: Cleanup Success - East Fork's Golden Preservation</a></li>
-                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2018/05/29/leadership-academy-spotlight-joel-glen/">Nature for All: Leadership Academy Spotlight - Joel Glen</a></li>
+                <li><a class="underline hover:no-underline" href="https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/">Link</a></li>
             </ul>
         </div>
         <button class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white bg-yellow-500 md:align-top flex-end font-extralight lg:text-center">Suggest an Edit</button>
