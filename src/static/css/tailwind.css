@@ -317,3 +317,11 @@ h3 {
   background-color: #FFE67B;
   color: #02502F;
 }
+
+.center-container {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  margin-left: 0;
+  padding-left: 0;
+}
