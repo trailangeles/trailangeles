@@ -3,7 +3,7 @@
       {% set background = cycler("bg-green-900", "bg-green-700", "bg-green-600") %}
       {% for event in events.events.slice(0,3) %}
           <div class="pt-2 lg:p-0">
-              <div class="p-5 h-48 lg:h-80 {{ background.next() }} flex flex-col justify-between">
+              <div class="p-5 h-80 {{ background.next() }} flex flex-col justify-between">
                   <h3 class="font-extrabold tracking-wide text-white uppercase">{{event.name}}</h3>
                   <h3 class="font-bold tracking-wide text-white uppercase">{{event.date | formatDate }}</h3>
                   <h4 class="font-serif text-sm font-light leading-6 tracking-wide text-white">{{event.description}}</h4>
