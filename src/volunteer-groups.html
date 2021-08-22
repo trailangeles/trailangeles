@@ -20,7 +20,7 @@ path: Volunteer Groups
   <div class="grid w-full grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-3 lg:mx-0">
     {% set background = cycler("bg-green-900", "bg-green-700") %}
     {%- for item in pagination.items %}
-    <div class="volunteer-group {{ background.next() }}" {%- for filter in item.filters %}data-{{filter}}=true{% endfor -%}>
+    <div class="volunteer-group {{ background.next() }}" {%- for filter in item.filters %} data-{{filter}}=true {% endfor -%}>
       {% if item.photo != nil %}
         <a href="/volunteer-groups/{{item.slug}}" alt="{{item.name}}">
           <img src="{{item.photo}}" style="height: 160px; width: 100%; object-fit: cover;">
