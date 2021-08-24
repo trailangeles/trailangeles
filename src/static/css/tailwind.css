@@ -198,15 +198,15 @@ h3 {
   outline: none;
 }
 
-.glide__arrow--left:hover {
+.splide__arrow--prev:hover {
   border-right: 25px solid white; 
 }
 
-.glide__arrow--right:hover {
+.splide__arrow--next:hover {
   border-left: 25px solid white; 
 }
 
-.glide__arrow--left {
+.splide__arrow--prev {
   right: 4.5em;
   width: 0; 
   height: 0; 
@@ -216,7 +216,7 @@ h3 {
   border-right: 25px solid #FFE67B; 
 }
 
-.glide__arrow--right {
+.splide__arrow--next {
   width: 0; 
   height: 0; 
   top: 50%;
