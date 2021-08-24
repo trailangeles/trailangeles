@@ -146,6 +146,29 @@
       ],
       "contactEmail": "board@mwba.org",
       "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. "
+    },
+    {
+      "facebook": "https://www.facebook.com/TrailGorillas/",
+      "name": "Pacific Crest Trail Association: Trail Gorillas - San Gabriel Mountains",
+      "slug": "pcta-trail-gorillas-san-gabriel-mountains",
+      "contactName": "Jim Richter",
+      "photo": "/static/img/IMG_20190427_184921.jpg",
+      "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "TrailGorillasoftheANF@gmail.com",
+      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Highway 2 at Inspiration Point to Soledad Canyon Road."
+    },
+    {
+      "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
+      "contactName": "Jim Richter",
+      "contactEmail": "TrailGorillasoftheANF@gmail.com",
+      "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "facebook": "https://www.facebook.com/TrailGorillas/",
+      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Soledad Canyon Road to Highway 138.",
+      "slug": "pcta-trail-gorillas-la-gateway",
+      "photo": "/static/img/IMG_20190427_194242.jpg"
     }
   ]
 }
