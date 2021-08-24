@@ -14,7 +14,7 @@ collections:
     name: "places-and-orgs"
     extension: "json"
     editor:
-      preview: true
+      preview: false
     files:
       - label: "Points"
         file: "src/_data/points.json"
@@ -139,7 +139,7 @@ collections:
     name: "events-and-filters"
     extension: "json"
     editor:
-      preview: true
+      preview: false
     files:
       - file: "src/_data/sortablefilters.json"
         label: "Sortable Filters"
