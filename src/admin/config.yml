@@ -54,6 +54,7 @@ collections:
                   - { label: "Sierra Madre", value: "SM" }
               - { label: Slug, name: slug, widget: string }
               - { label: ID, name: id, widget: id }
+              - { label: Description, name: description, widget: markdown, required: false }
               - { label: OsmWayId, name: osmwayid, widget: string, required: false, hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds" }
               - { label: OsmTags, name: osmtags, widget: hidden, required: false }
               - {label: "Open/Closed Status", name: "status", widget: "boolean", required: true, default: true}
@@ -105,7 +106,7 @@ collections:
               - { label: Website, name: website, widget: string }
               - { label: Facebook, name: facebook, widget: string, required: false }
               - { label: Instagram, name: instagram, widget: string, required: false }
-              - { label: Description, name: description, widget: text, required: false }
+              - { label: Description, name: description, widget: markdown, required: false }
               - { label: Requirements, name: requirements, widget: text, required: false }
               - { label: Slug, name: slug, widget: string, required: true }
               - {
