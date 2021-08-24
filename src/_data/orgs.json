@@ -57,6 +57,20 @@
       "description": "Taka Taka Club picks up trash on Angeles Crest Highway turnouts every Tuesday at 8 a.m. \n\nFor more information: https://outlooknewspapers.com/freeing-the-treasured-forest-of-trash/"
     },
     {
+      "name": "TreePeople",
+      "slug": "treepeople",
+      "contactName": "TreePeople",
+      "photo": "/static/img/IMG_20190221_174208.jpg",
+      "instagram": "https://www.instagram.com/treepeople_org/",
+      "website": "https://www.treepeople.org",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "fb4f7c80-f7af-11eb-b748-fde728692812"
+      ],
+      "contactEmail": " info@treepeople.org",
+      "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
+    },
+    {
       "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
       "name": "Fisheries Resource Volunteer Corps",
       "slug": "frvc",
