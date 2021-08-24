@@ -13,7 +13,7 @@ path: Upcoming Events
     <tr class="border-none text-white {{ background.next() }}">
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.name }}</td>
       <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.date | formatDate }}</td>
-      <td class="p-4 border-none cursor-pointer ">{{ event.description }}</td>
+      <td class="p-4 border-none cursor-pointer ">{{ event.description | safe }}</td>
       <td class="p-4 border-none cursor-pointer">
         <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full hover:bg-yellow-200 go-button" href="{{event.link}}">Go</a>
       </td>
