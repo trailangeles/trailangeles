@@ -1,30 +1,4 @@
 {
   "events": [
-    {
-      "name": "MWBA: Mt. Wilson Trail Work, October",
-      "date": "2021-09-19T15:00:00.000Z",
-      "description": "Gabrielino Trail (Long Canyon trail corridor) mountain bike trail work. Mountain bike required. Equipment and lunch provided.",
-      "link": "https://www.eventbrite.com/e/mwba-october-trail-work-on-the-gabrielino-trail-tickets-166595490597",
-      "id": "4fc899d5-bf90-4b6f-a75e-6d093af976e2"
-    },
-    {
-      "name": "MWBA: Gabrielino Trail Work",
-      "date": null,
-      "description": "Gabrielino Trail (Between Paul Little and Ken Burton) mountain bike trail work. Mountain bike required; equipment and lunch provided.",
-      "id": "b867b4ef-6396-4f48-81ac-407842556b0e"
-    },
-    {
-      "name": "National Public Lands Day",
-      "date": "2021-09-25T00:00:00.000Z",
-      "description": "It's <b>NPLD</b>",
-      "id": "862707fe-0700-4dd1-975a-ce24177c32ed"
-    },
-    {
-      "name": "Oaks Picnic Area Trail and River Cleanup",
-      "date": null,
-      "description": "East Forks Golden Preservation is hosting a clean up at Oaks Picnics Area. https://www.eventbrite.com/e/sunday-august-22nd-oaks-picnic-area-trail-and-river-cleanup-tickets-165684180845",
-      "link": "https://www.eventbrite.com/e/sunday-august-22nd-oaks-picnic-area-trail-and-river-cleanup-tickets-165684180845",
-      "id": "a991ec87-a3f9-40d6-820a-636d2da7a29f"
-    }
   ]
 }
