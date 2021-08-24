@@ -43,6 +43,20 @@
       "description": "Trail work: restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will move on to other trails in the Forest."
     },
     {
+      "name": "Taka Taka Club",
+      "contactName": "Valerie Botta",
+      "contactEmail": "vbottav@gmail.com",
+      "photo": "/static/img/IMG_20200516_062945.jpg",
+      "website": "instagram.com/takataka.club/",
+      "slug": "takatakaclub",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "fb4f7c80-f7af-11eb-b748-fde728692812",
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "description": "Taka Taka Club picks up trash on Angeles Crest Highway turnouts every Tuesday at 8 a.m. \n\nFor more information: https://outlooknewspapers.com/freeing-the-treasured-forest-of-trash/"
+    },
+    {
       "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
       "name": "Fisheries Resource Volunteer Corps",
       "slug": "frvc",
