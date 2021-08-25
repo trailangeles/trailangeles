@@ -187,52 +187,30 @@ h3 {
   -ms-user-select: none;
 }
 
-.glide__arrows {
-  -webkit-touch-callout: none;
-  user-select: none;
-}
-
-.glide__arrow {
-  position: absolute;
-  display: block;
-  top: 44%;
-  z-index: 2;
-  text-transform: uppercase;
-  opacity: 1;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.glide__arrow:focus {
-  outline: none;
-}
-
-.splide__arrow--prev:hover {
-  border-right: 25px solid white; 
-}
-
-.splide__arrow--next:hover {
-  border-left: 25px solid white; 
-}
-
 .splide__arrow--prev {
-  right: 4.5em;
+  right: 4em;
   width: 0; 
   height: 0; 
-  top: 50%;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent; 
-  border-right: 25px solid #FFE67B; 
+  top: 40%;
+  position: absolute;
+  z-index: 1000;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 
 .splide__arrow--next {
   width: 0; 
   height: 0; 
-  top: 50%;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 25px solid #FFE67B;
-  right: 2em;
+  top: 40%;
+  position: absolute;
+  right: 4.5em;
+  z-index: 1000;
+}
+
+.splide__arrow--next svg,
+.splide__arrow--prev svg {
+  stroke: rgb(255, 230, 123);
+  fill: rgb(255, 230, 123);
 }
 
 .glide--swipeable {
