@@ -117,6 +117,15 @@ h3 {
   line-height: 40px;
 }
 
+.absolute-go-button {
+  height: 45px;
+  text-align: center;
+  width: 45px;
+  line-height: 40px;
+  bottom: 10px;
+  position: absolute;
+}
+
 .offset-underline {
   text-decoration: underline;
   text-decoration-color: white;
