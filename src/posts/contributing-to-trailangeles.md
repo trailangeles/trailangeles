@@ -6,8 +6,6 @@ date: 2021-08-12T22:06:17.661Z
 ---
 All of the information on Trail Angeles is contributed by volunteers, and anyone can make a new edit. You might find some information is out of date, or there might be a trail missing, or maybe you took a great photo for a group that you'd like to upload.
 
-Note: Anyone can submit an edit the website without permission, but if you are not an Admin your changes will need to be approved by an Admin first before they go live.
-
 ## Editing the website
 
 ### Step 1: Create a free GitHub account
@@ -16,7 +14,7 @@ Our website is hosted on a site called GitHub. You will need a free GitHub accou
 
 ### Step 2: Login to the CMS
 
-You can access the CMS by visiting <https://trailangeles.org/admin>. Sign in using your GitHub account and then you will see something like this:
+You can access the CMS by visiting https://trailangeles.org/admin. Sign in using your GitHub account and then you will see something like this:
 
 ![](/static/img/screenshot_20210812_150939.jpg "Admin Home")
 
@@ -34,13 +32,13 @@ Each of these categories on the left represents content displayed on Trail Angel
 
 The maps we use are generated from OpenStreetMap data. The baselayer is a custom layer we created on MapTiler that highlights outdoor trails. There are three ways to help make our maps better:
 
-1. Editing Places/Points in the CMS
+## 1. Editing Places/Points in the CMS
 
 You can use Places and Points in the CMS to enrich the map views on a given page. For example, if you are editing the Eaton Canyon place page, you can help us out by creating Points around Eaton Canyon that are helpful to the public (like Parking, Bathrooms and Trailheads) and then linking the Place to the Points you created so they show up on the map
 
-2. Editing OpenStreetMap 
+## 2. Editing OpenStreetMap 
 
-The brown and orange trails you see on the map come from OpenStreetMap. To see an example of editing OpenStreetMaps see this video: <https://www.youtube.com/watch?v=5q7ypL0Osqc>. Most of the trails in the Angeles are already added to OSM, but they are missing valuable metadata. You can help us out by picking some trails and checking them for these properties:
+The brown and orange trails you see on the map come from OpenStreetMap. To see an example of editing OpenStreetMaps see this video: https://www.youtube.com/watch?v=5q7ypL0Osqc. Most of the trails in the Angeles are already added to OSM, but they are missing valuable metadata. You can help us out by picking some trails and checking them for these properties:
 
 * **Hiking Trails**: Help us make sure that all hiking trails have these tags: `sac_scale: hiking` and `highway: path`. Many of the trails only have `highway: path` but they are missing `sac_scale: hiking`. If you find a trail without `sac_scale: hiking` but you are sure it's a hiking trail, then go ahead and add it. This will make that trail show up in the MapTiler Outdoors layer which we use in our maps. 
 * **MTB Trails**: For MTB Trails to show up on the MapTiler Outdoors layer we need them to have a `mtb:scale` tag. Many of our trails are advanced and would be considered a `mtb:scale=2` or `mtb:scale=3`. Please help us out by adding this tag to all the trails you have ridden!
@@ -48,8 +46,6 @@ The brown and orange trails you see on the map come from OpenStreetMap. To see a
 
 Tip: On our basemap, we render the trails that have been successfully tagged already with one of the above `sac_scale` or `mtb:scale` tags as **brown**. The ones that don't yet have this tag are dotted **orange**. So if you are unsure what to do, look for a dotted orange trail that you feel confident in tagging. Note that once you make the edit, it may take a week or two before the change makes it live on our site.
 
-3. Linking OSM Ways to Places
+## 3. Linking OSM Ways to Places
 
-Inside our Admin page under the Places editor you will see a field that lets you enter in a 'OSM Way ID' and link it to a Place. For example, our entry for the Sam Merrill Trail is linked to this OSM Way: <https://www.openstreetmap.org/way/178426128#map=15/34.2190/-118.1163>. This means we can create a better experience on the map by highlighting the specific trail that this Place refers to, and we can also import tags for that trail and use them to enrich the info we show for that trail on the site.
-
-You can help us out by looking up the OSM Way for any Places that are for specific trails, and making sure they are linked correctly. To look up a Way the easiest way is to search for it by name on OpenStreetMap.org. You can also get a link to a Way you are editing from the Edit view of the ID editor at the bottom of the editing properties window.
+Inside our Admin page under the Places editor you will see a field that lets you enter in a 'OSM Way ID' and link it to a Place. For example, our entry for the Sam Merrill Trail is linked to this OSM Way: https://www.openstreetmap.org/way/178426128#map=15/34.2190/-118.1163. This means we can create a better experience on the map by highlighting the specific trail that this Place refers to, and we can also import tags for that trail and use them to enrich the info we show for that trail on the site. You can help us out by looking up the OSM Way for any Places that are for specific trails, and making sure they are linked correctly. To look up a Way the easiest way is to search for it by name on OpenStreetMap.org. You can also get a link to a Way you are editing from the Edit view of the ID editor at the bottom of the editing properties window.
