@@ -12,11 +12,12 @@
       "status": true
     },
     {
-      "name": "Echo Mountain Trail",
+      "name": "Echo Mountain/Sam Merrill Trail",
       "slug": "echo-mountain-trail",
       "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82",
       "area": "ALT",
-      "status": true
+      "status": true,
+      "osmwayid": "48035641"
     },
     {
       "name": "Mt. Wilson Trail",
