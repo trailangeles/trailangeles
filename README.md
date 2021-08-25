@@ -1,5 +1,6 @@
-# Neat Starter
+# Trail Angeles
 
+Based on:
 Starter Template for **N**etlify CMS, **E**leventy, **A**lphine JS & **T**ailwind CSS
 
 ## Live Demo
