@@ -340,3 +340,14 @@ h3 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+.hiddenscrollbar {
+  margin-bottom: 40px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.hiddenscrollbar::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
