@@ -3,7 +3,9 @@ module.exports = {
     mode: "all",
     content: ["./**/*.html"],
     options: {
-      whitelist: [
+      safelist: [
+        "splide__arrow--prev",
+        "splide__arrow--next"
       ],
     },
   },
