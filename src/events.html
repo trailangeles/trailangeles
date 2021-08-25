@@ -8,11 +8,11 @@ path: Upcoming Events
 <div class="container flex flex-col justify-center py-16 mx-auto">
   <h2 class="text-5xl font-black text-green-800 uppercase border-b border-green-800">Upcoming volunteer events</h2>  
   <table class="w-full my-8 border-none table-auto">
-  {% set background = cycler("bg-green-900", "bg-green-700") %}
+  {% set background = cycler("bg-white", "bg-gray-200") %}
   {%- for event in events.events %}
-    <tr class="border-none text-white {{ background.next() }}">
-      <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.name }}</td>
-      <td class="p-4 font-extrabold border-none cursor-pointer">{{ event.date | formatDate }}</td>
+    <tr class="text-black border-t-2 border-b-2 {{ background.next() }}">
+      <td class="p-4 text-lg font-bold border-none cursor-pointer text-large" style="width: 280px;">{{ event.name }}</td>
+      <td class="p-4 font-bold border-none cursor-pointer" style="width: 130px;">{{ event.date | formatDate }}</td>
       <td class="p-4 border-none cursor-pointer ">{{ event.description | safe }}</td>
       <td class="p-4 border-none cursor-pointer">
         <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full hover:bg-yellow-200 go-button" href="{{event.link}}">Go</a>

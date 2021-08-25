@@ -107,7 +107,6 @@ collections:
               - { label: Facebook, name: facebook, widget: string, required: false }
               - { label: Instagram, name: instagram, widget: string, required: false }
               - { label: Description, name: description, widget: markdown, required: false }
-              - { label: Requirements, name: requirements, widget: text, required: false }
               - { label: Slug, name: slug, widget: string, required: true }
               - {
                   label: Places,
