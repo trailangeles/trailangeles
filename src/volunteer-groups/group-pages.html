@@ -23,7 +23,7 @@ path: Volunteer Groups
             </div>
             <!-- <h5 class="pt-10 pb-10 font-black text-green-900 uppercase">Last Updated 00/00/00</h5> -->
             <ol>
-                <li class="font-serif leading-loose text-green-900">{{ group.description }}</li><br>
+                <li class="font-serif leading-loose text-green-900">{{ group.description | markdown | safe }}</li><br>
                 <li class="font-serif leading-loose text-green-900">{{ group.requirements }}</li>
             </ol>
         </div>
