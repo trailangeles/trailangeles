@@ -71,6 +71,24 @@
       "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
     },
     {
+      "facebook": "https://www.instagram.com/mwbaorg/",
+      "name": "Mt. Wilson Bicycling Association",
+      "slug": "mt-wilson-bicycling-association",
+      "contactName": "Jay Marion",
+      "places": [
+        "mt-wilson-trail"
+      ],
+      "requirements": "",
+      "photo": "/static/img/20141221-dsc00601.jpg",
+      "instagram": "https://www.facebook.com/groups/MWBAorg/",
+      "website": "https://mwba.org/",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "board@mwba.org",
+      "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. \n\n**Requirements:**\n\n* Mountain bike"
+    },
+    {
       "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
       "name": "Fisheries Resource Volunteer Corps",
       "slug": "frvc",
@@ -156,24 +174,6 @@
       "id": "83864e8f-8699-4d32-9602-55a6f9949cb9",
       "contactEmail": "bearcanyontrailcrew@gmail.com",
       "description": "Trail construction and repair. Bear Canyon Trail and other trails as necessary."
-    },
-    {
-      "facebook": "https://www.instagram.com/mwbaorg/",
-      "name": "Mt. Wilson Bicycling Association",
-      "slug": "mt-wilson-bicycling-association",
-      "contactName": "Jay Marion",
-      "places": [
-        "mt-wilson-trail"
-      ],
-      "requirements": "",
-      "photo": "/static/img/20141221-dsc00601.jpg",
-      "instagram": "https://www.facebook.com/groups/MWBAorg/",
-      "website": "https://mwba.org/",
-      "filters": [
-        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "board@mwba.org",
-      "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. \n\n**Requirements:**\n\n* Mountain bike"
     },
     {
       "facebook": "https://www.facebook.com/TrailGorillas/",
