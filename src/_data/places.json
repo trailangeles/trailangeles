@@ -42,21 +42,24 @@
     },
     {
       "status": true,
-      "name": "San Gabriel River, East Fork",
+      "name": "Haramokngna American Indian Cultural Center",
       "area": "BACK",
-      "slug": "east-fork-san-gabriel-river"
+      "slug": "haramokngna-american-indian-cultural-center",
+      "id": "075d0080-0618-11ec-9b4b-7fc400e344b4"
     },
     {
       "status": true,
+      "id": "18c0e800-0618-11ec-9b4b-7fc400e344b4",
+      "name": "San Gabriel River, East Fork",
+      "slug": "east-fork-san-gabriel-river",
+      "area": "BACK"
+    },
+    {
+      "status": true,
+      "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b4",
       "name": "San Gabriel River, West Fork",
       "area": "BACK",
       "slug": "west-fork-san-gabriel-river"
-    },
-    {
-      "status": true,
-      "name": "Haramokngna American Indian Cultural Center",
-      "area": "BACK",
-      "slug": "haramokngna-american-indian-cultural-center"
     }
   ]
 }
