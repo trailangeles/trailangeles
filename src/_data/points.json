@@ -13,6 +13,12 @@
       "description": "Hike up to some ruins",
       "id": "04b75f95-a8bc-45c7-971f-518236204792",
       "maki": "mountain"
+    },
+    {
+      "id": "359df230-061b-11ec-9f55-0d4131916bb6",
+      "name": "Bridge To Nowhere Trailhead",
+      "location": "{\"type\":\"Point\",\"coordinates\":[-117.7651736,34.2369415]}",
+      "description": "The parking lot and trailhead"
     }
   ]
 }
