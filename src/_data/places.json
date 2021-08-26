@@ -52,7 +52,10 @@
       "id": "18c0e800-0618-11ec-9b4b-7fc400e344b4",
       "name": "San Gabriel River, East Fork",
       "slug": "east-fork-san-gabriel-river",
-      "area": "BACK"
+      "area": "BACK",
+      "points": [
+        "359df230-061b-11ec-9f55-0d4131916bb6"
+      ]
     },
     {
       "status": true,
