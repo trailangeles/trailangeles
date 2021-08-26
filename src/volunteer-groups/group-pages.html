@@ -73,9 +73,10 @@ path: Volunteer Groups
 
     let marker, icon
     let markers = []
-    {% for trailplace in place.places %}
+    {% for groupplace in group.places %}
     {% for place in places.places %}
-    {% if trailplace === place.id %}
+    // {{groupplace}}
+    {% if groupplace === place.id %}
     icon = L.icon({
         iconUrl: '/static/img/icons/{{place.maki or "marker"}}-15.svg',
         iconSize: [30, 30]
@@ -88,6 +89,7 @@ path: Volunteer Groups
     {% endif %}
     {% endfor %}
     {% endfor %}
+    
     let group = new L.featureGroup(markers)
     map.fitBounds(group.getBounds().pad(0.5))
 

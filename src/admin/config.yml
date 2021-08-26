@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  open_authoring: true
+  # open_authoring: true
   repo: trailangeles/trailangeles
   auth_scope: repo
 media_folder: "src/static/img"
@@ -114,7 +114,7 @@ collections:
                   widget: relation,
                   collection: places-and-orgs,
                   file: 'places',
-                  valueField: places.*.slug,
+                  valueField: places.*.id,
                   displayFields: [places.*.name],
                   searchFields: [places.*.name],
                   multiple: true,

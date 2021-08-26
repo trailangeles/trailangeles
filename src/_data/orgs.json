@@ -25,11 +25,7 @@
       "slug": "lowelifes-respectable-citizens-club",
       "contactName": "Rob Pettersen",
       "places": [
-        "trail-2",
-        "trail-3",
-        "rubio-canyon",
-        "altadena-crest-trail",
-        "trail-4"
+
       ],
       "requirements": "",
       "photo": "/static/img/groups/lowelifes.jpg",
@@ -76,7 +72,6 @@
       "slug": "mt-wilson-bicycling-association",
       "contactName": "Jay Marion",
       "places": [
-        "mt-wilson-trail"
       ],
       "requirements": "",
       "photo": "/static/img/20141221-dsc00601.jpg",
