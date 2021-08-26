@@ -7,6 +7,12 @@
     <title>
       {{title}}
     </title>
+    <meta property="og:title" content="{{ title }} | Trail Angeles" />
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:image" name="image" content="https://trailangeles.netlify.app/static/img/east-fork-preservation.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="TrailAngeles is a volunteer portal for the Angeles National Forest." />
+    <meta property="og:locale" content="en_US" />
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
