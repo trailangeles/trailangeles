@@ -69,7 +69,7 @@ collections:
                   searchFields: [points.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of points associated with this place. They will show up on the place map"
+                  hint: "List of points associated with this place. They will show up on the place map as clickable icons"
                 }
               - {
                   label: Sortable Filters,

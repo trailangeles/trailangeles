@@ -47,10 +47,14 @@ path: Volunteer Groups
         </div>
         <div class="flex-grow flex-shrink bg-green-800 p-7 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Places maintained</h3>
-                {% for place in group.places %}
-                    <a class="text-white" href="/places/{{place}}">{{ place | formatSlug }}</span>{% if loop.last %}{% else %}, {% endif %}
+                {% for groupplace in group.places %}
+                {% for place in places.places %}
+                {% if groupplace === place.id %}
+                    <a class="text-white" href="/places/{{place.slug}}">{{ place.name }} </span>
+                {% endif %}
                 {% endfor -%}
-        </div>
+                {% endfor -%}
+                    </div>
     </div>
 </div>
 
@@ -75,24 +79,32 @@ path: Volunteer Groups
     let markers = []
     {% for groupplace in group.places %}
     {% for place in places.places %}
-    // {{groupplace}}
     {% if groupplace === place.id %}
+    {% for placepoint in place.points %}
+    {% for point in points.points %}
+    {% if placepoint === point.id %}
     icon = L.icon({
-        iconUrl: '/static/img/icons/{{place.maki or "marker"}}-15.svg',
+        iconUrl: '/static/img/icons/{{point.maki or "marker"}}-15.svg',
         iconSize: [30, 30]
     })
-    parsed = JSON.parse('{{ place.location | safe }}')
+    parsed = JSON.parse('{{ point.location | safe }}')
     marker = L.marker([parsed.coordinates[1], parsed.coordinates[0]], { icon })
-        .bindPopup("<b>{{ place.name }}</b><br>{{place.description}}")
+        .bindPopup("<b>{{ point.name }}</b><br>{{point.description}}")
         .addTo(map)
     markers.push(marker)
     {% endif %}
     {% endfor %}
     {% endfor %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
     
-    let group = new L.featureGroup(markers)
-    map.fitBounds(group.getBounds().pad(0.5))
-
+    if (markers.length === 1) {
+        map.setView([markers[0].getLatLng().lat, markers[0].getLatLng().lng], 11)
+    } else {
+        let group = new L.featureGroup(markers)
+        map.fitBounds(group.getBounds().pad(0.5))
+    }
     // for inspecting
     let mgl = gl._glMap
 
