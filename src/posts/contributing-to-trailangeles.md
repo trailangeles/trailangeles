@@ -20,13 +20,21 @@ You can access the CMS by visiting <https://trailangeles.org/admin>. Sign in usi
 
 Each of these categories on the left represents content displayed on Trail Angeles. Each one is a collection of data that can be edited and saved to the site from the CMS. Here's a breakdown of what each one is:
 
+Here's the main three:
+
 * **Organizations**: Each organization has its own page. When editing an organization you set the group photo as well as the places they maintain. Make sure to add 'Requirements' in the description listing what volunteers need to have before volunteering with this org.
 * **Places**: Each Place has its own page. Places are for well known areas or destinations like Eaton Canyon or the Sam Merrill Trail. Organizations can be linked to list of places they maintain
-* **Events**: This collection is directly pulled from a shared Google Calendar. If you have access to edit the calendar, you can create an event and it will get synced to this collection at the top of the next hour. It's best to edit details on the calendar and not in the admin for Events.
 * **Points**: Points are for smaller specific areas like a bathroom or a trailhead. You can associate a place with multiple points. A point shows up on the map with a custom icon
+
+So to the it all together: An **Organization** like East Forks Golden Preservation is associated with the **Place** called East Fork San Gabriel River. Places are used in our system to describe an area or region. A place could be a trail, a park, a nature center, or anywhere that deserves its own page. In the case of the East Fork, its Place is associated with a bunch of **Points** like the Bridge to Nowhere Trailhead and and the Bridge To Nowhere. The Points are the things that show up on the maps that are clickable. An Organization can have many Places, and a Place can have many Points.
+
+Here are some other things you can modify in the Admin UI:
+
 * **Sortable Filters**: The list of filters that shows up on the Volunteer Groups page. The filters defined here can be chosen when you edit the Volunteer Groups collection, and make the filtering on the site work.
 * **Settings > Alert**: You can set the text linked in the orange alert bar here
 * **Blog**: You can edit any blog post here. We use the blog for the site FAQ and this very guide you are reading
+
+Finally when you are done editing, hit Publish at the top and your changes will be submitted.
 
 ## Editing the maps
 
