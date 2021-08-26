@@ -1,8 +1,8 @@
 backend:
   name: github
   branch: master
-  # open_authoring: true
-  repo: maxogden/trailangeles
+  open_authoring: true
+  repo: trailangeles/trailangeles
   auth_scope: repo
 media_folder: "src/static/img"
 public_folder: "/static/img"
