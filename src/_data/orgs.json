@@ -69,7 +69,9 @@
       "name": "Mt. Wilson Bicycling Association",
       "slug": "mt-wilson-bicycling-association",
       "contactName": "Jay Marion",
-      "places": [],
+      "places": [
+        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+      ],
       "requirements": "",
       "photo": "/static/img/20141221-dsc00601.jpg",
       "instagram": "https://www.facebook.com/groups/MWBAorg/",
