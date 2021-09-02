@@ -1,6 +1,12 @@
 {
   "events": [
     {
+      "name": "TakaTaka Club: Trash Pick Up",
+      "date": "2021-08-31T15:00:00.000Z",
+      "description": "Pick up trash with the Taka Taka Club off the first pull-out along the Angeles Crest Highway. Contact on Instagram or email for details.",
+      "id": "0rbdp7vfgfnm7vipa94ubv9uur"
+    },
+    {
       "name": "TreePeople: San Francisquito Nevin's Restoration",
       "date": "2021-09-03T15:00:00.000Z",
       "description": "<span><span>Enjoy a morning of stewardship immersed in chaparral wildlands by helping protect and reintroduce Nevin’s barberry, a federally endangered species, to its former habitat. This project is in coordination with the California Botanic Garden in the Sierra Pelona Mountains of the Angeles National Forest</span></span>",
@@ -36,12 +42,6 @@
       "description": "Gabrielino Trail (Long Canyon trail corridor) mountain bike trail work. Mountain bike required. Equipment and lunch provided.<br><a href=\"https://www.eventbrite.com/e/mwba-septembertrail-work-on-the-gabrielino-trail-tickets-166595306045?aff=erelpanelorg\">https://www.eventbrite.com/e/mwba-septembertrail-work-on-the-gabrielino-trail-tickets-166595306045?aff=erelpanelorg</a>",
       "link": "https://www.eventbrite.com/e/mwba-septembertrail-work-on-the-gabrielino-trail-tickets-166595306045?aff=erelpanelorg",
       "id": "4g0brb6186soilq7741289j2pe"
-    },
-    {
-      "name": "TakaTaka Club: Trash Pick Up",
-      "date": "2021-08-31T15:00:00.000Z",
-      "description": "Pick up trash with the Taka Taka Club off the first pull-out along the Angeles Crest Highway. Contact on Instagram or email for details.",
-      "id": "0rbdp7vfgfnm7vipa94ubv9uur"
     }
   ]
 }
