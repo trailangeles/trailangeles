@@ -45,6 +45,11 @@ Work in progress: We have a field in our Admin UI to link an OSM Way ID to a spe
 
 We have a GitHub Action that imports a shared Google Calendar every hour into the site, and checks the calendar events in as JSON, which triggers a build on our site if there were new events. https://github.com/maxogden/google-calendar-import/
 
+Add a link in the Event Description in Google Calendar:
+
+<img width="498" alt="image" src="https://user-images.githubusercontent.com/3673236/132067672-b5a3a804-cdaa-44c3-8e1a-ed1c0135f2ce.png">
+
+
 ### Running the website locally
 
 ```
