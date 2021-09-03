@@ -56,6 +56,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
+    "./src/static/js/netlify-cms-widget-simple-uuid.js": "./static/js/netlify-cms-widget-simple-uuid.js",
   });
 
   // Copy Image Folder to /_site
