@@ -67,16 +67,14 @@
     {
       "status": true,
       "name": "San Gabriel Mountains National Monument",
-      "area": "BACK"
+      "area": "BACK",
+      "slug": "sgm-national-monument"
     },
     {
       "status": true,
       "name": "Mt. Wilson",
       "area": "BACK",
-      "slug": "mtwilson",
-      "points": [
-        ""
-      ]
+      "slug": "mtwilson"
     }
   ]
 }
