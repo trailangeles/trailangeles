@@ -2,7 +2,7 @@
 layout: default
 pagination:
   data: orgs.organizations
-  size: 12
+  size: 100
 path: Volunteer Groups
 ---
 <div class="container flex flex-col justify-center pt-8 mx-auto lg:pt-16">
@@ -44,7 +44,7 @@ path: Volunteer Groups
   </div>
 </div>  
   
-  {% if pagination.items.size > 12 %}
+  <!-- {% if pagination.items.size > 12 %}
     <nav aria-labelledby="my-pagination">
       <h2 id="my-pagination">This is my Pagination</h2>
       <ol>
@@ -57,7 +57,7 @@ path: Volunteer Groups
         <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
       </ol>
     </nav>
-  {% endif %}
+  {% endif %} -->
 </div>
 
 <script type="text/javascript">
