@@ -63,6 +63,12 @@
       "name": "San Gabriel River, West Fork",
       "area": "BACK",
       "slug": "west-fork-san-gabriel-river"
+    },
+    {
+      "status": true,
+      "name": "Mt. Wilson",
+      "area": "BACK",
+      "slug": "mtwilson"
     }
   ]
 }
