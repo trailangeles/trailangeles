@@ -218,6 +218,7 @@
     },
     {
       "name": "Testing Group",
+      "description": "a test group",
       "slug": "test-group",
       "contactName": "test",
       "contactEmail": "test@example.com",

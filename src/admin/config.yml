@@ -97,7 +97,7 @@ collections:
               - { label: Name, name: name, widget: string }
               - { label: Slug, name: slug, hint: "URL for this slug e.g. mt-wilson. lowercase, hyphenated, no spaces or special characters.", widget: string, required: true }
               - { label: ID, name: id, widget: id }
-              - { label: Description, name: description, widget: markdown, required: false }
+              - { label: Description, name: description, widget: markdown, required: true }
               - { label: OsmWayId, name: osmwayid, widget: string, required: false, hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds" }
               - { label: OsmTags, name: osmtags, widget: hidden, required: false }
               - {label: "Open/Closed Status", name: "status", widget: "boolean", required: true, default: true}
