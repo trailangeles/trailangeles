@@ -66,12 +66,14 @@
     },
     {
       "status": true,
+      "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b5",
       "name": "San Gabriel Mountains National Monument",
       "area": "BACK",
       "slug": "sgm-national-monument"
     },
     {
       "status": true,
+      "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b6",
       "name": "Mt. Wilson",
       "area": "BACK",
       "slug": "mtwilson"
