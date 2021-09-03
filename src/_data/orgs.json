@@ -215,15 +215,6 @@
       ],
       "contactEmail": "steve@corbamtb.org",
       "description": "**The Concerned Off-Road Bicyclists Association (CORBA)** *is an all-volunteer non-profit organization serving the mountain bicycling community of Los Angeles and its surrounding areas including southern Ventura County. We are dedicated to preserving open space, maintaining public access to public lands, and creating more trail opportunities for all to enjoy. We are a chapter of the International Mountain Bicycling Association ([IMBA](http://www.imba.com/)).***Our Mission** *We are passionate about mountain biking, public trails and preserving our public open space for future generations. CORBA is committed to ensuring equal access for all trail users, and to contributing to everyone's enjoyment of the trails. CORBA organizes and coordinates activities that support mountain biking recreation and that promote the conservation, administration and the maintenance of the public lands.*"
-    },
-    {
-      "name": "Testing Group",
-      "description": "a test group",
-      "slug": "test-group",
-      "contactName": "test",
-      "contactEmail": "test@example.com",
-      "photo": "/static/img/31-DSC05834.jpg",
-      "website": "http://example.com"
     }
   ]
 }
