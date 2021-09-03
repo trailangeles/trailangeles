@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "netlify-cms-widget-simple-uuid": "0.0.2",
     "postcss": "^8.2.1"
   }
 }

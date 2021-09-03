@@ -1,14 +1,14 @@
 backend:
   name: github
   branch: master
-  # open_authoring: true
+  open_authoring: true
   repo: trailangeles/trailangeles
   auth_scope: repo
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
 local_backend: true
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 collections:
   - label: "Places and Orgs"
     name: "places-and-orgs"
@@ -16,6 +16,57 @@ collections:
     editor:
       preview: false
     files:
+      - label: "Organizations"
+        file: "src/_data/orgs.json"
+        name: "organizations"
+        widget: "object"
+        collapsed: false
+        fields:
+          - label: Organizations
+            name: organizations
+            widget: list
+            collapsed: true
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Slug, name: slug, hint: "URL for this org e.g. lowe-lifes. lowercase, hyphenated, no spaces or special characters.", widget: string, required: true }
+              - { label: Contact Name, name: contactName, widget: string }
+              - { label: Contact Email, name: contactEmail, widget: string }
+              - { 
+                  label: Photo, 
+                  name: photo, 
+                  widget: file
+                }
+              - { label: Website, name: website, widget: string }
+              - { label: Facebook, name: facebook, widget: string, required: false }
+              - { label: Instagram, name: instagram, widget: string, required: false }
+              - { label: Description, name: description, widget: markdown, required: false }
+              - { label: ID, name: id, widget: id }
+              - {
+                  label: Places,
+                  name: places,
+                  widget: relation,
+                  collection: places-and-orgs,
+                  file: 'places',
+                  valueField: places.*.id,
+                  displayFields: [places.*.name],
+                  searchFields: [places.*.name],
+                  multiple: true,
+                  required: false,
+                  hint: "List of places this organization maintains. They will show up on the organization page"
+                }
+              - {
+                  label: Sortable Filters,
+                  name: filters,
+                  widget: relation,
+                  collection: events-and-filters,
+                  file: 'filters',
+                  valueField: filters.*.id,
+                  displayFields: [filters.*.name],
+                  searchFields: [filters.*.name],
+                  multiple: true,
+                  required: false,
+                  hint: "List of tags for this group that users can filter with in the UI"
+                }
       - label: "Points"
         file: "src/_data/points.json"
         name: "points"
@@ -27,11 +78,11 @@ collections:
             widget: list
             collapsed: false
             fields:
-              - { label: Name, name: name, widget: string }
+              - { label: Marker Pop-Up Title, name: name, widget: string }
+              - { label: Marker Pop-Up Description, name: description, widget: string }
               - { label: Location, name: location, widget: map }
-              - { label: Description, name: description, widget: string }
-              - { label: ID, name: id, widget: id }
               - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
+              - { label: ID, name: id, widget: id }
       - label: "Places"
         file: "src/_data/places.json"
         name: "places"
@@ -44,15 +95,7 @@ collections:
             collapsed: false
             fields:
               - { label: Name, name: name, widget: string }
-              -
-                label: "Area"
-                name: "area"
-                widget: "select"
-                options:
-                  - { label: "Altadena", value: "ALT" }
-                  - { label: "Backcountry", value: "BACK" }
-                  - { label: "Sierra Madre", value: "SM" }
-              - { label: Slug, name: slug, widget: string }
+              - { label: Slug, name: slug, hint: "URL for this slug e.g. mt-wilson. lowercase, hyphenated, no spaces or special characters.", widget: string, required: true }
               - { label: ID, name: id, widget: id }
               - { label: Description, name: description, widget: markdown, required: false }
               - { label: OsmWayId, name: osmwayid, widget: string, required: false, hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds" }
@@ -83,56 +126,6 @@ collections:
                   multiple: true,
                   required: false,
                   hint: "List of tags for this place that users can filter with in the UI"
-                }
-      - label: "Organizations"
-        file: "src/_data/orgs.json"
-        name: "organizations"
-        widget: "object"
-        collapsed: false
-        fields:
-          - label: Organizations
-            name: organizations
-            widget: list
-            collapsed: true
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Contact Name, name: contactName, widget: string }
-              - { label: Contact Email, name: contactEmail, widget: string }
-              - { 
-                  label: Photo, 
-                  name: photo, 
-                  widget: file
-                }
-              - { label: Website, name: website, widget: string }
-              - { label: Facebook, name: facebook, widget: string, required: false }
-              - { label: Instagram, name: instagram, widget: string, required: false }
-              - { label: Description, name: description, widget: markdown, required: false }
-              - { label: Slug, name: slug, widget: string, required: true }
-              - {
-                  label: Places,
-                  name: places,
-                  widget: relation,
-                  collection: places-and-orgs,
-                  file: 'places',
-                  valueField: places.*.id,
-                  displayFields: [places.*.name],
-                  searchFields: [places.*.name],
-                  multiple: true,
-                  required: false,
-                  hint: "List of places this organization maintains. They will show up on the organization page"
-                }
-              - {
-                  label: Sortable Filters,
-                  name: filters,
-                  widget: relation,
-                  collection: events-and-filters,
-                  file: 'filters',
-                  valueField: filters.*.id,
-                  displayFields: [filters.*.name],
-                  searchFields: [filters.*.name],
-                  multiple: true,
-                  required: false,
-                  hint: "List of tags for this group that users can filter with in the UI"
                 }
   - label: "Events and Filters"
     name: "events-and-filters"

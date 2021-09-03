@@ -1,6 +1,7 @@
 {
   "organizations": [
     {
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb1",
       "facebook": "https://www.facebook.com/East-Forks-Golden-Preservation-270602207058655/",
       "name": "East Fork's Golden Preservation",
       "slug": "east-forks-golden-preservation",
@@ -37,6 +38,7 @@
       "description": "Trail work: restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will move on to other trails in the Forest.\n\n**Requirements:**\n\n* Volunteers need to be physically fit and otherwise prepared for physical labor in backcountry areas.\n* Mountain bike.\n* Our work days are open to the public, depending on space."
     },
     {
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb3",
       "name": "Taka Taka Club",
       "contactName": "Valerie Botta",
       "contactEmail": "vbottav@gmail.com",
@@ -52,6 +54,7 @@
     },
     {
       "name": "TreePeople",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb4",
       "slug": "treepeople",
       "contactName": "TreePeople",
       "photo": "/static/img/IMG_20190221_174208.jpg",
@@ -66,6 +69,7 @@
     },
     {
       "facebook": "https://www.instagram.com/mwbaorg/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb5",
       "name": "Mt. Wilson Bicycling Association",
       "slug": "mt-wilson-bicycling-association",
       "contactName": "Jay Marion",
@@ -171,6 +175,7 @@
     },
     {
       "facebook": "https://www.facebook.com/TrailGorillas/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb8",
       "name": "Pacific Crest Trail Association: Trail Gorillas - San Gabriel Mountains",
       "slug": "pcta-trail-gorillas-san-gabriel-mountains",
       "contactName": "Jim Richter",
@@ -183,6 +188,7 @@
       "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Highway 2 at Inspiration Point to Soledad Canyon Road."
     },
     {
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb7",
       "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
       "contactName": "Jim Richter",
       "contactEmail": "TrailGorillasoftheANF@gmail.com",
@@ -193,6 +199,7 @@
       "photo": "/static/img/IMG_20190427_194242.jpg"
     },
     {
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb6",
       "facebook": "https://www.facebook.com/CORBAMTB",
       "name": "Concerned Off Road Bicycle Association",
       "slug": "corbamtb",

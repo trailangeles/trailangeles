@@ -4,7 +4,6 @@
       "name": "Altadena Crest Trail",
       "slug": "altadena-crest-trail",
       "id": "aa55e716-8d48-410a-9dd9-390f102aec2f",
-      "area": "ALT",
       "points": [
         "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
         "04b75f95-a8bc-45c7-971f-518236204792"
@@ -15,7 +14,6 @@
       "name": "Echo Mountain/Sam Merrill Trail",
       "slug": "echo-mountain-trail",
       "id": "f131b99a-ca8b-49ca-a06c-34ce4b4ade82",
-      "area": "ALT",
       "status": true,
       "osmwayid": "48035641"
     },
@@ -23,7 +21,6 @@
       "name": "Mt. Wilson Trail",
       "slug": "mt-wilson-trail",
       "id": "2439fce1-7df6-46b0-b65a-b13d4486b52b",
-      "area": "SM",
       "status": false
     },
     {
@@ -35,7 +32,6 @@
     },
     {
       "name": "Rubio Canyon Trail",
-      "area": "ALT",
       "slug": "rubio-canyon-trail",
       "id": "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4",
       "status": true
@@ -43,7 +39,6 @@
     {
       "status": true,
       "name": "Haramokngna American Indian Cultural Center",
-      "area": "BACK",
       "slug": "haramokngna-american-indian-cultural-center",
       "id": "075d0080-0618-11ec-9b4b-7fc400e344b4"
     },
@@ -52,7 +47,6 @@
       "id": "18c0e800-0618-11ec-9b4b-7fc400e344b4",
       "name": "San Gabriel River, East Fork",
       "slug": "east-fork-san-gabriel-river",
-      "area": "BACK",
       "points": [
         "359df230-061b-11ec-9f55-0d4131916bb6"
       ]
@@ -61,21 +55,18 @@
       "status": true,
       "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b4",
       "name": "San Gabriel River, West Fork",
-      "area": "BACK",
       "slug": "west-fork-san-gabriel-river"
     },
     {
       "status": true,
       "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b5",
       "name": "San Gabriel Mountains National Monument",
-      "area": "BACK",
       "slug": "sgm-national-monument"
     },
     {
       "status": true,
       "id": "2b4b2710-0618-11ec-9b4b-7fc400e344b6",
       "name": "Mt. Wilson",
-      "area": "BACK",
       "slug": "mtwilson",
       "points": [
         "359df230-061b-11ec-9f55-0d4131916bb7"
