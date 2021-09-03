@@ -193,18 +193,18 @@
       "photo": "/static/img/IMG_20190427_194242.jpg"
     },
     {
-      "facebook": "https://www.facebook.com/lanatureforall",
-      "name": "Nature for All",
-      "slug": "la-nature-for-all",
-      "contactName": "Araceli Hernandez",
-      "photo": "/static/img/img_20200304_201827.jpg",
-      "instagram": "https://www.Instagram.com/lanatureforall",
-      "website": "Lanatureforall.org",
+      "facebook": "https://www.facebook.com/CORBAMTB",
+      "name": "Concerned Off Road Bicycle Association",
+      "slug": "corbamtb",
+      "contactName": "Steve Messer",
+      "photo": "/static/img/57533086_10156063449771720_718020937349332992_n.jpg",
+      "instagram": "https://instagram.com/corbamtb",
+      "website": "https://corbamtb.com",
       "filters": [
-        "a5bebb50-f7af-11eb-b748-fde728692812"
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
       ],
-      "contactEmail": "Contact@lanatureforall.org",
-      "description": "###### NATURE FOR ALL WORKS TO BUILD A DIVERSE BASE OF SUPPORT FOR ENSURING THAT EVERYONE IN THE LOS ANGELES AREA—NO MATTER WHERE THEY LIVE—HAS EQUITABLE ACCESS TO THE WIDE RANGE OF BENEFITS THAT NATURE CAN PROVIDE.\n\n- - -\n\n### Nature For All advocates for policies and programs that will:\n\n* **Protect** the mountains and rivers in our area, to conserve resources and be more climate-resilient.\n* **Create** more natural spaces such as parks and bike paths in our historically underserved neighborhoods.\n* **Connect** people and public lands through more trails and other outdoor recreational opportunities, to improve public health."
+      "contactEmail": "steve@corbamtb.org",
+      "description": "**The Concerned Off-Road Bicyclists Association (CORBA)** *is an all-volunteer non-profit organization serving the mountain bicycling community of Los Angeles and its surrounding areas including southern Ventura County. We are dedicated to preserving open space, maintaining public access to public lands, and creating more trail opportunities for all to enjoy. We are a chapter of the International Mountain Bicycling Association ([IMBA](http://www.imba.com/)).***Our Mission** *We are passionate about mountain biking, public trails and preserving our public open space for future generations. CORBA is committed to ensuring equal access for all trail users, and to contributing to everyone's enjoyment of the trails. CORBA organizes and coordinates activities that support mountain biking recreation and that promote the conservation, administration and the maintenance of the public lands.*"
     }
   ]
 }
