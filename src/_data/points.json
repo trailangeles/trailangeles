@@ -26,6 +26,12 @@
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0625328,34.2236224]}",
       "description": "Large Parking Lot at Mt. Wilson Observatory",
       "maki": "parking"
+    },
+    {
+      "name": "Red Box Picnic Area Parking Lot",
+      "description": "You can park here with an Adventure Pass. There is a bathroom and multiple trailheads",
+      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1533402,34.2702685]}",
+      "maki": "parking"
     }
   ]
 }
