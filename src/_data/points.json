@@ -19,6 +19,12 @@
       "name": "Bridge To Nowhere Trailhead",
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7651736,34.2369415]}",
       "description": "The parking lot and trailhead"
+    },
+    {
+      "name": "",
+      "location": "{\"type\":\"Point\",\"coordinates\":[-117.8316528,34.3267684]}",
+      "description": "Camping, Hiking, Accessible bathrooms, amphitheater and so much more!",
+      "maki": "campsite"
     }
   ]
 }
