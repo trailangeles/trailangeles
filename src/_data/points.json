@@ -22,6 +22,7 @@
     },
     {
       "name": "Mt. Wilson Upper Parking",
+      "id": "359df230-061b-11ec-9f55-0d4131916bb7",
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0625328,34.2236224]}",
       "description": "Large Parking Lot at Mt. Wilson Observatory",
       "maki": "parking"
