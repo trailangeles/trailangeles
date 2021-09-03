@@ -71,6 +71,12 @@
       "points": [
         "359df230-061b-11ec-9f55-0d4131916bb7"
       ]
+    },
+    {
+      "status": true,
+      "name": "Red Box",
+      "slug": "red-box",
+      "description": "The Red Box picnic area is a popular trailhead at the intersection of Highway 2 and the Mt. Wilson road"
     }
   ]
 }
