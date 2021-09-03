@@ -1,7 +1,6 @@
 {
   "organizations": [
     {
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb1",
       "facebook": "https://www.facebook.com/East-Forks-Golden-Preservation-270602207058655/",
       "name": "East Fork's Golden Preservation",
       "slug": "east-forks-golden-preservation",
@@ -13,6 +12,7 @@
       "photo": "/static/img/east-fork-preservation.jpg",
       "instagram": "https://www.instagram.com/eastforksgoldenpreservation/",
       "website": "https://www.instagram.com/eastforksgoldenpreservation/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb1",
       "filters": [
         "0977c100-f7b0-11eb-b748-fde728692812",
         "a5bebb50-f7af-11eb-b748-fde728692812",
@@ -38,28 +38,28 @@
       "description": "Trail work: restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will move on to other trails in the Forest.\n\n**Requirements:**\n\n* Volunteers need to be physically fit and otherwise prepared for physical labor in backcountry areas.\n* Mountain bike.\n* Our work days are open to the public, depending on space."
     },
     {
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb3",
       "name": "Taka Taka Club",
+      "slug": "takatakaclub",
       "contactName": "Valerie Botta",
-      "contactEmail": "vbottav@gmail.com",
       "photo": "/static/img/IMG_20200516_062945.jpg",
       "website": "instagram.com/takataka.club/",
-      "slug": "takatakaclub",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb3",
       "filters": [
         "a5bebb50-f7af-11eb-b748-fde728692812",
         "fb4f7c80-f7af-11eb-b748-fde728692812",
         "0977c100-f7b0-11eb-b748-fde728692812"
       ],
+      "contactEmail": "vbottav@gmail.com",
       "description": "Taka Taka Club picks up trash on Angeles Crest Highway turnouts every Tuesday at 8 a.m. \n\nFor more information: https://outlooknewspapers.com/freeing-the-treasured-forest-of-trash/"
     },
     {
       "name": "TreePeople",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb4",
       "slug": "treepeople",
       "contactName": "TreePeople",
       "photo": "/static/img/IMG_20190221_174208.jpg",
       "instagram": "https://www.instagram.com/treepeople_org/",
       "website": "https://www.treepeople.org",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb4",
       "filters": [
         "a5bebb50-f7af-11eb-b748-fde728692812",
         "fb4f7c80-f7af-11eb-b748-fde728692812"
@@ -69,7 +69,6 @@
     },
     {
       "facebook": "https://www.instagram.com/mwbaorg/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb5",
       "name": "Mt. Wilson Bicycling Association",
       "slug": "mt-wilson-bicycling-association",
       "contactName": "Jay Marion",
@@ -80,6 +79,7 @@
       "photo": "/static/img/20141221-dsc00601.jpg",
       "instagram": "https://www.facebook.com/groups/MWBAorg/",
       "website": "https://mwba.org/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb5",
       "filters": [
         "1bb5b4d0-f7b0-11eb-b748-fde728692812"
       ],
@@ -175,12 +175,12 @@
     },
     {
       "facebook": "https://www.facebook.com/TrailGorillas/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb8",
       "name": "Pacific Crest Trail Association: Trail Gorillas - San Gabriel Mountains",
       "slug": "pcta-trail-gorillas-san-gabriel-mountains",
       "contactName": "Jim Richter",
       "photo": "/static/img/IMG_20190427_184921.jpg",
       "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb8",
       "filters": [
         "0977c100-f7b0-11eb-b748-fde728692812"
       ],
@@ -188,18 +188,17 @@
       "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Highway 2 at Inspiration Point to Soledad Canyon Road."
     },
     {
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb7",
-      "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
-      "contactName": "Jim Richter",
-      "contactEmail": "TrailGorillasoftheANF@gmail.com",
-      "website": "https://www.pcta.org/volunteer/regional-groups/",
       "facebook": "https://www.facebook.com/TrailGorillas/",
-      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Soledad Canyon Road to Highway 138.",
+      "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
       "slug": "pcta-trail-gorillas-la-gateway",
-      "photo": "/static/img/IMG_20190427_194242.jpg"
+      "contactName": "Jim Richter",
+      "photo": "/static/img/IMG_20190427_194242.jpg",
+      "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb7",
+      "contactEmail": "TrailGorillasoftheANF@gmail.com",
+      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Soledad Canyon Road to Highway 138."
     },
     {
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb6",
       "facebook": "https://www.facebook.com/CORBAMTB",
       "name": "Concerned Off Road Bicycle Association",
       "slug": "corbamtb",
@@ -210,11 +209,20 @@
       "photo": "/static/img/57533086_10156063449771720_718020937349332992_n.jpg",
       "instagram": "https://instagram.com/corbamtb",
       "website": "https://corbamtb.com",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb6",
       "filters": [
         "1bb5b4d0-f7b0-11eb-b748-fde728692812"
       ],
       "contactEmail": "steve@corbamtb.org",
       "description": "**The Concerned Off-Road Bicyclists Association (CORBA)** *is an all-volunteer non-profit organization serving the mountain bicycling community of Los Angeles and its surrounding areas including southern Ventura County. We are dedicated to preserving open space, maintaining public access to public lands, and creating more trail opportunities for all to enjoy. We are a chapter of the International Mountain Bicycling Association ([IMBA](http://www.imba.com/)).***Our Mission** *We are passionate about mountain biking, public trails and preserving our public open space for future generations. CORBA is committed to ensuring equal access for all trail users, and to contributing to everyone's enjoyment of the trails. CORBA organizes and coordinates activities that support mountain biking recreation and that promote the conservation, administration and the maintenance of the public lands.*"
+    },
+    {
+      "name": "Testing Group",
+      "slug": "test-group",
+      "contactName": "test",
+      "contactEmail": "test@example.com",
+      "photo": "/static/img/31-DSC05834.jpg",
+      "website": "http://example.com"
     }
   ]
 }
