@@ -5,5 +5,7 @@ items:
     url: /events
   - text: Volunteer Groups
     url: /volunteer-groups
+  - text: Newsletter
+    url: /newsletter
   - text: About
     url: /posts/about-us/
