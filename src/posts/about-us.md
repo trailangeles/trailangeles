@@ -2,6 +2,7 @@
 title: About us
 description: About TrailAngeles
 author: TrailAngeles
+path: About
 date: 2021-08-22T02:02:44.239Z
 ---
 ## About TrailAngeles

@@ -4,15 +4,14 @@ description: Lessons learned in the field while we volunteer are valuable
   lessons, yet they are much more valuable if we share them with other
   volunteers so that we may all learn from them.
 author: Angeles National Forest Volunteer Newsletter
+path: Newsletter
 date: 2021-09-11T05:11:44.118Z
 ---
 *From the August 2021 issue of the [Angeles National Forest Volunteer Newsletter](/newsletter).*
 
 Lessons learned in the field while we volunteer are valuable lessons, yet they are much more valuable if we share them with other volunteers so that we may all learn from them.
 
-
 For this series, we invite you to send to us stories about things you have encountered while working that were valuable lessons that everyone should consider so we may publish them here, whether they were safety problems, unusual encounters with the recreating public, or anything else that you have handled while volunteering that should be – and can be professionally– shared with other volunteers. Let us learn from your experiences.
-
 
 Situational awareness for employees and for volunteers is a must when we are out among the recreating public, we should be aware of what’s taking place within our area of influence from the time we get in the car to drive to the work site until the time we are safely back at home, being aware of who and what is in our surroundings is a matter of safety that should encompass the entire volunteer day.
 
@@ -30,11 +29,9 @@ The Trailbuilders held a 30 second huddle away from the rest of the group who co
 
 One of the Trailbuilders who has been with our group for decades was wearing a Forest Service volunteer uniform, and after our brief discussion, he went to the parent and ordered him to park his son in the shade, get him to drink water, and work to cool him down, and we got immediate compliance. Some of us performed our day’s trail work where the Scout was parked while the rest of the group continued up Big Cienega and did trail work at the proposed work site.
 
-
 ***The lessons learned here were at core four things:*** 
 
 (1) We can not always expect parents or minors to accept suggestions that we make about safety or even about stopping to rest, drink some fluids, or accept any suggestions that we might make. This is reasonable because parents know their kids best, yet it should be stressed that volunteers have the better experience working in extreme heat and extreme cold during bouts of unusual exercise which their kids may not be used to.
-
 
 (2) Some times compliance is only achieved with an expression of authority. It may be that our volunteer wearing a uniform underscored the suggestion that there might be a medical problem and to listen.
 

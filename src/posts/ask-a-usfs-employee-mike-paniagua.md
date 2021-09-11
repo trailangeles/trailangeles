@@ -5,6 +5,7 @@ description: Recently we had a chance to sit down with Forest Service Volunteer
   what he does in the Angeles National Forest and what it’s like working with
   and assisting volunteers.
 author: Angeles National Forest Volunteer Newsletter
+path: Newsletter
 date: 2021-09-11T04:59:58.463Z
 ---
 *From the August 2021 issue of the [Angeles National Forest Volunteer Newsletter.](/newsletter)*
