@@ -1,10 +1,10 @@
 # Trail Angeles
 
-TrailAngeles.org is a website to manage volunteer groups, recruit new volunteers, and provide accurate information on trails, hiking and other eductional programs in the Angeles National Forest.
+[TrailAngeles.org](https://trailangeles.org) is a website to manage volunteer groups, recruit new volunteers, and provide accurate information on trails, hiking and other eductional programs in the Angeles National Forest.
 
 ### Acknowledgements
 
-TrailAngeles was designed by https://susiethai.com/. Design and maintenance is sponsored by REI https://rei.com/. The project is maintained and stewarded by LA Nature For All https://lanatureforall.org/ in partnership with the Angeles National Forest. The code was developed pro-bono by Studio Gomashio https://gomashio.org/.
+The project is maintained and stewarded by [L.A. Nature For All](https://lanatureforall.org/) in partnership with the [Angeles National Forest](https://www.fs.usda.gov/main/angeles/home) and the [San Gabriel Mountains Community Collaborative](https://www.nationalforests.org/regional-programs/california-program/sangabrielmountains), facilitated by the [National Forest Foundation](https://www.nationalforests.org/) and sponsored by [REI](https://rei.com). The code was developed pro-bono by [Studio Goma Shio](https://gomashio.org/). The site and logo was designed by [Susie Thai](https://susiethai.com/).
 
 ## Getting Started
 
