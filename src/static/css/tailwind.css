@@ -63,6 +63,16 @@ h3 {
   background-position: center;
 }
 
+.rei-logo {
+  background-image: url(/static/img/rei_logo_transparent.png);
+  display: block;
+  height: 120px;
+  width: 120px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .ta-logo {
   background-image: url(/static/img/logo.svg);
   display: block;
