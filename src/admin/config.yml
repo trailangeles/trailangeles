@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: master
+  branch: main
   open_authoring: true
   repo: trailangeles/trailangeles
   auth_scope: repo
