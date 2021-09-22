@@ -10,14 +10,17 @@ path: Events
   <table class="w-full my-8 border-none table-auto">
   {% set background = cycler("bg-white", "bg-gray-200") %}
   {%- for event in events.events %}
-    <tr class="text-black border-t-2 border-b-2 {{ background.next() }}">
-      <td class="p-4 text-lg font-bold border-none cursor-pointer text-large" style="width: 280px;">{{ event.name }}</td>
-      <td class="p-4 font-bold border-none cursor-pointer" style="width: 130px;">{{ event.date | formatDate }}</td>
-      <td class="p-4 border-none cursor-pointer ">{{ event.description | safe }}</td>
-      <td class="p-4 border-none cursor-pointer">
-        <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full hover:bg-yellow-200 go-button" href="{{event.link}}">Go</a>
-      </td>
-    </tr>
+    {% set isInTheFuture = event.date | isInTheFuture  %}
+    {% if isInTheFuture == true %}
+      <tr class="text-black border-t-2 border-b-2 {{ background.next() }}">
+        <td class="p-4 text-lg font-bold border-none cursor-pointer text-large" style="width: 280px;">{{ event.name }}</td>
+        <td class="p-4 font-bold border-none cursor-pointer" style="width: 130px;">{{ event.date | formatDate }}</td>
+        <td class="p-4 border-none cursor-pointer ">{{ event.description | safe }}</td>
+        <td class="p-4 border-none cursor-pointer">
+          <a target="_blank" class="self-end float-right p-1 text-xl font-extrabold text-white uppercase bg-yellow-500 rounded-full hover:bg-yellow-200 go-button" href="{{event.link}}">Go</a>
+        </td>
+      </tr>
+    {% endif %}
   {% endfor -%}
   </table>
   <div class="flex w-full mt-3 bg-gray-100 flex-stretch">

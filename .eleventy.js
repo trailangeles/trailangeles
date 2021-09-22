@@ -26,6 +26,20 @@ module.exports = function (eleventyConfig) {
     return new Date(Date.parse(dateObj)).toDateString();
   });
 
+  // // return true or "true" if the date is in the future
+  // eleventyConfig.addFilter("isInTheFuture"), (dateObj) => {
+  //   let currentDate = new Date();
+  //   let eventDate = new Date(Date.parse(dateObj));
+  //   return eventDate > currentDate;
+  // }
+
+  // human readable date from string
+  eleventyConfig.addFilter("isInTheFuture", (dateObj) => {
+    let currentDate = new Date();
+    let eventDate = new Date(Date.parse(dateObj));
+    return eventDate > currentDate;
+  });
+
   // human readable trail name from slug
   eleventyConfig.addFilter("formatSlug", (slug) => {
     var words = slug.split("-");
