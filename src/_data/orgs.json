@@ -215,6 +215,24 @@
       ],
       "contactEmail": "steve@corbamtb.org",
       "description": "**The Concerned Off-Road Bicyclists Association (CORBA)** *is an all-volunteer non-profit organization serving the mountain bicycling community of Los Angeles and its surrounding areas including southern Ventura County. We are dedicated to preserving open space, maintaining public access to public lands, and creating more trail opportunities for all to enjoy. We are a chapter of the International Mountain Bicycling Association ([IMBA](http://www.imba.com/)).***Our Mission** *We are passionate about mountain biking, public trails and preserving our public open space for future generations. CORBA is committed to ensuring equal access for all trail users, and to contributing to everyone's enjoyment of the trails. CORBA organizes and coordinates activities that support mountain biking recreation and that promote the conservation, administration and the maintenance of the public lands.*"
+    },
+    {
+      "facebook": "https://www.facebook.com/groups/656695178656701",
+      "name": "Rubio Canyon Trail Crew",
+      "slug": "rubio-canyon-trail-crew",
+      "contactName": "Sean Cucamonga",
+      "places": [
+        "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4"
+      ],
+      "photo": "/static/img/rubio-canyon-trail-crew.jpg",
+      "website": "https://www.facebook.com/groups/656695178656701",
+      "id": "04bb7960-7981-11ec-b249-e7d049282110",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "n/a",
+      "description": "We are volunteers who love the Rubio Canyon region of the San Gabriel Mountains and help maintain the trail system. We operate in conjunction with the Arroyos & Foothills Conservancy, working twice a month on Saturday mornings. Please contact the AFC or the group on Facebook if you're interested in volunteering. And feel free to post pictures and stories of your trip to the Rubio Canyon and Echo Mountain area on their Facebook Group page. You can also report problems with the trails there."
     }
   ]
 }
