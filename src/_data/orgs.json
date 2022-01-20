@@ -1,137 +1,34 @@
 {
   "organizations": [
     {
-      "facebook": "https://www.facebook.com/East-Forks-Golden-Preservation-270602207058655/",
-      "name": "East Fork's Golden Preservation",
-      "slug": "east-forks-golden-preservation",
-      "contactName": "Joel Glen",
-      "places": [
-        "18c0e800-0618-11ec-9b4b-7fc400e344b4"
-      ],
-      "requirements": "",
-      "photo": "/static/img/east-fork-preservation.jpg",
-      "instagram": "https://www.instagram.com/eastforksgoldenpreservation/",
-      "website": "https://www.instagram.com/eastforksgoldenpreservation/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb1",
-      "filters": [
-        "0977c100-f7b0-11eb-b748-fde728692812",
-        "a5bebb50-f7af-11eb-b748-fde728692812",
-        "fb4f7c80-f7af-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "contact@lanatureforall.org",
-      "description": "Using gloves, bags, and trash grabbers, we pick up trash around the Oaks Picnic Area and along the East Fork River. We weigh and toss after. So far they've picked up over 8,505 pounds of trash off our beautiful San Gabriel Mountains.\n\n**Requirements**:\n\n* Bring water, clothes you don't mind getting wet and dirty. \n* We will provide snacks and lunch for all volunteers to who pre-register.\n\n**Learn more about us:** [Cleanup Success: East Fork’s Golden Preservation](https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/)"
+      "id": "4d68fb60-7990-11ec-a404-ffa5b67d6027",
+      "name": "Adams Pack Station",
+      "contactName": "Maggie Moran",
+      "website": "http://adamspackstation.com/",
+      "slug": "adams-pack-station",
+      "contactEmail": "n/a",
+      "photo": "http://adamspackstation.com/",
+      "description": "<!--StartFragment-->\n\nAdams Pack Station is a donkey pack station, information center, and event venue in Big Santa Anita Canyon, San Gabriel Mountains. We survived the Bobcat Fire, which swept through Big Santa Anita Canyon on Sept 13, 2020. Unfortunately the canyon and the road to Chantry Flat remain closed to the public for the foreseeable future, which means the pack station has no income. We need your help to feed the donkeys and pay the bills so we can stick around until you return to hike in our beautiful canyon.\n\n<!--EndFragment-->"
     },
     {
-      "name": "Lowelifes Respectable Citizens' Club",
-      "slug": "lowelifes-respectable-citizens-club",
-      "contactName": "Rob Pettersen",
-      "places": [],
-      "requirements": "",
-      "photo": "/static/img/groups/lowelifes.jpg",
-      "instagram": "https://www.instagram.com/lowelifesrcc/",
-      "website": "https://www.lowelifesrcc.org",
-      "id": "98cb2b14-b4a0-4bd4-967f-4803e4e01a2c",
-      "filters": [
-        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "board@lowelifesrcc.org",
-      "description": "Trail work: Restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will begin focusing on restoration of upper Trail Canyon, trail projects in Chilao, and continued maintenance of the other trails we maintain such as Gabrielino, Silver Moccasin, and Mt Hillyer. \n\nAdditionally, we will prioritize efforts on trails we cover that were impacted by the 2020 Bobcat Fire when we are allowed to enter the closure area. Those trails include: Gabrielino, Silver Moccasin, Rim Trail, Kenyon Devore, and Valley Forge. \n\n**Requirements:**\n\n* Volunteers need to be physically fit and otherwise prepared for physical labor in backcountry areas.\n* Mountain bike (optional).\n* Our work days are open to the public, depending on space."
+      "id": "fb57a780-7990-11ec-a404-ffa5b67d6027",
+      "name": "Altadena Crest Trail Restoration",
+      "slug": "Altadena-Crest-Trail-Restoration",
+      "contactName": "Robert Edlin",
+      "contactEmail": "altadenatrails@gmail.com",
+      "photo": "https://altadenatrails.org/about-us/",
+      "website": "https://altadenatrails.org/about-us/",
+      "description": "<!--StartFragment-->\n\nAltadenaTrails.org is the online home for the Altadena Crest Trail Restoration Working Group. This group was convened by the County to solicit public input on the completion of the Altadena Crest Trail and related trails.\n\nWe are a small but active group of trail and open space advocates, recreational trail users and local concerned citizens. Our mission is to aid the County in the completion of the Altadena Crest Trail, including closing the two gaps that interrupt this historic trail.\n\n<!--EndFragment-->"
     },
     {
-      "name": "Taka Taka Club",
-      "slug": "takatakaclub",
-      "contactName": "Valerie Botta",
-      "photo": "/static/img/IMG_20200516_062945.jpg",
-      "website": "instagram.com/takataka.club/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb3",
-      "filters": [
-        "a5bebb50-f7af-11eb-b748-fde728692812",
-        "fb4f7c80-f7af-11eb-b748-fde728692812",
-        "0977c100-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "vbottav@gmail.com",
-      "description": "Taka Taka Club picks up trash on Angeles Crest Highway turnouts every Tuesday at 8 a.m. \n\nFor more information: https://outlooknewspapers.com/freeing-the-treasured-forest-of-trash/"
-    },
-    {
-      "name": "TreePeople",
-      "slug": "treepeople",
-      "contactName": "TreePeople",
-      "photo": "/static/img/IMG_20190221_174208.jpg",
-      "instagram": "https://www.instagram.com/treepeople_org/",
-      "website": "https://www.treepeople.org",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb4",
-      "filters": [
-        "a5bebb50-f7af-11eb-b748-fde728692812",
-        "fb4f7c80-f7af-11eb-b748-fde728692812"
-      ],
-      "contactEmail": " info@treepeople.org",
-      "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
-    },
-    {
-      "facebook": "https://www.instagram.com/mwbaorg/",
-      "name": "Mt. Wilson Bicycling Association",
-      "slug": "mt-wilson-bicycling-association",
-      "contactName": "Jay Marion",
-      "places": [
-        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
-      ],
-      "requirements": "",
-      "photo": "/static/img/20141221-dsc00601.jpg",
-      "instagram": "https://www.facebook.com/groups/MWBAorg/",
-      "website": "https://mwba.org/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb5",
-      "filters": [
-        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "board@mwba.org",
-      "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. \n\n**Requirements:**\n\n* Mountain bike"
-    },
-    {
-      "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
-      "name": "Fisheries Resource Volunteer Corps",
-      "slug": "frvc",
-      "contactName": "Dave Baumgartner",
-      "places": [],
-      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "requirements": "We offer a wide range of activities, some do require specialized skills and physical qualifications, while other activities do not.",
-      "photo": "/static/img/groups/frvc.jpg",
-      "website": "https://www.frvc.net",
-      "id": "cb9e2232-1aab-46b2-833e-598a4644088c",
-      "contactEmail": "dabaumgartner@aol.com",
-      "description": "FRVC specializes in watershed projects which includes water quality, riparian restoration, aquatic organism studies and infrastructure projects, we monitor human impact activity, and provide education and advice to forest visitors among other various activities.  We do monitor 16 wild trout streams and rivers in the Angeles and San Bernardino NF's and I believe our work is relatively unique among other volunteer groups in the area."
-    },
-    {
-      "facebook": "https://www.facebook.com/SanGabrielMountainsTrailbuilders",
-      "name": "San Gabriel Mountains Trail Builders",
-      "slug": "sgm-trailbuilders",
-      "contactName": "Ben White",
-      "places": [],
-      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "requirements": "Long-term SGMTB volunteers are expected to acquire signed formal agreements with the USFS District Ranger, and are expected to have First Aid medical training, however the Trailbuilders invite volunteers of all ages to join our trail efforts without formal training, we provide a morning meeting before we head to the work site, and we ask that all volunteers only do such work as they feel comfortable with, we do not expect volunteers to perform tasks they do not feel comfortable doing. At the same time, we provide a degree of training while working in the field, affording High School and College students, Girl Scouts and Boy Scouts, and everyone else, get introduced to methods and best practices. We hope that volunteers who come out from time to time acquire comfortable skills which allows them to mention their volunteer work on their employment resumes. We provide work hours for people who must perform Community Service, and we assist Boy Scout Eagle Scout candidates with potential projects.",
+      "id": "3517efb0-7992-11ec-a404-ffa5b67d6027",
+      "name": "Angeles National Forest Fire Lookout Association",
+      "slug": "Angeles-National-Forest-Fire-Lookout-Association",
+      "contactName": "Valerie Hanich",
+      "contactEmail": "N/a",
       "photo": "/static/img/31-DSC05780.jpg",
-      "website": "http://www.sgmtrailbuilders.org/",
-      "id": "242f2488-1e8c-4f78-8cee-ed92ccf002a8",
-      "filters": [
-        "0977c100-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "bwootenwhite@hotmail.com",
-      "description": "The San Gabriel Mountains Trailbuilders (SGMTB) is an all-volunteer, 501(c)3 non-profit public service organization dedicated, to constructing and maintaining hiking trails in the San Gabriel Mountains Angeles National Forest (San Gabriel Mountains National Monument) in Southern California. They were founded in 1984.\n\nThe primary efforts which the Trailbuilders perform involve hiking and nature trail restoration, repairs, and maintenance within the Crystal Lake Recreation Area, and the Mount Baldy area, and along the East and West Forks of the San Gabriel River. We perform other work within the Angeles National Forest as needed and scheduled by the U. S. Forest Service, including installing signs at trailheads, building foot bridges, repairing damage to Visitor Centers, removing spray paint vandalism, and other activities which are requested, however trail work consists of 90% or more of what the Trailbuilders do."
-    },
-    {
-      "name": "JPL Trailbuilders",
-      "slug": "jpl-trailbuilders",
-      "contactName": "Kathie Reilly",
-      "places": [],
-      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
-      "requirements": "Our events are open to the public",
-      "photo": "/static/img/screenshot_20210521_101530.jpg",
-      "website": "trailangeles.netlify.app/",
-      "id": "fc702e7d-62a3-430c-a18b-92d52e84997a",
-      "filters": [
-        "0977c100-f7b0-11eb-b748-fde728692812"
-      ],
-      "contactEmail": "outrspcklr@att.net",
-      "description": "Trail maintenance on Mt Lowe East and West Trails, Muir Peak Trail, Colby Canyon Trail, South San Gabriel Peak Trail, North San Gabriel Peak Trail (sometimes called Bill Reilly Trail)"
+      "website": "https://www.google.com/search?q=angeles+national+forest+fire+lookout+association&rlz=1C1UEAD_enUS938US938&oq=angeles+national+fire+look&aqs=chrome.1.69i57j0i22i30.6526j0j4&sourceid=chrome&ie=UTF-8",
+      "description": "<!--StartFragment-->\n\n# **About ANFFLA**\n\nThe Fire Lookout Program is a partnership between the U.S. Forest Service, Angeles National Forest and the Angeles National Forest Fire Lookout Association, a not-for-profit, volunteer organization.\n\n<!--EndFragment-->\n\n<!--StartFragment-->\n\n**The four primary purposes of the Program are:**\n\n* **Restore**, maintain and staff the remaining lookouts of the Angeles National Forest.\n* **Interpret** the natural and cultural history of the fire lookouts and the surrounding area.\n* **Generate** interest in and support for the Fire Lookout Program.\n* **Encourage** visitors to participate actively in caring for all of our National Forests.\n\nThe Program, managed by volunteers, serves an additional role in that the volunteers are trained to call in smoke and fire reports thus enhancing the fire fighting capabilities of the U.S. Forest Service.  **The Program objectives are:**\n\n\n\n* Staff and maintain the remaining fire lookouts\n* Provide informal and impromptu interpretation of the surrounding area both cultural and historical\n* Assist the Angeles National Forest by greeting visitors, and providing general forest orientation, information and assistance\n* Assist the Angeles National Forest Recreation Staff by providing general recreation information\n* Assist the Angeles National Forest Fire Prevention Staff through interpretive delivery of key fire prevention messages and hands-on experience with the Osborne Fire Finder and related devices\n* Assist the Angeles National Forest Dispatch/Fire Suppression Staff by providing radio relay, accurate smoke reports and remote eyes and ears for incident assessment as needed\n* Create a positive image for the U.S. Forest Service, Angeles National Forest Fire Lookout Association, its’ program, volunteers, partners and sponsors\n\n<!--EndFragment-->"
     },
     {
       "facebook": "https://www.facebook.com/CrystalLakeVisitorCenter",
@@ -161,42 +58,33 @@
       "description": "Main event: Los Angeles County Fair providing education on Wildfire Prevention, California History (Native American Site, BLM Land - Gold Mining and General Lands Office history, Cross Cut sawing, Native Reptiles, Leave No Trace, Fire Lookout Tower, etc.  We work with Angeles and San Bernardino National Forest, BLM and LA County Fire Forest Division. Throughout the year we have ground maintenance on 1 1/2 acres at the Pomona Fairgrounds, including development of new activities, trail maintenance, etc"
     },
     {
+      "id": "ec9cd510-7992-11ec-a404-ffa5b67d6027",
+      "name": "Arroyos and Foothills Conservancy ",
+      "slug": "Arroyos-and-Foothills-Conservancy ",
+      "contactName": "John Howell",
+      "contactEmail": "johnrhowell@earthlink.net",
+      "website": "http://www.arroyosfoothills.org/ ",
+      "photo": "http://www.arroyosfoothills.org/",
+      "description": "<!--StartFragment-->\n\nWe conserve and steward natural open space and provide free environmental education programs.\n\nThe San Gabriel Mountains are a vast natural landscape that is healthy and fully functioning. The San Rafael Hills, Verdugo Mountains and Griffith Park are islands of native habitat that need to be reconnected with the San Gabriels if they are to sustain healthy and diverse natural populations of wildlife and native plants. AFC is working to connect these islands with corridors that will invite wildlife to pass freely from one area to another and allow these special urban habitats to adapt to climate change. We are also preserving lands in our foothills with the highest intrinsic ecological value.  These key habitat areas are being strategically protected through land acquisition, conservation easements, land use planning and implementation, and education\n\n<!--EndFragment-->"
+    },
+    {
       "name": "Bear Canyon Trail Crew",
       "slug": "bearcanyontrailcrew",
       "contactName": "Alan Coles",
-      "places": [],
+      "places": [
+        "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4"
+      ],
       "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
       "requirements": "No special skills required. Open to everyone.",
       "photo": "/static/img/groups/bearcanyontrailcrew.jpg",
       "website": "https://sites.google.com/view/bearcanyontrailcrew/home",
       "id": "83864e8f-8699-4d32-9602-55a6f9949cb9",
-      "contactEmail": "bearcanyontrailcrew@gmail.com",
-      "description": "Trail construction and repair. Bear Canyon Trail and other trails as necessary."
-    },
-    {
-      "facebook": "https://www.facebook.com/TrailGorillas/",
-      "name": "Pacific Crest Trail Association: Trail Gorillas - San Gabriel Mountains",
-      "slug": "pcta-trail-gorillas-san-gabriel-mountains",
-      "contactName": "Jim Richter",
-      "photo": "/static/img/IMG_20190427_184921.jpg",
-      "website": "https://www.pcta.org/volunteer/regional-groups/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb8",
       "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
         "0977c100-f7b0-11eb-b748-fde728692812"
       ],
-      "contactEmail": "TrailGorillasoftheANF@gmail.com",
-      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Highway 2 at Inspiration Point to Soledad Canyon Road."
-    },
-    {
-      "facebook": "https://www.facebook.com/TrailGorillas/",
-      "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
-      "slug": "pcta-trail-gorillas-la-gateway",
-      "contactName": "Jim Richter",
-      "photo": "/static/img/IMG_20190427_194242.jpg",
-      "website": "https://www.pcta.org/volunteer/regional-groups/",
-      "id": "83864e8f-8699-4d32-9602-55a6f9949cb7",
-      "contactEmail": "TrailGorillasoftheANF@gmail.com",
-      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Soledad Canyon Road to Highway 138."
+      "contactEmail": "bearcanyontrailcrew@gmail.com",
+      "description": "Trail construction and repair. Bear Canyon Trail and other trails as necessary."
     },
     {
       "facebook": "https://www.facebook.com/CORBAMTB",
@@ -204,7 +92,7 @@
       "slug": "corbamtb",
       "contactName": "Steve Messer",
       "places": [
-        "2b4b2710-0618-11ec-9b4b-7fc400e344b6"
+        "18c0e800-0618-11ec-9b4b-7fc400e344b4"
       ],
       "photo": "/static/img/57533086_10156063449771720_718020937349332992_n.jpg",
       "instagram": "https://instagram.com/corbamtb",
@@ -215,6 +103,132 @@
       ],
       "contactEmail": "steve@corbamtb.org",
       "description": "**The Concerned Off-Road Bicyclists Association (CORBA)** *is an all-volunteer non-profit organization serving the mountain bicycling community of Los Angeles and its surrounding areas including southern Ventura County. We are dedicated to preserving open space, maintaining public access to public lands, and creating more trail opportunities for all to enjoy. We are a chapter of the International Mountain Bicycling Association ([IMBA](http://www.imba.com/)).***Our Mission** *We are passionate about mountain biking, public trails and preserving our public open space for future generations. CORBA is committed to ensuring equal access for all trail users, and to contributing to everyone's enjoyment of the trails. CORBA organizes and coordinates activities that support mountain biking recreation and that promote the conservation, administration and the maintenance of the public lands.*"
+    },
+    {
+      "facebook": "https://www.facebook.com/East-Forks-Golden-Preservation-270602207058655/",
+      "name": "East Fork's Golden Preservation",
+      "slug": "east-forks-golden-preservation",
+      "contactName": "Joel Glen",
+      "places": [
+        "18c0e800-0618-11ec-9b4b-7fc400e344b4"
+      ],
+      "requirements": "",
+      "photo": "/static/img/east-fork-preservation.jpg",
+      "instagram": "https://www.instagram.com/eastforksgoldenpreservation/",
+      "website": "https://www.instagram.com/eastforksgoldenpreservation/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb1",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "contact@lanatureforall.org",
+      "description": "Using gloves, bags, and trash grabbers, we pick up trash around the Oaks Picnic Area and along the East Fork River. We weigh and toss after. So far they've picked up over 8,505 pounds of trash off our beautiful San Gabriel Mountains.\n\n**Requirements**:\n\n* Bring water, clothes you don't mind getting wet and dirty. \n* We will provide snacks and lunch for all volunteers to who pre-register.\n\n**Learn more about us:** [Cleanup Success: East Fork’s Golden Preservation](https://lanatureforall.org/2020/01/07/cleanup-success-east-forks-golden-preservation/)"
+    },
+    {
+      "facebook": "https://www.facebook.com/FRVC-Fisheries-Resource-Volunteer-Corps-353455568388784",
+      "name": "Fisheries Resource Volunteer Corps",
+      "slug": "frvc",
+      "contactName": "Dave Baumgartner",
+      "places": [],
+      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+      "requirements": "We offer a wide range of activities, some do require specialized skills and physical qualifications, while other activities do not.",
+      "photo": "/static/img/groups/frvc.jpg",
+      "website": "https://www.frvc.net",
+      "id": "cb9e2232-1aab-46b2-833e-598a4644088c",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "dabaumgartner@aol.com",
+      "description": "FRVC specializes in watershed projects which includes water quality, riparian restoration, aquatic organism studies and infrastructure projects, we monitor human impact activity, and provide education and advice to forest visitors among other various activities.  We do monitor 16 wild trout streams and rivers in the Angeles and San Bernardino NF's and I believe our work is relatively unique among other volunteer groups in the area."
+    },
+    {
+      "name": "JPL Trailbuilders",
+      "slug": "jpl-trailbuilders",
+      "contactName": "Kathie Reilly",
+      "places": [],
+      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+      "requirements": "Our events are open to the public",
+      "photo": "/static/img/screenshot_20210521_101530.jpg",
+      "website": "trailangeles.netlify.app/",
+      "id": "fc702e7d-62a3-430c-a18b-92d52e84997a",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "fb4f7c80-f7af-11eb-b748-fde728692812",
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "outrspcklr@att.net",
+      "description": "Trail maintenance on Mt Lowe East and West Trails, Muir Peak Trail, Colby Canyon Trail, South San Gabriel Peak Trail, North San Gabriel Peak Trail (sometimes called Bill Reilly Trail)"
+    },
+    {
+      "name": "Lowelifes Respectable Citizens' Club",
+      "slug": "lowelifes-respectable-citizens-club",
+      "contactName": "Rob Pettersen",
+      "places": [
+        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+      ],
+      "requirements": "",
+      "photo": "/static/img/groups/lowelifes.jpg",
+      "instagram": "https://www.instagram.com/lowelifesrcc/",
+      "website": "https://www.lowelifesrcc.org",
+      "id": "98cb2b14-b4a0-4bd4-967f-4803e4e01a2c",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "board@lowelifesrcc.org",
+      "description": "Trail work: Restoration and maintenance. Lowelifes is currently focused on the restoration of Condor Peak Trail. When that project is complete, we will begin focusing on restoration of upper Trail Canyon, trail projects in Chilao, and continued maintenance of the other trails we maintain such as Gabrielino, Silver Moccasin, and Mt Hillyer. \n\nAdditionally, we will prioritize efforts on trails we cover that were impacted by the 2020 Bobcat Fire when we are allowed to enter the closure area. Those trails include: Gabrielino, Silver Moccasin, Rim Trail, Kenyon Devore, and Valley Forge. \n\n**Requirements:**\n\n* Volunteers need to be physically fit and otherwise prepared for physical labor in backcountry areas.\n* Mountain bike (optional).\n* Our work days are open to the public, depending on space."
+    },
+    {
+      "facebook": "https://www.instagram.com/mwbaorg/",
+      "name": "Mt. Wilson Bicycling Association",
+      "slug": "mt-wilson-bicycling-association",
+      "contactName": "Jay Marion",
+      "places": [
+        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+      ],
+      "requirements": "",
+      "photo": "/static/img/20141221-dsc00601.jpg",
+      "instagram": "https://www.facebook.com/groups/MWBAorg/",
+      "website": "https://mwba.org/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb5",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "board@mwba.org",
+      "description": "Trailwork, trail courtesy and mountain bike advocacy in the Angeles National Forest. \n\n**Requirements:**\n\n* Mountain bike"
+    },
+    {
+      "facebook": "https://www.facebook.com/TrailGorillas/",
+      "name": "Pacific Crest Trail Association: Trail Gorillas - San Gabriel Mountains",
+      "slug": "pcta-trail-gorillas-san-gabriel-mountains",
+      "contactName": "Jim Richter",
+      "places": [
+        "2b4b2710-0618-11ec-9b4b-7fc400e344b6"
+      ],
+      "photo": "/static/img/IMG_20190427_184921.jpg",
+      "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb8",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "TrailGorillasoftheANF@gmail.com",
+      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Highway 2 at Inspiration Point to Soledad Canyon Road."
+    },
+    {
+      "facebook": "https://www.facebook.com/TrailGorillas/",
+      "name": "Pacific Crest Trail Association: Trail Gorillas - LA Gateway Chapter",
+      "slug": "pcta-trail-gorillas-la-gateway",
+      "contactName": "Jim Richter",
+      "places": [
+        "a7e9507f-fa3b-4f7a-bbb7-d56075dea3f4"
+      ],
+      "photo": "/static/img/IMG_20190427_194242.jpg",
+      "website": "https://www.pcta.org/volunteer/regional-groups/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb7",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "TrailGorillasoftheANF@gmail.com",
+      "description": "The Trail Gorillas of the Pacific Crest Trail Association have adopted the PCT's southern 500 miles between the Mexico border and Kennedy Meadows. The San Gabriel Mountains chapter monitors and organizes trail work events for the PCT from Soledad Canyon Road to Highway 138."
     },
     {
       "facebook": "https://www.facebook.com/groups/656695178656701",
@@ -228,11 +242,72 @@
       "website": "https://www.facebook.com/groups/656695178656701",
       "id": "04bb7960-7981-11ec-b249-e7d049282110",
       "filters": [
-        "a5bebb50-f7af-11eb-b748-fde728692812",
         "0977c100-f7b0-11eb-b748-fde728692812"
       ],
       "contactEmail": "n/a",
       "description": "We are volunteers who love the Rubio Canyon region of the San Gabriel Mountains and help maintain the trail system. We operate in conjunction with the Arroyos & Foothills Conservancy, working twice a month on Saturday mornings. Please contact the AFC or the group on Facebook if you're interested in volunteering. And feel free to post pictures and stories of your trip to the Rubio Canyon and Echo Mountain area on their Facebook Group page. You can also report problems with the trails there."
+    },
+    {
+      "facebook": "https://www.facebook.com/SanGabrielMountainsTrailbuilders",
+      "name": "San Gabriel Mountains Trail Builders",
+      "slug": "sgm-trailbuilders",
+      "contactName": "Ben White",
+      "places": [],
+      "area": "bc6b9cff-92cc-4322-bbe5-82528b8867cf",
+      "requirements": "Long-term SGMTB volunteers are expected to acquire signed formal agreements with the USFS District Ranger, and are expected to have First Aid medical training, however the Trailbuilders invite volunteers of all ages to join our trail efforts without formal training, we provide a morning meeting before we head to the work site, and we ask that all volunteers only do such work as they feel comfortable with, we do not expect volunteers to perform tasks they do not feel comfortable doing. At the same time, we provide a degree of training while working in the field, affording High School and College students, Girl Scouts and Boy Scouts, and everyone else, get introduced to methods and best practices. We hope that volunteers who come out from time to time acquire comfortable skills which allows them to mention their volunteer work on their employment resumes. We provide work hours for people who must perform Community Service, and we assist Boy Scout Eagle Scout candidates with potential projects.",
+      "photo": "/static/img/31-DSC05780.jpg",
+      "website": "http://www.sgmtrailbuilders.org/",
+      "id": "242f2488-1e8c-4f78-8cee-ed92ccf002a8",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "fb4f7c80-f7af-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "bwootenwhite@hotmail.com",
+      "description": "The San Gabriel Mountains Trailbuilders (SGMTB) is an all-volunteer, 501(c)3 non-profit public service organization dedicated, to constructing and maintaining hiking trails in the San Gabriel Mountains Angeles National Forest (San Gabriel Mountains National Monument) in Southern California. They were founded in 1984.\n\nThe primary efforts which the Trailbuilders perform involve hiking and nature trail restoration, repairs, and maintenance within the Crystal Lake Recreation Area, and the Mount Baldy area, and along the East and West Forks of the San Gabriel River. We perform other work within the Angeles National Forest as needed and scheduled by the U. S. Forest Service, including installing signs at trailheads, building foot bridges, repairing damage to Visitor Centers, removing spray paint vandalism, and other activities which are requested, however trail work consists of 90% or more of what the Trailbuilders do."
+    },
+    {
+      "name": "Taka Taka Club",
+      "slug": "takatakaclub",
+      "contactName": "Valerie Botta",
+      "places": [
+        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+      ],
+      "photo": "/static/img/IMG_20200516_062945.jpg",
+      "website": "instagram.com/takataka.club/",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb3",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "vbottav@gmail.com",
+      "description": "Taka Taka Club picks up trash on Angeles Crest Highway turnouts every Tuesday at 8 a.m. \n\nFor more information: https://outlooknewspapers.com/freeing-the-treasured-forest-of-trash/"
+    },
+    {
+      "name": "TreePeople",
+      "slug": "treepeople",
+      "contactName": "TreePeople",
+      "places": [
+        "2439fce1-7df6-46b0-b65a-b13d4486b52b"
+      ],
+      "photo": "/static/img/IMG_20190221_174208.jpg",
+      "instagram": "https://www.instagram.com/treepeople_org/",
+      "website": "https://www.treepeople.org",
+      "id": "83864e8f-8699-4d32-9602-55a6f9949cb4",
+      "filters": [
+        "1bb5b4d0-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": " info@treepeople.org",
+      "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
+    },
+    {
+      "facebook": "https://www.facebook.com/communityhikingclub/",
+      "name": "Community Hiking Club",
+      "slug": "Community-Hiking-Club",
+      "contactName": "Dianne Hellrigel",
+      "photo": "communityhikingclub.org",
+      "website": "communityhikingclub.org",
+      "id": "0a9a7b20-7a3e-11ec-8475-6d5b47035c5b",
+      "contactEmail": "zuliebear@aol.com",
+      "description": "<!--StartFragment-->\n\nBasic Trail Training, Stewardship events (trash clean up, river clean ups, graffiti removals, trail maintenance and construction, micro-trash clean ups for the condors.\n\nAny special requirements needed to join your training? Only for trail work and we will train you\n\nAnything else you'd like to share.  We also love to hike, camp, and every other year we do an international hiking trip (after covid). We'd love to have you join us! We also do wildflower photography hikes and historical hikes in the Angeles National Forest.\n\n \n\n<!--EndFragment-->\n\n\n\n<!--StartFragment-->\n\nFor hiking during covid: [meetup.com/Santa](http://meetup.com/Santa) Clarita Community Hiking Club\n\n<!--EndFragment-->"
     }
   ]
 }
