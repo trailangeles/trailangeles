@@ -253,6 +253,15 @@
       ],
       "contactEmail": " info@treepeople.org",
       "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
+    },
+    {
+      "id": "fb57a780-7990-11ec-a404-ffa5b67d6027",
+      "name": "Altadena Crest Trail Restoration",
+      "slug": "Altadena-Crest-Trail-Restoration",
+      "contactName": "Robert Edlin",
+      "contactEmail": "altadenatrails@gmail.com",
+      "photo": "https://altadenatrails.org/about-us/",
+      "website": "https://altadenatrails.org/about-us/"
     }
   ]
 }
