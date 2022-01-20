@@ -7,7 +7,7 @@
       "website": "http://adamspackstation.com/",
       "slug": "adams-pack-station",
       "contactEmail": "n/a",
-      "photo": "http://adamspackstation.com/",
+      "photo": "/static/img/IMG_20190427_184921.jpg",
       "description": "\n\nAdams Pack Station is a donkey pack station, information center, and event venue in Big Santa Anita Canyon, San Gabriel Mountains. We survived the Bobcat Fire, which swept through Big Santa Anita Canyon on Sept 13, 2020. Unfortunately the canyon and the road to Chantry Flat remain closed to the public for the foreseeable future, which means the pack station has no income. We need your help to feed the donkeys and pay the bills so we can stick around until you return to hike in our beautiful canyon."
     },
     {
@@ -16,7 +16,7 @@
       "slug": "Altadena-Crest-Trail-Restoration",
       "contactName": "Robert Edlin",
       "contactEmail": "altadenatrails@gmail.com",
-      "photo": "https://altadenatrails.org/about-us/",
+      "photo": "/static/img/31-DSC05780.jpg",
       "website": "https://altadenatrails.org/about-us/",
       "description": "\n\nAltadenaTrails.org is the online home for the Altadena Crest Trail Restoration Working Group. This group was convened by the County to solicit public input on the completion of the Altadena Crest Trail and related trails.\n\nWe are a small but active group of trail and open space advocates, recreational trail users and local concerned citizens. Our mission is to aid the County in the completion of the Altadena Crest Trail, including closing the two gaps that interrupt this historic trail."
     },
@@ -64,7 +64,7 @@
       "contactName": "John Howell",
       "contactEmail": "johnrhowell@earthlink.net",
       "website": "http://www.arroyosfoothills.org/ ",
-      "photo": "http://www.arroyosfoothills.org/",
+      "photo": "/static/img/IMG_20190329_180033.jpg",
       "description": "\n\nWe conserve and steward natural open space and provide free environmental education programs.\n\nThe San Gabriel Mountains are a vast natural landscape that is healthy and fully functioning. The San Rafael Hills, Verdugo Mountains and Griffith Park are islands of native habitat that need to be reconnected with the San Gabriels if they are to sustain healthy and diverse natural populations of wildlife and native plants. AFC is working to connect these islands with corridors that will invite wildlife to pass freely from one area to another and allow these special urban habitats to adapt to climate change. We are also preserving lands in our foothills with the highest intrinsic ecological value.  These key habitat areas are being strategically protected through land acquisition, conservation easements, land use planning and implementation, and education"
     },
     {
@@ -109,7 +109,7 @@
       "name": "Community Hiking Club",
       "slug": "Community-Hiking-Club",
       "contactName": "Dianne Hellrigel",
-      "photo": "communityhikingclub.org",
+      "photo": "/static/img/IMG_20190427_095346.jpg",
       "website": "communityhikingclub.org",
       "id": "0a9a7b20-7a3e-11ec-8475-6d5b47035c5b",
       "contactEmail": "zuliebear@aol.com",
