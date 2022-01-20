@@ -7,7 +7,8 @@
       "website": "http://adamspackstation.com/",
       "slug": "adams-pack-station",
       "contactEmail": "n/a",
-      "photo": "http://adamspackstation.com/"
+      "photo": "http://adamspackstation.com/",
+      "description": "<!--StartFragment-->\n\nAdams Pack Station is a donkey pack station, information center, and event venue in Big Santa Anita Canyon, San Gabriel Mountains. We survived the Bobcat Fire, which swept through Big Santa Anita Canyon on Sept 13, 2020. Unfortunately the canyon and the road to Chantry Flat remain closed to the public for the foreseeable future, which means the pack station has no income. We need your help to feed the donkeys and pay the bills so we can stick around until you return to hike in our beautiful canyon.\n\n<!--EndFragment-->"
     },
     {
       "id": "fb57a780-7990-11ec-a404-ffa5b67d6027",
@@ -17,6 +18,15 @@
       "contactEmail": "altadenatrails@gmail.com",
       "photo": "https://altadenatrails.org/about-us/",
       "website": "https://altadenatrails.org/about-us/"
+    },
+    {
+      "id": "3517efb0-7992-11ec-a404-ffa5b67d6027",
+      "name": "Angeles National Forest Fire Lookout Association",
+      "slug": "Angeles-National-Forest-Fire-Lookout-Association",
+      "contactName": "Valerie Hanich",
+      "contactEmail": "N/a",
+      "photo": "/static/img/31-DSC05780.jpg",
+      "website": "n/a"
     },
     {
       "facebook": "https://www.facebook.com/CrystalLakeVisitorCenter",
@@ -262,15 +272,6 @@
       ],
       "contactEmail": " info@treepeople.org",
       "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
-    },
-    {
-      "id": "3517efb0-7992-11ec-a404-ffa5b67d6027",
-      "name": "Angeles National Forest Fire Lookout Association",
-      "slug": "Angeles-National-Forest-Fire-Lookout-Association",
-      "contactName": "Valerie Hanich",
-      "contactEmail": "N/a",
-      "photo": "/static/img/31-DSC05780.jpg",
-      "website": "n/a"
     }
   ]
 }
