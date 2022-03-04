@@ -1,19 +1,19 @@
 name: GCal Import
 on:
   issues:
-    types: [ opened ]
+    types: [opened]
   schedule:
     # Runs "at minute 1 past every hour" (see https://crontab.guru)
-    - cron: '1 * * * *'
+    - cron: "1 * * * *"
 jobs:
   gcalimport:
     runs-on: ubuntu-latest
     steps:
-    - name: GCal Import
-      uses: maxogden/google-calendar-import@v1.1.0
-      with:
-        google-token: ${{ secrets.GOOGLE_TOKEN }}
-        google-credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
-        calendar-id: ${{ secrets.CALENDAR_ID }}
-        json-path: ${{ secrets.JSON_PATH }}
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: GCal Import
+        uses: maxogden/google-calendar-import@v1.1.1
+        with:
+          google-token: ${{ secrets.GOOGLE_TOKEN }}
+          google-credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
+          calendar-id: ${{ secrets.CALENDAR_ID }}
+          json-path: ${{ secrets.JSON_PATH }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
