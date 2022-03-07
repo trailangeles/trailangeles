@@ -28,44 +28,61 @@ collections:
             collapsed: true
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Slug, name: slug, hint: "URL for this org e.g. lowe-lifes. lowercase, hyphenated, no spaces or special characters.", widget: string, required: true }
+              - {
+                  label: Slug,
+                  name: slug,
+                  hint: "URL for this org e.g. lowe-lifes. lowercase, hyphenated, no spaces or special characters.",
+                  widget: string,
+                  required: true,
+                }
               - { label: Contact Name, name: contactName, widget: string }
               - { label: Contact Email, name: contactEmail, widget: string }
-              - { 
-                  label: Photo, 
-                  name: photo, 
-                  widget: file
-                }
+              - { label: Photo, name: photo, widget: file }
               - { label: Website, name: website, widget: string }
-              - { label: Facebook, name: facebook, widget: string, required: false }
-              - { label: Instagram, name: instagram, widget: string, required: false }
-              - { label: Description, name: description, widget: markdown, required: false }
+              - {
+                  label: Facebook,
+                  name: facebook,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Instagram,
+                  name: instagram,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: markdown,
+                  required: false,
+                }
               - { label: ID, name: id, widget: id }
               - {
                   label: Places,
                   name: places,
                   widget: relation,
                   collection: places-and-orgs,
-                  file: 'places',
+                  file: "places",
                   valueField: places.*.id,
                   displayFields: [places.*.name],
                   searchFields: [places.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of places this organization maintains. They will show up on the organization page"
+                  hint: "List of places this organization maintains. They will show up on the organization page",
                 }
               - {
                   label: Sortable Filters,
                   name: filters,
                   widget: relation,
                   collection: events-and-filters,
-                  file: 'filters',
+                  file: "filters",
                   valueField: filters.*.id,
                   displayFields: [filters.*.name],
                   searchFields: [filters.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of tags for this group that users can filter with in the UI"
+                  hint: "List of tags for this group that users can filter with in the UI",
                 }
       - label: "Points"
         file: "src/_data/points.json"
@@ -79,9 +96,19 @@ collections:
             collapsed: false
             fields:
               - { label: Marker Pop-Up Title, name: name, widget: string }
-              - { label: Marker Pop-Up Description, name: description, widget: string }
+              - {
+                  label: Marker Pop-Up Description,
+                  name: description,
+                  widget: string,
+                }
               - { label: Location, name: location, widget: map }
-              - { label: Mapbox Maki Icon Name, name: maki, widget: string, required: false, hint: "View them here https://labs.mapbox.com/maki-icons/" }
+              - {
+                  label: Mapbox Maki Icon Name,
+                  name: maki,
+                  widget: string,
+                  required: false,
+                  hint: "View them here https://labs.mapbox.com/maki-icons/",
+                }
               - { label: ID, name: id, widget: id }
       - label: "Places"
         file: "src/_data/places.json"
@@ -95,37 +122,69 @@ collections:
             collapsed: false
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Slug, name: slug, hint: "URL for this slug e.g. mt-wilson. lowercase, hyphenated, no spaces or special characters.", widget: string, required: true }
+              - { label: Address, name: address, widget: string }
+              - { label: Phone, name: phone, widget: string }
+              - { label: Hours, name: hours, widget: string }
+              - { label: Notes, name: notes, widget: string }
+              - {
+                  label: Slug,
+                  name: slug,
+                  hint: "URL for this slug e.g. mt-wilson. lowercase, hyphenated, no spaces or special characters.",
+                  widget: string,
+                  required: true,
+                }
               - { label: ID, name: id, widget: id }
-              - { label: Description, name: description, widget: markdown, required: true }
-              - { label: OsmWayId, name: osmwayid, widget: string, required: false, hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds" }
-              - { label: OsmTags, name: osmtags, widget: hidden, required: false }
-              - {label: "Open/Closed Status", name: "status", widget: "boolean", required: true, default: true}
+              - {
+                  label: Description,
+                  name: description,
+                  widget: markdown,
+                  required: true,
+                }
+              - {
+                  label: OsmWayId,
+                  name: osmwayid,
+                  widget: string,
+                  required: false,
+                  hint: "The numeric id at the end of e.g. https://www.openstreetmap.org/way/178426128, this will import the tags for that way on osm every time the site builds",
+                }
+              - {
+                  label: OsmTags,
+                  name: osmtags,
+                  widget: hidden,
+                  required: false,
+                }
+              - {
+                  label: "Open/Closed Status",
+                  name: "status",
+                  widget: "boolean",
+                  required: true,
+                  default: true,
+                }
               - {
                   label: Points,
                   name: points,
                   widget: relation,
                   collection: places-and-orgs,
-                  file: 'points',
+                  file: "points",
                   valueField: points.*.id,
                   displayFields: [points.*.name],
                   searchFields: [points.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of points associated with this place. They will show up on the place map as clickable icons"
+                  hint: "List of points associated with this place. They will show up on the place map as clickable icons",
                 }
               - {
                   label: Sortable Filters,
                   name: filters,
                   widget: relation,
                   collection: events-and-filters,
-                  file: 'filters',
+                  file: "filters",
                   valueField: filters.*.id,
                   displayFields: [filters.*.name],
                   searchFields: [filters.*.name],
                   multiple: true,
                   required: false,
-                  hint: "List of tags for this place that users can filter with in the UI"
+                  hint: "List of tags for this place that users can filter with in the UI",
                 }
   - label: "Events and Filters"
     name: "events-and-filters"

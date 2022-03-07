@@ -76,8 +76,121 @@
       "status": true,
       "id": "2b4b2710-0618-11ec-9b4b-7fc400e344c1",
       "name": "Red Box",
-      "slug": "red-box",
-      "description": "The Red Box picnic area is a popular trailhead at the intersection of Highway 2 and the Mt. Wilson road"
-    }
+      "slug": "red-box"
+    },
+    {
+      "status": true,
+      "id": "bd0bed81-f37b-41f5-b073-a344bbb9f79a",
+      "name": "Angeles National Forest Headquarters",
+      "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
+      "phone": "(626)-574-1613",
+      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch. Adventure Passes sold on Mondays and Fridays",
+      "slug": "anfhq"
+    },
+    {
+      "status": true,
+      "id": "e9087f25-45ec-4b84-ac08-be97c44075e4",
+      "name": "Angeles National Forest Gateway District Office",
+      "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
+      "phone": "(818) 899-1900",
+      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
+      "slug": "lagrdhq"
+    },
+    {
+      "status": true,
+      "id": "3c893db7-dcb8-4be1-93b0-f9fe11ccca47",
+      "name": "San Gabriel Mountains National Monument District Office",
+      "address": "110 N. Wabash Ave. Glendora, CA 91741",
+      "phone": "(747) 322-6643",
+      "hours": "Monday – Friday 8:00 a.m. - 4:30 p.m.",
+      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch, Adventure & IA Passes sold on M-W-F, 8 a.m. - 1 p.m.",
+      "slug": "sgmnmhq"
+    },
+    {
+      "status": true,
+      "id": "c006744a-da58-4ab8-982b-636056a556f8",
+      "name": "Angeles National Forest Acton Office/Work Center",
+      "address": "33708 Crown Valley Rd. Acton, CA 93510",
+      "phone": "(661) 269-2808",
+      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
+      "slug": "anfacton"
+    },
+    {
+      "status": true,
+      "id": "381e56bf-cdde-404b-9875-e3a633f85834",
+      "name": "Big Pines Visitor Center",
+      "address": "24537 CA-2, Wrightwood, CA 92397",
+      "phone": "(760) 249-3504",
+      "hours": "Saturday and Sunday 10:00 a.m. - 3:00 p.m.",
+      "slug": "anfbigpines"
+    },
+    {
+      "status": false,
+      "id": "abd41a8c-ece1-439f-b5ee-55dabf379dfa",
+      "name": "Grassy Hollow Visitor Center",
+      "phone": "(626) 821-6737",
+      "hours": "Saturday and Sunday 10:00 a.m. - 4:00 p.m.",
+      "notes": "Closed due to COVID-19 pandemic. Calls not being answered",
+      "slug": "anfgrassyhollow"
+    },
+    {
+      "status": true,
+      "id": "c688c8c0-5496-4766-911f-de82e94ecc71",
+      "name": "Mt. Baldy Visitor Center",
+      "address": "6778 Mt Baldy Rd, Mt Baldy, CA 91759",
+      "phone": "(909) 982-2829",
+      "hours": "Saturdays and Holidays 7:00 am - 4:00 pm",
+      "slug": "anfmtbaldy"
+    },
+    {
+      "status": true,
+      "id": "aa849fbd-7d7b-4aaa-8dec-ab99f9045569",
+      "name": "San Gabriel Canyon Gateway Visitor Center",
+      "address": "N, 1960 San Gabriel Canyon Rd, Azusa, CA 91702",
+      "phone": "(626) 969-1012",
+      "hours": "Saturday and Sunday 8:00 a.m. - 1:00 p.m.",
+      "slug": "anfsgc"
+    },
+    {
+      "status": true,
+      "id": "27789f72-b1dc-4637-a5ab-5b0a692d1683",
+      "name": "San Gabriel Canyon OHV Area",
+      "phone": "(626) 910-1235",
+      "hours": "Saturday and Sunday 8:00 a.m. - 4:00 p.m.",
+      "slug": "anfsgcohv"
+    },
+    {
+      "status": false,
+      "id": "d72da376-a3e5-4231-a375-0fb8bcb1d4dd",
+      "name": "Crystal Lake Information Station",
+      "address": "9877 N Crystal Lake Rd, Azusa, CA 91702",
+      "phone": "(626) 910-1149",
+      "hours": "Saturday and Sunday 8 a.m. - 4:00 p.m.",
+      "notes": "Calls not being answered",
+      "slug": "anfcrystallake"
+    },
+    {
+      "status": true,
+      "id": "1d1a40d5-35bd-4f6b-94fc-7bb0a9c2a6f3",
+      "name": "Henninger Flats Visitor Center",
+      "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
+      "phone": "(626)-574-1613",
+      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
+      "slug": "anfhenninger"
+    },
+    {
+      "status": true,
+      "id": "5bad4a82-f541-4c94-b316-40519b0df0a7",
+      "name": "Eaton Canyon Nature Center",
+      "address": "1750 N. Altadena Dr, Pasadena, CA 91107",
+      "phone": "626-398-5420",
+      "hours": "Tuesday – Sunday 8 a.m. - 5:00 p.m.",
+      "notes": "Permit to enter Eaton Canyon Park required to visit nature center",
+      "slug": "eatoncanyonnaturecenter"
+    }    
   ]
 }
