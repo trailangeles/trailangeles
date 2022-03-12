@@ -126,6 +126,7 @@ collections:
               - { label: Phone, name: phone, widget: string }
               - { label: Hours, name: hours, widget: string }
               - { label: Notes, name: notes, widget: string }
+              - { label: Site Type, name: siteType, widget: string }
               - {
                   label: Slug,
                   name: slug,

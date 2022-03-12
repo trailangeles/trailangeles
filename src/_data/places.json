@@ -315,14 +315,6 @@
       "slug": "sawmillcampground"
     },
     {
-      "status": true,
-      "id": "baff2dbc-4353-488f-b1cf-403bae299570",
-      "name": "Oak Flat Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41746",
-      "siteType": "Campground",
-      "slug": "bearcanyontrailcamp"
-    },
-    {
       "status": false,
       "id": "58ae1c1e-c0c5-401f-a6a6-6f33b7d55400",
       "name": "Upper Shake Campground",

@@ -15,6 +15,7 @@ path: Places
       <table class="w-full border-none table-auto places-table">
         {% set background = cycler("bg-green-900", "bg-green-700") %}
         {%- for item in pagination.items %}
+        <!--{{item.slug}}-->
           <tr onclick="window.location='/places/{{item.slug}}'" class="border-none text-white {{ background.next() }}">
             <td class="p-4 font-extrabold border-none cursor-pointer hover:yellow-100 ">{{ item.name }}</td>
           </tr>
@@ -37,7 +38,6 @@ path: Places
   {% for place in places.places %}
   {% for trailpoint in place.points %}
   {% for point in points.points %}
-  // {{point}}
   {% if trailpoint === point.id %}
   icon = L.icon({
     iconUrl: '/static/img/icons/{{point.maki or "marker"}}-15.svg',
