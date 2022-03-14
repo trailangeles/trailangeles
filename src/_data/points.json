@@ -1,559 +1,606 @@
 {
-  "points": [
-    {
-      "name": "Cobb Estate Trailhead",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1306434,34.2039697]}",
-      "description": "You can hike here",
-      "id": "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
-      "maki": "parking"
-    },
-    {
-      "name": "Echo Mountain Summit",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1203544,34.2110036]}",
-      "description": "Hike up to some ruins",
-      "id": "04b75f95-a8bc-45c7-971f-518236204792",
-      "maki": "mountain"
-    },
-    {
-      "id": "359df230-061b-11ec-9f55-0d4131916bb6",
-      "name": "Bridge To Nowhere Trailhead",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-117.7651736,34.2369415]}",
-      "description": "The parking lot and trailhead"
-    },
-    {
-      "name": "Mt. Wilson Upper Parking",
-      "id": "359df230-061b-11ec-9f55-0d4131916bb7",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.0625328,34.2236224]}",
-      "description": "Large Parking Lot at Mt. Wilson Observatory",
-      "maki": "parking"
-    },
-    {
-      "name": "Red Box Picnic Area Parking Lot",
-      "description": "You can park here with an Adventure Pass. There is a bathroom and multiple trailheads",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1533402,34.2702685]}",
-      "maki": "parking"
-    },
-    {
-      "status": true,
-      "id": "ddb17384-5d23-4fe4-a510-0543c6deb4d7",
-      "name": "Angeles National Forest Headquarters",
-      "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
-      "phone": "(626)-574-1613",
-      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
-      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch. Adventure Passes sold on Mondays and Fridays",
-      "siteType": "Visitor Center",
-      "slug": "anfhq",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "b87325b5-31bd-4dec-ba89-5f3ae1903e6a",
-      "name": "Angeles National Forest Gateway District Office",
-      "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
-      "phone": "(818) 899-1900",
-      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
-      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
-      "siteType": "Visitor Center",
-      "slug": "lagrdhq",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "a984aa68-11d7-4bd7-b0ec-0e4d80133c4d",
-      "name": "San Gabriel Mountains National Monument District Office",
-      "address": "110 N. Wabash Ave. Glendora, CA 91741",
-      "phone": "(747) 322-6643",
-      "hours": "Monday – Friday 8:00 a.m. - 4:30 p.m.",
-      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch, Adventure & IA Passes sold on M-W-F, 8 a.m. - 1 p.m.",
-      "siteType": "Visitor Center",
-      "slug": "sgmnmhq",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "428bd3c6-9613-41ed-93f2-d693c68e219c",
-      "name": "Angeles National Forest Acton Office/Work Center",
-      "address": "33708 Crown Valley Rd. Acton, CA 93510",
-      "phone": "(661) 269-2808",
-      "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
-      "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
-      "siteType": "Visitor Center",
-      "slug": "anfacton",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "61883789-a4be-42a7-8a3b-20dcde34299b",
-      "name": "Big Pines Visitor Center",
-      "address": "24537 CA-2, Wrightwood, CA 92397",
-      "phone": "(760) 249-3504",
-      "hours": "Saturday and Sunday 10:00 a.m. - 3:00 p.m.",
-      "siteType": "Visitor Center",
-      "slug": "anfbigpines",
-      "maki": "ranger-station"
-    },
-    {
-      "status": false,
-      "id": "aa905f24-d3b9-4d7f-b5c4-5e82503491a0",
-      "name": "Grassy Hollow Visitor Center",
-      "phone": "(626) 821-6737",
-      "hours": "Saturday and Sunday 10:00 a.m. - 4:00 p.m.",
-      "notes": "Closed due to COVID-19 pandemic. Calls not being answered",
-      "siteType": "Visitor Center",
-      "slug": "anfgrassyhollow",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "cb722485-a78b-478d-a920-e63514cab1cc",
-      "name": "Mt. Baldy Visitor Center",
-      "address": "6778 Mt Baldy Rd, Mt Baldy, CA 91759",
-      "phone": "(909) 982-2829",
-      "hours": "Saturdays and Holidays 7:00 am - 4:00 pm",
-      "siteType": "Visitor Center",
-      "slug": "anfmtbaldy",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "a8c703f2-0960-42e4-94bb-2a61d3d0f92a",
-      "name": "San Gabriel Canyon Gateway Visitor Center",
-      "address": "N, 1960 San Gabriel Canyon Rd, Azusa, CA 91702",
-      "phone": "(626) 969-1012",
-      "hours": "Saturday and Sunday 8:00 a.m. - 1:00 p.m.",
-      "siteType": "Visitor Center",
-      "slug": "anfsgc",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "1bf45f81-9bd7-47a9-8fd4-091d29765208",
-      "name": "San Gabriel Canyon OHV Area",
-      "phone": "(626) 910-1235",
-      "hours": "Saturday and Sunday 8:00 a.m. - 4:00 p.m.",
-      "slug": "anfsgcohv"
-    },
-    {
-      "status": false,
-      "id": "2359c069-22f4-422a-8d15-71a1e5c99fac",
-      "name": "Crystal Lake Information Station",
-      "address": "9877 N Crystal Lake Rd, Azusa, CA 91702",
-      "phone": "(626) 910-1149",
-      "hours": "Saturday and Sunday 8 a.m. - 4:00 p.m.",
-      "siteType": "Visitor Center",
-      "notes": "Calls not being answered",
-      "slug": "anfcrystallake",
-      "maki": "ranger-station"
-    },
-    {
-      "status": false,
-      "id": "f912835d-5149-48ea-87cc-d742ca08fb35",
-      "name": "Crystal Lake Cafe and General Store",
-      "link": "https://www.facebook.com/crystallakecafe/",
-      "phone": "(626) 910-1029",
-      "hours": "Wed-Mon 8:00 a.m. - 5:00 p.m.",
-      "slug": "crystallakecafe",
-      "maki": "restauraunt"
-    },
-    {
-      "status": true,
-      "id": "60647dbd-981e-414d-ab40-ca0466410c1b",
-      "name": "Henninger Flats Visitor Center",
-      "phone": "626-794-0675",
-      "hours": "Monday – Friday 8 a.m. - 4:00 p.m.",
-      "siteType": "Visitor Center",
-      "slug": "anfhenninger",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "73993223-b4be-4ac3-a0eb-47832586f69c",
-      "name": "Eaton Canyon Nature Center",
-      "address": "1750 N. Altadena Dr, Pasadena, CA 91107",
-      "phone": "626-398-5420",
-      "hours": "Tuesday – Sunday 8 a.m. - 5:00 p.m.",
-      "notes": "Permit to enter Eaton Canyon Park required to visit nature center",
-      "siteType": "Visitor Center",
-      "slug": "eatoncanyonnaturecenter",
-      "maki": "ranger-station"
-    },
-    {
-      "status": true,
-      "id": "d51604dc-4575-4e65-92d6-20c0aa635a32",
-      "name": "Bear Canyon Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41712&actid=29",
-      "siteType": "Trail Camp",
-      "slug": "bearcanyontrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "384ceac6-2f97-42f1-ab1b-6d852e554e7c",
-      "name": "Gould Mesa Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41708",
-      "siteType": "Trail Camp",
-      "slug": "gouldmesatrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "97072f9b-ce45-4260-b822-61ab4adbf2f0",
-      "name": "Hoegees Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41702",
-      "siteType": "Trail Camp",
-      "slug": "hoegeestrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "330ee3b1-8148-4702-914a-c96592d5bd73",
-      "name": "Idlehour Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41714&actid=29",
-      "siteType": "Trail Camp",
-      "slug": "idlehourtrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "595102d0-563f-4f1f-a063-3eaa462d6bce",
-      "name": "Millard Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41706&actid=29",
-      "siteType": "Trail Camp",
-      "slug": "millardtrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "8449b66d-02c6-49ac-b132-89aa5800509a",
-      "name": "Mt. Lowe Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41778",
-      "siteType": "Trail Camp",
-      "slug": "mtlowetrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "9f363b9d-8fd3-4da4-ab29-fc8717f4f332",
-      "name": "Spruce Grove Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41704",
-      "siteType": "Trail Camp",
-      "slug": "sprucegrovetrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "31d3e861-d2eb-435b-934b-46f2971c6054",
-      "name": "Messenger Flats Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41766",
-      "siteType": "Campground",
-      "slug": "messengerflatscampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "52bced52-43ff-4363-bfbf-3ea158442fa5",
-      "name": "Bear Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41758",
-      "siteType": "Campground",
-      "slug": "bearcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "898de057-02a1-46f0-9344-6e8000ab3c54",
-      "name": "Cottonwood Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41762",
-      "siteType": "Campground",
-      "slug": "cottonwoodcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "8507a80f-e2c7-4506-b2ae-4ef71102ec3f",
-      "name": "Los Alamos Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41744",
-      "siteType": "Campground",
-      "slug": "losalamostcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "fe59d83e-ed16-45d2-8a82-ddc184454284",
-      "name": "Oak Flat Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41746",
-      "siteType": "Campground",
-      "slug": "oakflatcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "d00eec9d-5a2b-4ca6-b302-f6048fd4c5f7",
-      "name": "Sawmill Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41748&actid=29",
-      "siteType": "Campground",
-      "slug": "sawmillcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "58ae1c1e-c0c5-401f-a6a6-6f33b7d55400",
-      "name": "Upper Shake Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41748&actid=29",
-      "siteType": "Campground",
-      "slug": "uppershakecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "4ac843cd-6703-483a-9637-3875638ff081",
-      "name": "Appletree Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41722",
-      "siteType": "Campground",
-      "slug": "appletreecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "d69cb901-44b3-41a9-94b6-b98e1bf514ad",
-      "name": "Peavine Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41734",
-      "siteType": "Campground",
-      "slug": "peavinecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "339c82ef-72aa-4719-b061-9029ceeacf6c",
-      "name": "Big Rock Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41724",
-      "siteType": "Campground",
-      "slug": "bigrockcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "1e7fa56b-4977-473a-9dcc-bf92af7e1cba",
-      "name": "South Fork Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41740",
-      "siteType": "Campground",
-      "slug": "southforkcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "b67f45c7-b0af-486a-ae8a-c5b7154da7e5",
-      "name": "Sycamore Flat Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41742&actid=70",
-      "siteType": "Campground",
-      "slug": "sycamoreflatcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "b37ad452-1dae-45c3-9a0c-7b239b6477bf",
-      "name": "Crystal Lake Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41686",
-      "siteType": "Campground",
-      "slug": "crystallakecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "ca98607b-0bfd-4ab0-818d-423cd8d360f1",
-      "name": "Devore Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41698&actid=29",
-      "siteType": "Trail Camp",
-      "slug": "devoretrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "30dec6ee-7844-427f-964c-3b98ccd1764a",
-      "name": "Spring Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41700",
-      "siteType": "Trail Camp",
-      "slug": "springtrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "ac896287-ec54-4576-8808-c47c8ec50f7f",
-      "name": "Valley Forge Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41694",
-      "siteType": "Trail Camp",
-      "slug": "valleyforgetrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "e759c888-5b2c-43a3-8ffa-de2ece4a2d69",
-      "name": "West Fork Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41696&actid=29",
-      "siteType": "Trail Camp",
-      "slug": "westforktrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "128ffe12-7856-4d7e-af91-afd28e8e5092",
-      "name": "Blue Ridge Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41726",
-      "siteType": "Campground",
-      "slug": "blueridgecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "2abbc409-7d1e-4326-a400-17908b96dd55",
-      "name": "Buckhorn Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41690&actid=29",
-      "siteType": "Campground",
-      "slug": "buckhorncampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "36e47192-95d7-465b-8f2b-420bff3a3bd2",
-      "name": "Cabin Flat Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41728",
-      "siteType": "Trail Camp",
-      "slug": "cabinflattrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "9b5a6836-d2a2-461a-b713-b5a9094f5186",
-      "name": "Chilao Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41780",
-      "siteType": "Campground",
-      "slug": "chilaocampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "2331abd9-d52c-4e4f-a572-a1d3effd8af5",
-      "name": "Cooper Canyon Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41716",
-      "siteType": "Trail Camp",
-      "slug": "coopercanyontrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "e3f05261-bc73-46b3-a0ba-42cc19e2d17c",
-      "name": "Guffy Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41730",
-      "siteType": "Campground",
-      "slug": "guffycampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "20782984-8cbb-434d-8cdb-ae1351526636",
-      "name": "Horse Flats Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41692",
-      "siteType": "Campground",
-      "slug": "horseflatscampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "3fae6fd5-f36c-4039-b8e0-e714d09ae184",
-      "name": "Lake Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41680",
-      "siteType": "Campground",
-      "slug": "lakecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "7ebbde5c-d2f6-4030-b8f0-f5274a40d6d3",
-      "name": "Little Jimmy Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=82790",
-      "siteType": "Trail Camp",
-      "slug": "littlejimmytrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "7164ddf0-3267-433a-882e-b20ca8a53faa",
-      "name": "Lupine Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41732",
-      "siteType": "Campground",
-      "slug": "lupinecampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "afe2459c-38c4-43d0-a9d0-4a13d18b61cb",
-      "name": "Mountain Oak Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41682",
-      "siteType": "Campground",
-      "slug": "mountainoakcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "2a223bd6-1bd3-4122-9088-07e42d8e6a29",
-      "name": "Table Mountain Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41684",
-      "siteType": "Campground",
-      "slug": "tablemountaincampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "d5fbef97-d286-45a9-9cab-1d214acfc224",
-      "name": "Monte Cristo Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41768",
-      "siteType": "Campground",
-      "slug": "montecristocampground",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "99affae4-a51d-43bb-b63c-6db17fe0b16c",
-      "name": "Mt. Pacifico Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41720",
-      "siteType": "Campground",
-      "slug": "mtpacificocampgroubd",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "086d2845-e2af-4538-907b-79c6db208ccd",
-      "name": "Sulphur Springs Trail Camp",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41792",
-      "siteType": "Trail Camp",
-      "slug": "sulphurspringstrailcamp",
-      "maki": "campsite"
-    },
-    {
-      "status": true,
-      "id": "8ee6a99e-eed2-46bb-8d3c-1e9a8aaac0d7",
-      "name": "Coldbrook Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41772",
-      "siteType": "Campground",
-      "slug": "coldbrookcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "c47c0772-f31f-4797-8e45-89fd864c0570",
-      "name": "Glenn Camp Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41774",
-      "siteType": "Campground",
-      "slug": "glenncampcampground",
-      "maki": "campsite"
-    },
-    {
-      "status": false,
-      "id": "56a1e7c0-2847-4dc1-a2ac-f4541d612127",
-      "name": "Manker Flat Campground",
-      "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41776&actid=29",
-      "siteType": "Campground",
-      "slug": "mankerflatcampground",
-      "maki": "campsite"
-    }
-  ]
-}
+    "points": [
+      {
+        "name": "Cobb Estate Trailhead",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.1306434,34.2039697]}",
+        "description": "You can hike here",
+        "id": "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
+        "maki": "parking"
+      },
+      {
+        "name": "Echo Mountain Summit",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.1203544,34.2110036]}",
+        "description": "Hike up to some ruins",
+        "id": "04b75f95-a8bc-45c7-971f-518236204792",
+        "maki": "mountain"
+      },
+      {
+        "id": "359df230-061b-11ec-9f55-0d4131916bb6",
+        "name": "Bridge To Nowhere Trailhead",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.7651736,34.2369415]}",
+        "description": "The parking lot and trailhead"
+      },
+      {
+        "name": "Mt. Wilson Upper Parking",
+        "id": "359df230-061b-11ec-9f55-0d4131916bb7",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.0625328,34.2236224]}",
+        "description": "Large Parking Lot at Mt. Wilson Observatory",
+        "maki": "parking"
+      },
+      {
+        "name": "Red Box Picnic Area Parking Lot",
+        "description": "You can park here with an Adventure Pass. There is a bathroom and multiple trailheads",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.1533402,34.2702685]}",
+        "maki": "parking"
+      },
+      {
+        "status": true,
+        "id": "428bd3c6-9613-41ed-93f2-d693c68e219c",
+        "name": "Angeles National Forest Acton Office/Work Center",
+        "address": "33708 Crown Valley Rd. Acton, CA 93510",
+        "phone": "(661) 269-2808",
+        "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+        "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
+        "siteType": "Visitor Center",
+        "slug": "anfacton",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.197925,34.494427]}"
+      },
+      {
+        "status": true,
+        "id": "b87325b5-31bd-4dec-ba89-5f3ae1903e6a",
+        "name": "Angeles National Forest Gateway District Office",
+        "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
+        "phone": "(818) 899-1900",
+        "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+        "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
+        "siteType": "Visitor Center",
+        "slug": "lagrdhq",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.36164,34.29413]}"
+      },
+      {
+        "status": true,
+        "id": "ddb17384-5d23-4fe4-a510-0543c6deb4d7",
+        "name": "Angeles National Forest Headquarters",
+        "address": "701 N. Santa Anita Ave. Arcadia, CA 91006",
+        "phone": "(626)-574-1613",
+        "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
+        "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch. Adventure Passes sold on Mondays and Fridays",
+        "siteType": "Visitor Center",
+        "slug": "anfhq",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.033762,34.148074]}"
+      },
+      {
+        "status": true,
+        "id": "4ac843cd-6703-483a-9637-3875638ff081",
+        "name": "Appletree Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41722",
+        "siteType": "Campground",
+        "slug": "appletreecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.713431,34.386599]}"
+      },
+      {
+        "status": true,
+        "id": "52bced52-43ff-4363-bfbf-3ea158442fa5",
+        "name": "Bear Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41758",
+        "siteType": "Campground",
+        "slug": "bearcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.632448,34.712652]}"
+      },
+      {
+        "status": true,
+        "id": "d51604dc-4575-4e65-92d6-20c0aa635a32",
+        "name": "Bear Canyon Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41712&actid=29",
+        "siteType": "Trail Camp",
+        "slug": "bearcanyontrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.148633,34.250672]}"
+      },
+      {
+        "status": true,
+        "id": "61883789-a4be-42a7-8a3b-20dcde34299b",
+        "name": "Big Pines Visitor Center",
+        "address": "24537 CA-2, Wrightwood, CA 92397",
+        "phone": "(760) 249-3504",
+        "hours": "Saturday and Sunday 10:00 a.m. - 3:00 p.m.",
+        "siteType": "Visitor Center",
+        "slug": "anfbigpines",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.689783,34.378959]}"
+      },
+      {
+        "status": true,
+        "id": "339c82ef-72aa-4719-b061-9029ceeacf6c",
+        "name": "Big Rock Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41724",
+        "siteType": "Campground",
+        "slug": "bigrockcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.776933,34.387932]}"
+      },
+      {
+        "status": true,
+        "id": "128ffe12-7856-4d7e-af91-afd28e8e5092",
+        "name": "Blue Ridge Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41726",
+        "siteType": "Campground",
+        "slug": "blueridgecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.687263,34.359675]}"
+      },
+      {
+        "status": false,
+        "id": "2abbc409-7d1e-4326-a400-17908b96dd55",
+        "name": "Buckhorn Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41690&actid=29",
+        "siteType": "Campground",
+        "slug": "buckhorncampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.912784,34.346691]}"
+      },
+      {
+        "status": true,
+        "id": "36e47192-95d7-465b-8f2b-420bff3a3bd2",
+        "name": "Cabin Flat Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41728",
+        "siteType": "Trail Camp",
+        "slug": "cabinflattrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.699631,34.343942]}"
+      },
+      {
+        "status": true,
+        "id": "9b5a6836-d2a2-461a-b713-b5a9094f5186",
+        "name": "Chilao Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41780",
+        "siteType": "Campground",
+        "slug": "chilaocampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.016678,34.323785]}"
+      },
+      {
+        "status": true,
+        "id": "8ee6a99e-eed2-46bb-8d3c-1e9a8aaac0d7",
+        "name": "Coldbrook Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41772",
+        "siteType": "Campground",
+        "slug": "coldbrookcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.840418,34.291484]}"
+      },
+      {
+        "status": false,
+        "id": "2331abd9-d52c-4e4f-a572-a1d3effd8af5",
+        "name": "Cooper Canyon Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41716",
+        "siteType": "Trail Camp",
+        "slug": "coopercanyontrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.921081,34.360791]}"
+      },
+      {
+        "status": false,
+        "id": "898de057-02a1-46f0-9344-6e8000ab3c54",
+        "name": "Cottonwood Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41762",
+        "siteType": "Campground",
+        "slug": "cottonwoodcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.502468,34.63955]}"
+      },
+      {
+        "status": false,
+        "id": "f912835d-5149-48ea-87cc-d742ca08fb35",
+        "name": "Crystal Lake Cafe and General Store",
+        "link": "https://www.facebook.com/crystallakecafe/",
+        "phone": "(626) 910-1029",
+        "hours": "Wed-Mon 8:00 a.m. - 5:00 p.m.",
+        "slug": "crystallakecafe",
+        "maki": "restauraunt",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.835572,34.324171]}"
+      },
+      {
+        "status": true,
+        "id": "b37ad452-1dae-45c3-9a0c-7b239b6477bf",
+        "name": "Crystal Lake Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41686",
+        "siteType": "Campground",
+        "slug": "crystallakecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.832889,34.325682]}"
+      },
+      {
+        "status": false,
+        "id": "2359c069-22f4-422a-8d15-71a1e5c99fac",
+        "name": "Crystal Lake Information Station",
+        "address": "9877 N Crystal Lake Rd, Azusa, CA 91702",
+        "phone": "(626) 910-1149",
+        "hours": "Saturday and Sunday 8 a.m. - 4:00 p.m.",
+        "siteType": "Visitor Center",
+        "notes": "Calls not being answered",
+        "slug": "anfcrystallake",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.835019,34.32424]}"
+      },
+      {
+        "status": false,
+        "id": "ca98607b-0bfd-4ab0-818d-423cd8d360f1",
+        "name": "Devore Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41698&actid=29",
+        "siteType": "Trail Camp",
+        "slug": "devoretrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.035833,34.243055]}"
+      },
+      {
+        "status": true,
+        "id": "73993223-b4be-4ac3-a0eb-47832586f69c",
+        "name": "Eaton Canyon Nature Center",
+        "address": "1750 N. Altadena Dr, Pasadena, CA 91107",
+        "phone": "626-398-5420",
+        "hours": "Tuesday – Sunday 8 a.m. - 5:00 p.m.",
+        "notes": "Permit to enter Eaton Canyon Park required to visit nature center",
+        "siteType": "Visitor Center",
+        "slug": "eatoncanyonnaturecenter",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.097027,34.177075]}"
+      },
+      {
+        "status": false,
+        "id": "c47c0772-f31f-4797-8e45-89fd864c0570",
+        "name": "Glenn Camp Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41774",
+        "siteType": "Campground",
+        "slug": "glenncampcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.951666,34.240833]}"
+      },
+      {
+        "status": true,
+        "id": "384ceac6-2f97-42f1-ab1b-6d852e554e7c",
+        "name": "Gould Mesa Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41708",
+        "siteType": "Trail Camp",
+        "slug": "gouldmesatrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.17847,34.222073]}"
+      },
+      {
+        "status": false,
+        "id": "aa905f24-d3b9-4d7f-b5c4-5e82503491a0",
+        "name": "Grassy Hollow Visitor Center",
+        "phone": "(626) 821-6737",
+        "hours": "Saturday and Sunday 10:00 a.m. - 4:00 p.m.",
+        "notes": "Closed due to COVID-19 pandemic. Calls not being answered",
+        "siteType": "Visitor Center",
+        "slug": "anfgrassyhollow",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.722161,34.375357]}"
+      },
+      {
+        "status": true,
+        "id": "e3f05261-bc73-46b3-a0ba-42cc19e2d17c",
+        "name": "Guffy Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41730",
+        "siteType": "Campground",
+        "slug": "guffycampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.655247,34.341053]}"
+      },
+      {
+        "status": true,
+        "id": "60647dbd-981e-414d-ab40-ca0466410c1b",
+        "name": "Henninger Flats Visitor Center",
+        "phone": "626-794-0675",
+        "hours": "Monday – Friday 8 a.m. - 4:00 p.m.",
+        "siteType": "Visitor Center",
+        "slug": "anfhenninger",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.090066,34.193549]}"
+      },
+      {
+        "status": false,
+        "id": "97072f9b-ce45-4260-b822-61ab4adbf2f0",
+        "name": "Hoegees Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41702",
+        "siteType": "Trail Camp",
+        "slug": "hoegeestrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.033333,34.207777]}"
+      },
+      {
+        "status": false,
+        "id": "20782984-8cbb-434d-8cdb-ae1351526636",
+        "name": "Horse Flats Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41692",
+        "siteType": "Campground",
+        "slug": "horseflatscampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.01,34.342777]}"
+      },
+      {
+        "status": true,
+        "id": "330ee3b1-8148-4702-914a-c96592d5bd73",
+        "name": "Idlehour Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41714&actid=29",
+        "siteType": "Trail Camp",
+        "slug": "idlehourtrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.084166,34.207777]}"
+      },
+      {
+        "status": false,
+        "id": "3fae6fd5-f36c-4039-b8e0-e714d09ae184",
+        "name": "Lake Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41680",
+        "siteType": "Campground",
+        "slug": "lakecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.72257,34.391061]}"
+      },
+      {
+        "status": false,
+        "id": "7ebbde5c-d2f6-4030-b8f0-f5274a40d6d3",
+        "name": "Little Jimmy Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=82790",
+        "siteType": "Trail Camp",
+        "slug": "littlejimmytrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.830606,34.347568]}"
+      },
+      {
+        "status": true,
+        "id": "8507a80f-e2c7-4506-b2ae-4ef71102ec3f",
+        "name": "Los Alamos Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41744",
+        "siteType": "Campground",
+        "slug": "losalamostcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.81022,34.70189]}"
+      },
+      {
+        "status": true,
+        "id": "7164ddf0-3267-433a-882e-b20ca8a53faa",
+        "name": "Lupine Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41732",
+        "siteType": "Campground",
+        "slug": "lupinecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.668071,34.329593]}"
+      },
+      {
+        "status": false,
+        "id": "56a1e7c0-2847-4dc1-a2ac-f4541d612127",
+        "name": "Manker Flat Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41776&actid=29",
+        "siteType": "Campground",
+        "slug": "mankerflatcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.630833,34.265]}"
+      },
+      {
+        "status": false,
+        "id": "31d3e861-d2eb-435b-934b-46f2971c6054",
+        "name": "Messenger Flats Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41766",
+        "siteType": "Campground",
+        "slug": "messengerflatscampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.189781,34.379869]}"
+      },
+      {
+        "status": true,
+        "id": "595102d0-563f-4f1f-a063-3eaa462d6bce",
+        "name": "Millard Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41706&actid=29",
+        "siteType": "Campground",
+        "slug": "millardcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.145696,34.217416]}"
+      },
+      {
+        "status": true,
+        "id": "d5fbef97-d286-45a9-9cab-1d214acfc224",
+        "name": "Monte Cristo Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41768",
+        "siteType": "Campground",
+        "slug": "montecristocampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.109452,34.34135]}"
+      },
+      {
+        "status": false,
+        "id": "afe2459c-38c4-43d0-a9d0-4a13d18b61cb",
+        "name": "Mountain Oak Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41682",
+        "siteType": "Campground",
+        "slug": "mountainoakcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.729469,34.395092]}"
+      },
+      {
+        "status": true,
+        "id": "cb722485-a78b-478d-a920-e63514cab1cc",
+        "name": "Mt. Baldy Visitor Center",
+        "address": "6778 Mt Baldy Rd, Mt Baldy, CA 91759",
+        "phone": "(909) 982-2829",
+        "hours": "Saturdays and Holidays 7:00 am - 4:00 pm",
+        "siteType": "Visitor Center",
+        "slug": "anfmtbaldy",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.657319,34.238792]}"
+      },
+      {
+        "status": true,
+        "id": "8449b66d-02c6-49ac-b132-89aa5800509a",
+        "name": "Mt. Lowe Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41778",
+        "siteType": "Trail Camp",
+        "slug": "mtlowetrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.110494,34.226414]}"
+      },
+      {
+        "status": true,
+        "id": "99affae4-a51d-43bb-b63c-6db17fe0b16c",
+        "name": "Mt. Pacifico Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41720",
+        "siteType": "Campground",
+        "slug": "mtpacificocampgroubd",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.034211,34.382562]}"
+      },
+      {
+        "status": true,
+        "id": "fe59d83e-ed16-45d2-8a82-ddc184454284",
+        "name": "Oak Flat Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41746",
+        "siteType": "Campground",
+        "slug": "oakflatcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.722081,34.600451]}"
+      },
+      {
+        "status": true,
+        "id": "d69cb901-44b3-41a9-94b6-b98e1bf514ad",
+        "name": "Peavine Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41734",
+        "siteType": "Campground",
+        "slug": "peavinecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.718706,34.389624]}"
+      },
+      {
+        "status": true,
+        "id": "a8c703f2-0960-42e4-94bb-2a61d3d0f92a",
+        "name": "San Gabriel Canyon Gateway Visitor Center",
+        "address": "N, 1960 San Gabriel Canyon Rd, Azusa, CA 91702",
+        "phone": "(626) 969-1012",
+        "hours": "Saturday and Sunday 8:00 a.m. - 1:00 p.m.",
+        "siteType": "Visitor Center",
+        "slug": "anfsgc",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.909032,34.159311]}"
+      },
+      {
+        "status": true,
+        "id": "a984aa68-11d7-4bd7-b0ec-0e4d80133c4d",
+        "name": "San Gabriel Mountains National Monument District Office",
+        "address": "110 N. Wabash Ave. Glendora, CA 91741",
+        "phone": "(747) 322-6643",
+        "hours": "Monday – Friday 8:00 a.m. - 4:30 p.m.",
+        "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch, Adventure & IA Passes sold on M-W-F, 8 a.m. - 1 p.m.",
+        "siteType": "Visitor Center",
+        "slug": "sgmnmhq",
+        "maki": "ranger-station",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.862122,34.137159]}"
+      },
+      {
+        "status": true,
+        "id": "d00eec9d-5a2b-4ca6-b302-f6048fd4c5f7",
+        "name": "Sawmill Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41748&actid=29",
+        "siteType": "Campground",
+        "slug": "sawmillcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.571822,34.701007]}"
+      },
+      {
+        "status": false,
+        "id": "1e7fa56b-4977-473a-9dcc-bf92af7e1cba",
+        "name": "South Fork Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41740",
+        "siteType": "Campground",
+        "slug": "southforkcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.820733,34.395623]}"
+      },
+      {
+        "status": false,
+        "id": "30dec6ee-7844-427f-964c-3b98ccd1764a",
+        "name": "Spring Camp Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41700",
+        "siteType": "Campground",
+        "slug": "springcampcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.977777,34.215277]}"
+      },
+      {
+        "status": false,
+        "id": "9f363b9d-8fd3-4da4-ab29-fc8717f4f332",
+        "name": "Spruce Grove Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41704",
+        "siteType": "Trail Camp",
+        "slug": "sprucegrovetrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.030277,34.220555]}"
+      },
+      {
+        "status": false,
+        "id": "086d2845-e2af-4538-907b-79c6db208ccd",
+        "name": "Sulphur Springs Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41792",
+        "siteType": "Trail Camp",
+        "slug": "sulphurspringstrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.988239,34.367298]}"
+      },
+      {
+        "status": false,
+        "id": "b67f45c7-b0af-486a-ae8a-c5b7154da7e5",
+        "name": "Sycamore Flat Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41742&actid=70",
+        "siteType": "Campground",
+        "slug": "sycamoreflatcampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.825169,34.413414]}"
+      },
+      {
+        "status": false,
+        "id": "2a223bd6-1bd3-4122-9088-07e42d8e6a29",
+        "name": "Table Mountain Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41684",
+        "siteType": "Campground",
+        "slug": "tablemountaincampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-117.693567,34.389923]}"
+      },
+      {
+        "status": false,
+        "id": "58ae1c1e-c0c5-401f-a6a6-6f33b7d55400",
+        "name": "Upper Shake Campground",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/recarea/?recid=41748&actid=29",
+        "siteType": "Campground",
+        "slug": "uppershakecampground",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.529636,34.690594]}"
+      },
+      {
+        "status": false,
+        "id": "ac896287-ec54-4576-8808-c47c8ec50f7f",
+        "name": "Valley Forge Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recarea/?recid=41694",
+        "siteType": "Trail Camp",
+        "slug": "valleyforgetrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.073333,34.253055]}"
+      },
+      {
+        "status": false,
+        "id": "e759c888-5b2c-43a3-8ffa-de2ece4a2d69",
+        "name": "West Fork Trail Camp",
+        "link": "https://www.fs.usda.gov/recarea/angeles/recreation/camping-cabins/recarea/?recid=41696&actid=29",
+        "siteType": "Trail Camp",
+        "slug": "westforktrailcamp",
+        "maki": "campsite",
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.048888,34.246388]}"
+      }
+    ]
+  }
+  
