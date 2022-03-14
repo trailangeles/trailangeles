@@ -69,6 +69,7 @@ collections:
                   searchFields: [places.*.name],
                   multiple: true,
                   required: false,
+                  options_length: 999,
                   hint: "List of places this organization maintains. They will show up on the organization page",
                 }
               - {
@@ -82,6 +83,7 @@ collections:
                   searchFields: [filters.*.name],
                   multiple: true,
                   required: false,
+                  options_length: 999,
                   hint: "List of tags for this group that users can filter with in the UI",
                 }
       - label: "Points"
@@ -95,6 +97,21 @@ collections:
             widget: list
             collapsed: false
             fields:
+              - {
+                  label: Address,
+                  name: address,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Phone, name: phone, widget: string, required: false }
+              - { label: Hours, name: hours, widget: string, required: false }
+              - { label: Notes, name: notes, widget: string, required: false }
+              - {
+                  label: Site Type,
+                  name: siteType,
+                  widget: string,
+                  required: false,
+                }
               - { label: Marker Pop-Up Title, name: name, widget: string }
               - {
                   label: Marker Pop-Up Description,
@@ -122,11 +139,6 @@ collections:
             collapsed: false
             fields:
               - { label: Name, name: name, widget: string }
-              - { label: Address, name: address, widget: string }
-              - { label: Phone, name: phone, widget: string }
-              - { label: Hours, name: hours, widget: string }
-              - { label: Notes, name: notes, widget: string }
-              - { label: Site Type, name: siteType, widget: string }
               - {
                   label: Slug,
                   name: slug,
@@ -172,6 +184,7 @@ collections:
                   searchFields: [points.*.name],
                   multiple: true,
                   required: false,
+                  options_length: 999,
                   hint: "List of points associated with this place. They will show up on the place map as clickable icons",
                 }
               - {
@@ -185,6 +198,7 @@ collections:
                   searchFields: [filters.*.name],
                   multiple: true,
                   required: false,
+                  options_length: 999,
                   hint: "List of tags for this place that users can filter with in the UI",
                 }
   - label: "Events and Filters"
