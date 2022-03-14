@@ -23,6 +23,18 @@
         "339c82ef-72aa-4719-b061-9029ceeacf6c",
         "2abbc409-7d1e-4326-a400-17908b96dd55"
       ]
+    },
+    {
+      "status": true,
+      "id": "8d062e30-a3ea-11ec-905a-9fb1abfaf2d6",
+      "name": "Backpacking Campsites",
+      "slug": "backpacking-campsites",
+      "description": "All of the hike-in/backpacking only campsites in the Angeles National Forest",
+      "points": [
+        "2331abd9-d52c-4e4f-a572-a1d3effd8af5",
+        "d51604dc-4575-4e65-92d6-20c0aa635a32",
+        "36e47192-95d7-465b-8f2b-420bff3a3bd2"
+      ]
     }
   ]
 }
