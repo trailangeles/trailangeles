@@ -1,82 +1,28 @@
 {
   "places": [
     {
-      "name": "Altadena Crest Trail",
-      "slug": "altadena-crest-trail",
-      "id": "db9489b7-ee11-4e2a-971f-e46dc10b492b",
-      "points": [
-        "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
-        "04b75f95-a8bc-45c7-971f-518236204792"
-      ],
-      "status": true
-    },
-    {
-      "name": "Echo Mountain/Sam Merrill Trail",
-      "slug": "echo-mountain-trail",
-      "id": "98e3c84a-08fb-42e4-a555-da553b022554",
-      "status": true,
-      "osmwayid": "48035641"
-    },
-    {
-      "name": "Mt. Wilson Trail",
-      "slug": "mt-wilson-trail",
-      "id": "c6bc7485-64a5-4204-bddf-c66de3ff7b03",
-      "status": false
-    },
-    {
-      "name": "Brown Mountain Trail",
-      "slug": "brown-mountain-trail",
-      "id": "7f7a042e-6c61-439f-ba7a-19752a56b198",
-      "area": "ALT",
-      "status": true
-    },
-    {
-      "name": "Rubio Canyon Trail",
-      "slug": "rubio-canyon-trail",
-      "id": "703a0ac5-e455-44a3-a045-6d23559cac1f",
-      "status": true
-    },
-    {
       "status": true,
       "name": "Haramokngna American Indian Cultural Center",
       "slug": "haramokngna-american-indian-cultural-center",
-      "id": "f08ffe93-968e-4fba-8c9a-7450f160a769"
+      "id": "f08ffe93-968e-4fba-8c9a-7450f160a769",
+      "description": "Located at Red Box Parking Area"
     },
     {
       "status": true,
-      "id": "bd04ad7d-9cf8-4790-bc3d-8b3f1fd3aff1",
-      "name": "San Gabriel River, East Fork",
-      "slug": "east-fork-san-gabriel-river",
+      "id": "0313b260-a3ea-11ec-905a-9fb1abfaf2d6",
+      "name": "Car Camping Campgrounds",
+      "slug": "car-camping",
+      "description": "All of the designated Car-accessible campgrounds in the Angeles National Forest",
       "points": [
-        "359df230-061b-11ec-9f55-0d4131916bb6"
+        "898de057-02a1-46f0-9344-6e8000ab3c54",
+        "8ee6a99e-eed2-46bb-8d3c-1e9a8aaac0d7",
+        "9b5a6836-d2a2-461a-b713-b5a9094f5186",
+        "52bced52-43ff-4363-bfbf-3ea158442fa5",
+        "4ac843cd-6703-483a-9637-3875638ff081",
+        "128ffe12-7856-4d7e-af91-afd28e8e5092",
+        "339c82ef-72aa-4719-b061-9029ceeacf6c",
+        "2abbc409-7d1e-4326-a400-17908b96dd55"
       ]
-    },
-    {
-      "status": true,
-      "id": "45678cb7-3ded-4fe3-9717-ebe2a8d19bba",
-      "name": "San Gabriel River, West Fork",
-      "slug": "west-fork-san-gabriel-river"
-    },
-    {
-      "status": true,
-      "id": "2e69756e-8d92-4bb7-86f4-8a321c9c1a33",
-      "name": "San Gabriel Mountains National Monument",
-      "slug": "sgm-national-monument"
-    },
-    {
-      "status": true,
-      "id": "578d7b94-45b5-4e99-9550-9d4514ef3d45",
-      "name": "Mt. Wilson",
-      "slug": "mtwilson",
-      "points": [
-        "359df230-061b-11ec-9f55-0d4131916bb7"
-      ]
-    },
-    {
-      "status": true,
-      "id": "a4da08b4-324c-435e-bb94-b55a6bedf6be",
-      "name": "Red Box",
-      "slug": "red-box"
     }
   ]
 }
