@@ -1,37 +1,22 @@
 {
   "points": [
     {
-      "name": "Cobb Estate Trailhead",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1306434,34.2039697]}",
-      "description": "You can hike here",
-      "id": "8e4c1404-2e2d-46a8-a34b-cd9a33a5adf2",
-      "maki": "parking"
-    },
-    {
-      "name": "Echo Mountain Summit",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.1203544,34.2110036]}",
-      "description": "Hike up to some ruins",
-      "id": "04b75f95-a8bc-45c7-971f-518236204792",
-      "maki": "mountain"
-    },
-    {
-      "id": "359df230-061b-11ec-9f55-0d4131916bb6",
-      "name": "Bridge To Nowhere Trailhead",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-117.7651736,34.2369415]}",
-      "description": "The parking lot and trailhead"
-    },
-    {
-      "name": "Mt. Wilson Upper Parking",
-      "id": "359df230-061b-11ec-9f55-0d4131916bb7",
-      "location": "{\"type\":\"Point\",\"coordinates\":[-118.0625328,34.2236224]}",
-      "description": "Large Parking Lot at Mt. Wilson Observatory",
-      "maki": "parking"
+        "siteType": "Visitor Center",
+        "name": "Haramokngna American Indian Cultural Center",
+        "slug": "haramokngna-center",
+        "phone": "(626) 449-8975",
+        "maki": "ranger-station",
+        "status": true,
+        "location": "{\"type\":\"Point\",\"coordinates\":[-118.105523,34.257962]}",
+        "id": "659cc71c-4b6a-4d0a-88b0-d9e2429d1a57",
+        "link": "http://haramokngna.org/",
+        "description": "n/a"
     },
     {
       "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
       "siteType": "Visitor Center",
       "name": "Angeles National Forest Acton Office/Work Center",
-      "slug": "anfacton",
+      "slug": "anf-acton",
       "phone": "(661) 269-2808",
       "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
       "maki": "ranger-station",
@@ -45,7 +30,7 @@
       "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch",
       "siteType": "Visitor Center",
       "name": "Angeles National Forest Gateway District Office",
-      "slug": "lagrdhq",
+      "slug": "la-grd-hq",
       "phone": "(818) 899-1900",
       "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
       "maki": "ranger-station",
@@ -59,7 +44,7 @@
       "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch. Adventure Passes sold on Mondays and Fridays",
       "siteType": "Visitor Center",
       "name": "Angeles National Forest Headquarters",
-      "slug": "anfhq",
+      "slug": "anf-hq",
       "phone": "(626)-574-1613",
       "hours": "Monday – Friday 8 a.m. - 4:30 p.m.",
       "maki": "ranger-station",
@@ -72,7 +57,7 @@
     {
       "siteType": "Campground",
       "name": "Appletree Campground",
-      "slug": "appletreecampground",
+      "slug": "appletree-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.713431,34.386599]}",
@@ -83,7 +68,7 @@
     {
       "siteType": "Campground",
       "name": "Bear Campground",
-      "slug": "bearcampground",
+      "slug": "bear-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.632448,34.712652]}",
@@ -94,7 +79,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Bear Canyon Trail Camp",
-      "slug": "bearcanyontrailcamp",
+      "slug": "bear-canyon-trail-camp",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1396991,34.2440438]}",
@@ -105,7 +90,7 @@
     {
       "siteType": "Visitor Center",
       "name": "Big Pines Visitor Center",
-      "slug": "anfbigpines",
+      "slug": "anf-big-pines",
       "phone": "(760) 249-3504",
       "hours": "Saturday and Sunday 10:00 a.m. - 3:00 p.m.",
       "maki": "ranger-station",
@@ -118,7 +103,7 @@
     {
       "siteType": "Campground",
       "name": "Big Rock Campground",
-      "slug": "bigrockcampground",
+      "slug": "big-rock-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7763775,34.3876892]}",
@@ -129,7 +114,7 @@
     {
       "siteType": "Campground",
       "name": "Blue Ridge Campground",
-      "slug": "blueridgecampground",
+      "slug": "blue-ridge-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.6876375,34.3597481]}",
@@ -140,7 +125,7 @@
     {
       "siteType": "Campground",
       "name": "Buckhorn Campground",
-      "slug": "buckhorncampground",
+      "slug": "buckhorn-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.9157542,34.3452427]}",
@@ -151,7 +136,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Cabin Flat Trail Camp",
-      "slug": "cabinflattrailcamp",
+      "slug": "cabin-flat-trail-camp",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7001138,34.344128]}",
@@ -162,7 +147,7 @@
     {
       "siteType": "Campground",
       "name": "Chilao Campground",
-      "slug": "chilaocampground",
+      "slug": "chilao-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0053307,34.3263995]}",
@@ -173,7 +158,7 @@
     {
       "siteType": "Campground",
       "name": "Coldbrook Campground",
-      "slug": "coldbrookcampground",
+      "slug": "coldbrook-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.8398318,34.293809]}",
@@ -184,7 +169,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Cooper Canyon Trail Camp",
-      "slug": "coopercanyontrailcamp",
+      "slug": "cooper-canyon-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.921081,34.360791]}",
@@ -195,7 +180,7 @@
     {
       "siteType": "Campground",
       "name": "Cottonwood Campground",
-      "slug": "cottonwoodcampground",
+      "slug": "cottonwood-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.502468,34.63955]}",
@@ -205,7 +190,7 @@
     },
     {
       "name": "Crystal Lake Cafe and General Store",
-      "slug": "crystallakecafe",
+      "slug": "crystal-lake-cafe",
       "phone": "(626) 910-1029",
       "hours": "Wed-Mon 8:00 a.m. - 5:00 p.m.",
       "maki": "restauraunt",
@@ -218,7 +203,7 @@
     {
       "siteType": "Campground",
       "name": "Crystal Lake Campground",
-      "slug": "crystallakecampground",
+      "slug": "crystal-lake-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.832889,34.325682]}",
@@ -230,7 +215,7 @@
       "notes": "Calls not being answered",
       "siteType": "Visitor Center",
       "name": "Crystal Lake Information Station",
-      "slug": "anfcrystallake",
+      "slug": "anf-crystal-lake",
       "phone": "(626) 910-1149",
       "hours": "Saturday and Sunday 8 a.m. - 4:00 p.m.",
       "maki": "ranger-station",
@@ -243,7 +228,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Devore Trail Camp",
-      "slug": "devoretrailcamp",
+      "slug": "devore-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.035833,34.243055]}",
@@ -255,7 +240,7 @@
       "notes": "Permit to enter Eaton Canyon Park required to visit nature center",
       "siteType": "Visitor Center",
       "name": "Eaton Canyon Nature Center",
-      "slug": "eatoncanyonnaturecenter",
+      "slug": "eaton-canyon-nature-center",
       "phone": "626-398-5420",
       "hours": "Tuesday – Sunday 8 a.m. - 5:00 p.m.",
       "maki": "ranger-station",
@@ -268,7 +253,7 @@
     {
       "siteType": "Campground",
       "name": "Glenn Camp Campground",
-      "slug": "glenncampcampground",
+      "slug": "glenn-camp-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.952535,34.2405048]}",
@@ -279,7 +264,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Gould Mesa Trail Camp",
-      "slug": "gouldmesatrailcamp",
+      "slug": "gould-mesa-trail-camp",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.17847,34.222073]}",
@@ -291,7 +276,7 @@
       "notes": "Closed due to COVID-19 pandemic. Calls not being answered",
       "siteType": "Visitor Center",
       "name": "Grassy Hollow Visitor Center",
-      "slug": "anfgrassyhollow",
+      "slug": "anf-grassy-hollow",
       "phone": "(626) 821-6737",
       "hours": "Saturday and Sunday 10:00 a.m. - 4:00 p.m.",
       "maki": "ranger-station",
@@ -303,7 +288,7 @@
     {
       "siteType": "Campground",
       "name": "Guffy Campground",
-      "slug": "guffycampground",
+      "slug": "guffy-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.655247,34.341053]}",
@@ -314,7 +299,7 @@
     {
       "siteType": "Visitor Center",
       "name": "Henninger Flats Visitor Center",
-      "slug": "anfhenninger",
+      "slug": "anf-henninger",
       "phone": "626-794-0675",
       "hours": "Monday – Friday 8 a.m. - 4:00 p.m.",
       "maki": "ranger-station",
@@ -326,7 +311,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Hoegees Trail Camp",
-      "slug": "hoegeestrailcamp",
+      "slug": "hoegees-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0334975,34.2080945]}",
@@ -337,7 +322,7 @@
     {
       "siteType": "Campground",
       "name": "Horse Flats Campground",
-      "slug": "horseflatscampground",
+      "slug": "horse-flats-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.010515,34.3454611]}",
@@ -348,7 +333,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Idlehour Trail Camp",
-      "slug": "idlehourtrailcamp",
+      "slug": "idlehour-trail-camp",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0842209,34.2080405]}",
@@ -359,7 +344,7 @@
     {
       "siteType": "Campground",
       "name": "Lake Campground",
-      "slug": "lakecampground",
+      "slug": "lake-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7217975,34.3906714]}",
@@ -370,7 +355,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Little Jimmy Trail Camp",
-      "slug": "littlejimmytrailcamp",
+      "slug": "little-jimmy-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.8312819,34.3475414]}",
@@ -381,7 +366,7 @@
     {
       "siteType": "Campground",
       "name": "Los Alamos Campground",
-      "slug": "losalamostcampground",
+      "slug": "los-alamos-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.8140609,34.7015636]}",
@@ -392,7 +377,7 @@
     {
       "siteType": "Campground",
       "name": "Lupine Campground",
-      "slug": "lupinecampground",
+      "slug": "lupine-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.6683607,34.3284235]}",
@@ -403,7 +388,7 @@
     {
       "siteType": "Campground",
       "name": "Manker Flat Campground",
-      "slug": "mankerflatcampground",
+      "slug": "manker-flat-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.630833,34.265]}",
@@ -414,7 +399,7 @@
     {
       "siteType": "Campground",
       "name": "Messenger Flats Campground",
-      "slug": "messengerflatscampground",
+      "slug": "messenger-flats-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1894591,34.3798159]}",
@@ -425,7 +410,7 @@
     {
       "siteType": "Campground",
       "name": "Millard Campground",
-      "slug": "millardcampground",
+      "slug": "millard-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1454171,34.2170877]}",
@@ -436,7 +421,7 @@
     {
       "siteType": "Campground",
       "name": "Monte Cristo Campground",
-      "slug": "montecristocampground",
+      "slug": "monte-cristo-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.1097846,34.3417132]}",
@@ -447,7 +432,7 @@
     {
       "siteType": "Campground",
       "name": "Mountain Oak Campground",
-      "slug": "mountainoakcampground",
+      "slug": "mountain-oak-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7295977,34.3954992]}",
@@ -458,7 +443,7 @@
     {
       "siteType": "Visitor Center",
       "name": "Mt. Baldy Visitor Center",
-      "slug": "anfmtbaldy",
+      "slug": "mt-baldy-visitor-center",
       "phone": "(909) 982-2829",
       "hours": "Saturdays and Holidays 7:00 am - 4:00 pm",
       "maki": "ranger-station",
@@ -471,7 +456,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Mt. Lowe Trail Camp",
-      "slug": "mtlowetrailcamp",
+      "slug": "mt-lowe-trail-camp",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.110494,34.226414]}",
@@ -482,7 +467,7 @@
     {
       "siteType": "Campground",
       "name": "Mt. Pacifico Campground",
-      "slug": "mtpacificocampgroubd",
+      "slug": "mt-pacifico-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0340179,34.3827745]}",
@@ -493,7 +478,7 @@
     {
       "siteType": "Campground",
       "name": "Oak Flat Campground",
-      "slug": "oakflatcampground",
+      "slug": "oak-flat-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.7220059,34.5998681]}",
@@ -504,7 +489,7 @@
     {
       "siteType": "Campground",
       "name": "Peavine Campground",
-      "slug": "peavinecampground",
+      "slug": "peavine-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.7218388,34.3907041]}",
@@ -515,7 +500,7 @@
     {
       "siteType": "Visitor Center",
       "name": "San Gabriel Canyon Gateway Visitor Center",
-      "slug": "anfsgc",
+      "slug": "anf-san-gabriel-canyon-visitor-center",
       "phone": "(626) 969-1012",
       "hours": "Saturday and Sunday 8:00 a.m. - 1:00 p.m.",
       "maki": "ranger-station",
@@ -529,7 +514,7 @@
       "notes": "Closed Major Holidays, 1:00 - 1:30 for lunch, Adventure & IA Passes sold on M-W-F, 8 a.m. - 1 p.m.",
       "siteType": "Visitor Center",
       "name": "San Gabriel Mountains National Monument District Office",
-      "slug": "sgmnmhq",
+      "slug": "anf-san-gabriel-national-monument-hq",
       "phone": "(747) 322-6643",
       "hours": "Monday – Friday 8:00 a.m. - 4:30 p.m.",
       "maki": "ranger-station",
@@ -542,7 +527,7 @@
     {
       "siteType": "Campground",
       "name": "Sawmill Campground",
-      "slug": "sawmillcampground",
+      "slug": "sawmill-campground",
       "maki": "campsite",
       "status": true,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.5708028,34.7013334]}",
@@ -553,7 +538,7 @@
     {
       "siteType": "Campground",
       "name": "South Fork Campground",
-      "slug": "southforkcampground",
+      "slug": "south-fork-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.8205828,34.3954814]}",
@@ -564,7 +549,7 @@
     {
       "siteType": "Campground",
       "name": "Spring Camp Campground",
-      "slug": "springcampcampground",
+      "slug": "spring-camp-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.9779701,34.2152238]}",
@@ -575,7 +560,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Spruce Grove Trail Camp",
-      "slug": "sprucegrovetrailcamp",
+      "slug": "spruce-grove-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.030277,34.220555]}",
@@ -586,7 +571,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Sulphur Springs Trail Camp",
-      "slug": "sulphurspringstrailcamp",
+      "slug": "sulphur-springs-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.9878313,34.3673157]}",
@@ -597,7 +582,7 @@
     {
       "siteType": "Campground",
       "name": "Sycamore Flat Campground",
-      "slug": "sycamoreflatcampground",
+      "slug": "sycamore-flat-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.8249866,34.4133874]}",
@@ -608,7 +593,7 @@
     {
       "siteType": "Campground",
       "name": "Table Mountain Campground",
-      "slug": "tablemountaincampground",
+      "slug": "table-mountain-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-117.6934919,34.3897194]}",
@@ -619,7 +604,7 @@
     {
       "siteType": "Campground",
       "name": "Upper Shake Campground",
-      "slug": "uppershakecampground",
+      "slug": "upper-shake-campground",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.5296682,34.6909733]}",
@@ -630,7 +615,7 @@
     {
       "siteType": "Trail Camp",
       "name": "Valley Forge Trail Camp",
-      "slug": "valleyforgetrailcamp",
+      "slug": "valley-forge-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.0739016,34.2531259]}",
@@ -641,7 +626,7 @@
     {
       "siteType": "Trail Camp",
       "name": "West Fork Trail Camp",
-      "slug": "westforktrailcamp",
+      "slug": "west-fork-trail-camp",
       "maki": "campsite",
       "status": false,
       "location": "{\"type\":\"Point\",\"coordinates\":[-118.049516,34.2463555]}",

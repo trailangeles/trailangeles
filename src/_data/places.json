@@ -2,13 +2,6 @@
   "places": [
     {
       "status": true,
-      "name": "Haramokngna American Indian Cultural Center",
-      "slug": "haramokngna-american-indian-cultural-center",
-      "id": "f08ffe93-968e-4fba-8c9a-7450f160a769",
-      "description": "Located at Red Box Parking Area"
-    },
-    {
-      "status": true,
       "id": "0313b260-a3ea-11ec-905a-9fb1abfaf2d6",
       "name": "Car Camping Campgrounds",
       "slug": "car-camping",

@@ -151,7 +151,7 @@ collections:
                   label: Description,
                   name: description,
                   widget: markdown,
-                  required: true,
+                  required: false,
                 }
               - {
                   label: OsmWayId,
