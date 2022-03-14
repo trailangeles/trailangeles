@@ -66,6 +66,26 @@
         "97072f9b-ce45-4260-b822-61ab4adbf2f0",
         "330ee3b1-8148-4702-914a-c96592d5bd73"
       ]
+    },
+    {
+      "status": true,
+      "id": "c0cdaf30-a3eb-11ec-8239-0f6feb74cefc",
+      "name": "Visitor Centers",
+      "slug": "visitor-centers",
+      "description": "All of the Visitor Centers for the Angeles National Forest",
+      "points": [
+        "428bd3c6-9613-41ed-93f2-d693c68e219c",
+        "b87325b5-31bd-4dec-ba89-5f3ae1903e6a",
+        "ddb17384-5d23-4fe4-a510-0543c6deb4d7",
+        "61883789-a4be-42a7-8a3b-20dcde34299b",
+        "2359c069-22f4-422a-8d15-71a1e5c99fac",
+        "a984aa68-11d7-4bd7-b0ec-0e4d80133c4d",
+        "a8c703f2-0960-42e4-94bb-2a61d3d0f92a",
+        "60647dbd-981e-414d-ab40-ca0466410c1b",
+        "aa905f24-d3b9-4d7f-b5c4-5e82503491a0",
+        "73993223-b4be-4ac3-a0eb-47832586f69c",
+        "cb722485-a78b-478d-a920-e63514cab1cc"
+      ]
     }
   ]
 }
