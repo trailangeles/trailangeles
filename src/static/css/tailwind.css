@@ -88,7 +88,7 @@ h3 {
   display: block;
   margin: 0 auto;
   width: 30px;
-  height: 30px;  
+  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -199,8 +199,8 @@ h3 {
 
 .splide__arrow--prev {
   right: 4em;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   top: 40%;
   position: absolute;
   z-index: 1000;
@@ -209,8 +209,8 @@ h3 {
 }
 
 .splide__arrow--next {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   top: 40%;
   position: absolute;
   right: 4.5em;
@@ -311,8 +311,8 @@ h3 {
 }
 
 .places-table tr:hover {
-  background-color: #FFE67B;
-  color: #02502F;
+  background-color: #ffe67b;
+  color: #02502f;
 }
 
 .center-container {
@@ -329,13 +329,18 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.blog .prose {
+  max-width: initial;
+}
+
 .hiddenscrollbar {
   margin-bottom: 40px;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
-.hiddenscrollbar::-webkit-scrollbar { /* WebKit */
+.hiddenscrollbar::-webkit-scrollbar {
+  /* WebKit */
   width: 0;
   height: 0;
 }
