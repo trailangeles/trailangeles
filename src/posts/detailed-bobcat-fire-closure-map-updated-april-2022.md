@@ -10,7 +10,7 @@ To make the closure more understandable for trail crews and forest users, we at 
 
 Volunteer groups such as the [Lowelifes](https://trailangeles.org/volunteer-groups/lowelifes-respectable-citizens-club/), [Mt. Wilson Bicycling Association](https://trailangeles.org/volunteer-groups/mt-wilson-bicycling-association/) and [Bear Canyon Trail Crew](https://trailangeles.org/volunteer-groups/bearcanyontrailcrew/) are hard at work lately to reopen the damaged trails in the new closure zone.
 
-All trail work in the Angeles National Forest and San Gabriel National Monument is performed by volunteer groups like these, please consider joining on one of their upcoming outings!
+Want to help? All trail work in the Angeles National Forest and San Gabriel National Monument is performed by volunteer groups like these. Please consider joining on one of their upcoming outings by checking out our [list of volunteer groups](https://trailangeles.org/volunteer-groups/). You can also subscribe to the bi-monthly volunteer newsletter at the bottom of this page.
 
 <iframe width="1024" height="690" 
 src="https://caltopo.com/m/KAD00" frameborder="0" allowfullscreen></iframe>
