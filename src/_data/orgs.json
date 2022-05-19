@@ -308,6 +308,21 @@
       ],
       "contactEmail": " info@treepeople.org",
       "description": "TreePeople’s Mountain Forestry program trains and mobilizes community members to increase the climate and fire-resilience of the Angeles National Forest and the Santa Monica Mountains. "
+    },
+    {
+      "facebook": "https://www.facebook.com/wilbur.sturtevant",
+      "name": "Sturtevant Camp",
+      "slug": "sturtevant-camp",
+      "contactName": "Gary Keene",
+      "photo": "/static/img/281717546_7431762440230942_2180354921195416610_n.jpg",
+      "website": "http://www.sturtevantcamp.com/",
+      "id": "1a3aada0-d788-11ec-93e6-55198c5c5ed9",
+      "filters": [
+        "a5bebb50-f7af-11eb-b748-fde728692812",
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "garymkeene@gmail.com",
+      "description": "A hike-in mountain resort & event venue operating in Big Santa Anita Canyon of Southern California since 1893. The trails around Chantry Flat that service Sturtevant Camp were badly damaged in the Bobcat fire. If you would like to help in this important restoration effort, please contact Gary for information on upcoming volunteer days "
     }
   ]
 }
