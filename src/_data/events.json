@@ -2,12 +2,6 @@
   "events": [
     {
       "name": "San Gabriel Mountains Trailbuilders",
-      "date": "2022-06-04T00:00:00.000Z",
-      "description": "<font><p>The San Gabriel Mountains Trailbuilders work the 1st, 3rd, and 5th Saturday of every month, and we work special projects which are not scheduled. Please email us to get on to the mailinglist to keep informed about scheduled and special projects! Email Ben at<a href=\"mailto:bwootenwhite@hotmail.com\">bwootenwhite@hotmail.com</a><b></b></p></font>",
-      "id": "594mshiad2ng876696f04ajgtm_20220604"
-    },
-    {
-      "name": "San Gabriel Mountains Trailbuilders",
       "date": "2022-06-18T00:00:00.000Z",
       "description": "<span><br><font><p>The San Gabriel Mountains Trailbuilders work the 1st, 3rd, and 5th Saturday of every month, and we work special projects which are not scheduled. Please email us to get on to the mailinglist to keep informed about scheduled and special projects! Email Ben at<a href=\"mailto:bwootenwhite@hotmail.com\">bwootenwhite@hotmail.com</a><b></b></p></font></span>",
       "id": "1cnrei1qrdq2tt21huj3l2103n_20220618"
@@ -104,16 +98,16 @@
       "id": "tq3bj0lb29no05ncta32j47ui0_20220827T150000Z"
     },
     {
-      "name": "Lowelife's Trail Work Campout",
-      "date": "2022-06-04T00:00:00.000Z",
-      "description": "Lowelifes is back at it June 4-5 in the Bobcat burn zone, working Gabrielino, Kenyon Devore, and maybe some of Valley Forge trail too. We request that volunteers attend both work days, and to entice you to commit we will provide a tasty dinner on Saturday night. The access to West Fork Campground along 2N24 is about 5.5 miles and 1,600 feet downhill from Red Box (Highway 2 at Mt Wilson Rd), so be ready to ride or hike that distance on Saturday morning and Sunday afternoon. Water is easily accessible from the campsite – bring your filter. We supply the tools, safety gear, and training.",
-      "id": "7ldh2g6qqh7gn5id661fd5ef2s"
-    },
-    {
       "name": "San Gabriel Mountains Trailbuilders",
       "date": "2022-09-03T00:00:00.000Z",
       "description": "<font><p>The San Gabriel Mountains Trailbuilders work the 1st, 3rd, and 5th Saturday of every month, and we work special projects which are not scheduled. Please email us to get on to the mailinglist to keep informed about scheduled and special projects! Email Ben at<a href=\"mailto:bwootenwhite@hotmail.com\">bwootenwhite@hotmail.com</a><b></b></p></font>",
       "id": "594mshiad2ng876696f04ajgtm_20220903"
+    },
+    {
+      "name": "National Trails Day + Trail Angeles Celebration",
+      "date": "2022-06-04T17:00:00.000Z",
+      "description": "<p>In support of National Trails Day 2022 there will be an event at the Cobb Estate in Altadena to provide information, outreach, trail maintenance supplies (thanks to REI), refreshments and networking for hikers and trail maintainers.</p><p>Join volunteers and staff from the American Hiking Society, National Forest Foundation, Trail Angeles and the Angeles National Forest on June 4th from 9AM until 2PM at the Cobb Estate Trailhead in Altadena.</p><p>We encourage you to stop by and say hello! You can remove invasive mustard and pick up some trash if you have some free time.</p><p>See you there, Max, TrailAngeles Volunteer</p>",
+      "id": "0t48s7rum7lbkeg9rrk5hrk9tl"
     }
   ]
 }
