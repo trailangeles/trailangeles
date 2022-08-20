@@ -1,6 +1,6 @@
 # Trail Angeles
 
-[TrailAngeles.org](https://trailangeles.org) is a website to manage volunteer groups, recruit new volunteers, and provide accurate information on trails, hiking and other eductional programs in the Angeles National Forest.
+[TrailAngeles.org](https://trailangeles.org) is a website to manage volunteer groups, recruit new volunteers, and provide accurate information on trails, hiking and other educational programs in the Angeles National Forest.
 
 ### Acknowledgements
 
