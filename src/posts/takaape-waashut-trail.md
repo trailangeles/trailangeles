@@ -13,6 +13,6 @@ The Takaape' Waashut Trail connects walnut woodlands in Northeast Los Angeles.
 ### Resources
 
 * [Takaape' Waashut Trail Map (Caltopo.com)](https://caltopo.com/m/QN6R2)
-* [Takaape' Waashut Trail Brochure](https://trailangeles.org/static/bw-trail-brochure.pdf)
-* [Identification + iNaturalist Guide](https://trailangeles.org/static/bw-identification.pdf)
-* [Growing + Collecting Black Walnuts Guide](https://trailangeles.org/static/bw-grow-collect.pdf)
+* [Takaape' Waashut Trail Brochure](https://trailangeles.org/static/img/bw-trail-brochure.pdf)
+* [Identification + iNaturalist Guide](https://trailangeles.org/static/img/bw-identification.pdf)
+* [Growing + Collecting Black Walnuts Guide](https://trailangeles.org/static/img/bw-grow-collect.pdf)
