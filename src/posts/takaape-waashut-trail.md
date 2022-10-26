@@ -8,11 +8,11 @@ T﻿he California Black Walnut tree *(Tongva: Takaape' Waashut, Spanish: Nogales
 
 The Takaape' Waashut Trail connects walnut woodlands in Northeast Los Angeles.
 
-![trail](https://trailangeles.org/static/img/bw-hike.png)
+![trail](https://trailangeles.org/static/img/bw-trail.png)
 
 ### Resources
 
 * [Takaape' Waashut Trail Map (Caltopo.com)](https://caltopo.com/m/QN6R2)
-* [Takaape' Waashut Trail Brochure](https://trailangeles.org/static/bw-brochure.pdf)
+* [Takaape' Waashut Trail Brochure](https://trailangeles.org/static/bw-trail-brochure.pdf)
 * [Identification + iNaturalist Guide](https://trailangeles.org/static/bw-identification.pdf)
 * [Growing + Collecting Black Walnuts Guide](https://trailangeles.org/static/bw-grow-collect.pdf)
