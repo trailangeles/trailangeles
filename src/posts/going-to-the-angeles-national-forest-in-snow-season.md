@@ -26,6 +26,10 @@ A good source for mountain snow forecasts is weather.gov. Use the map on their f
 
 If you check these before a storm, you will usually see that Mt. Baldy will receive much more snow than Mt. Wilson, with Mt. Waterman somewhere in the middle. 
 
+![](/static/img/baldyweather.png)
+
+*Mt. Baldy Forecast For November 8th, 2022*
+
 You can also consult the [Snow Cal Snow instagram account](https://www.instagram.com/socalsnow/), which posts detailed analyses of snow and avalanche conditions in the San Gabriels for most storms: <https://www.instagram.com/socalsnow/>
 
 ### Timing
