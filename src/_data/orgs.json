@@ -323,6 +323,23 @@
       ],
       "contactEmail": "garymkeene@gmail.com",
       "description": "A hike-in mountain resort & event venue operating in Big Santa Anita Canyon of Southern California since 1893. The trails around Chantry Flat that service Sturtevant Camp were badly damaged in the Bobcat fire. If you would like to help in this important restoration effort, please contact Gary for information on upcoming volunteer days "
+    },
+    {
+      "facebook": "https://www.facebook.com/groups/76938058649",
+      "name": "Eaton Canyon Nature Center Associates",
+      "slug": "ecnca",
+      "contactName": "Volunteer Email",
+      "places": [
+        "c0cdaf30-a3eb-11ec-8239-0f6feb74cefc"
+      ],
+      "photo": "/static/img/3396359472_00d7984b3d_z.jpg",
+      "website": "https://www.ecnca.org/volunteer/",
+      "id": "ea886c80-609b-11ed-a111-e3034fda9752",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "ecncag@gmail.com",
+      "description": "The Eaton Canyon Nature Center Associates (ECNCA) is a chapter of the Nature Center Associates (NCA), a non-profit 501(c)(3) corporation and support group of the natural area park system of Los Angeles County. Founded for educational and scientific purposes, its primary mission is to develop in children and adults an appreciation of the natural world and to preserve Eaton Canyon as a natural area for future generations."
     }
   ]
 }
