@@ -198,6 +198,7 @@ h3 {
 }
 
 .splide__arrow--prev {
+  display: none;
   right: 4em;
   width: 0;
   height: 0;
@@ -209,6 +210,7 @@ h3 {
 }
 
 .splide__arrow--next {
+  display: none;
   width: 0;
   height: 0;
   top: 40%;
@@ -219,6 +221,7 @@ h3 {
 
 .splide__arrow--next svg,
 .splide__arrow--prev svg {
+  display: none;
   stroke: rgb(255, 230, 123);
   fill: rgb(255, 230, 123);
 }
@@ -321,6 +324,7 @@ h3 {
   width: 100vw;
   margin-left: 0;
   padding-left: 0;
+  text-shadow: 1px 1px black;
 }
 
 .blog .prose h2 {
