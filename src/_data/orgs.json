@@ -28,7 +28,7 @@
       "contactEmail": "N/a",
       "photo": "/static/img/31-DSC05780.jpg",
       "website": "https://www.google.com/search?q=angeles+national+forest+fire+lookout+association&rlz=1C1UEAD_enUS938US938&oq=angeles+national+fire+look&aqs=chrome.1.69i57j0i22i30.6526j0j4&sourceid=chrome&ie=UTF-8",
-      "description": "\n\n# **About ANFFLA**\n\nThe Fire Lookout Program is a partnership between the U.S. Forest Service, Angeles National Forest and the Angeles National Forest Fire Lookout Association, a not-for-profit, volunteer organization.\n\n<!--EndFragment-->\n\n<!--StartFragment-->\n\n**The four primary purposes of the Program are:**\n\n* **Restore**, maintain and staff the remaining lookouts of the Angeles National Forest.\n* **Interpret** the natural and cultural history of the fire lookouts and the surrounding area.\n* **Generate** interest in and support for the Fire Lookout Program.\n* **Encourage** visitors to participate actively in caring for all of our National Forests.\n\nThe Program, managed by volunteers, serves an additional role in that the volunteers are trained to call in smoke and fire reports thus enhancing the fire fighting capabilities of the U.S. Forest Service.  **The Program objectives are:**\n\n* Staff and maintain the remaining fire lookouts\n* Provide informal and impromptu interpretation of the surrounding area both cultural and historical\n* Assist the Angeles National Forest by greeting visitors, and providing general forest orientation, information and assistance\n* Assist the Angeles National Forest Recreation Staff by providing general recreation information\n* Assist the Angeles National Forest Fire Prevention Staff through interpretive delivery of key fire prevention messages and hands-on experience with the Osborne Fire Finder and related devices\n* Assist the Angeles National Forest Dispatch/Fire Suppression Staff by providing radio relay, accurate smoke reports and remote eyes and ears for incident assessment as needed\n* Create a positive image for the U.S. Forest Service, Angeles National Forest Fire Lookout Association, its’ program, volunteers, partners and sponsors"
+      "description": "The Fire Lookout Program is a partnership between the U.S. Forest Service, Angeles National Forest and the Angeles National Forest Fire Lookout Association, a not-for-profit, volunteer organization.\n\n**The four primary purposes of the Program are:**\n\n* **Restore**, maintain and staff the remaining lookouts of the Angeles National Forest.\n* **Interpret** the natural and cultural history of the fire lookouts and the surrounding area.\n* **Generate** interest in and support for the Fire Lookout Program.\n* **Encourage** visitors to participate actively in caring for all of our National Forests.\n\nThe Program, managed by volunteers, serves an additional role in that the volunteers are trained to call in smoke and fire reports thus enhancing the fire fighting capabilities of the U.S. Forest Service.  **The Program objectives are:**\n\n* Staff and maintain the remaining fire lookouts\n* Provide informal and impromptu interpretation of the surrounding area both cultural and historical\n* Assist the Angeles National Forest by greeting visitors, and providing general forest orientation, information and assistance\n* Assist the Angeles National Forest Recreation Staff by providing general recreation information\n* Assist the Angeles National Forest Fire Prevention Staff through interpretive delivery of key fire prevention messages and hands-on experience with the Osborne Fire Finder and related devices\n* Assist the Angeles National Forest Dispatch/Fire Suppression Staff by providing radio relay, accurate smoke reports and remote eyes and ears for incident assessment as needed\n* Create a positive image for the U.S. Forest Service, Angeles National Forest Fire Lookout Association, its’ program, volunteers, partners and sponsors"
     },
     {
       "facebook": "https://www.facebook.com/CrystalLakeVisitorCenter",
@@ -323,6 +323,23 @@
       ],
       "contactEmail": "garymkeene@gmail.com",
       "description": "A hike-in mountain resort & event venue operating in Big Santa Anita Canyon of Southern California since 1893. The trails around Chantry Flat that service Sturtevant Camp were badly damaged in the Bobcat fire. If you would like to help in this important restoration effort, please contact Gary for information on upcoming volunteer days "
+    },
+    {
+      "facebook": "https://www.facebook.com/groups/76938058649",
+      "name": "Eaton Canyon Nature Center Associates",
+      "slug": "ecnca",
+      "contactName": "Volunteer Email",
+      "places": [
+        "c0cdaf30-a3eb-11ec-8239-0f6feb74cefc"
+      ],
+      "photo": "/static/img/3396359472_00d7984b3d_z.jpg",
+      "website": "https://www.ecnca.org/volunteer/",
+      "id": "ea886c80-609b-11ed-a111-e3034fda9752",
+      "filters": [
+        "0977c100-f7b0-11eb-b748-fde728692812"
+      ],
+      "contactEmail": "ecncag@gmail.com",
+      "description": "The Eaton Canyon Nature Center Associates (ECNCA) is a chapter of the Nature Center Associates (NCA), a non-profit 501(c)(3) corporation and support group of the natural area park system of Los Angeles County. Founded for educational and scientific purposes, its primary mission is to develop in children and adults an appreciation of the natural world and to preserve Eaton Canyon as a natural area for future generations."
     }
   ]
 }
