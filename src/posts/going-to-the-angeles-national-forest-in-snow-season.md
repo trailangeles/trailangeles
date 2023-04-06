@@ -3,6 +3,7 @@ title: Driving To The Angeles National Forest In Snow Season
 description: A guide on how to visit safely and have fun
 author: Max
 date: 2022-11-07T17:08:35.091Z
+id: 5062f03b-b13d-4171-8d72-feeaac5a3e8f
 ---
 The Angeles National Forest has a snow season that can start as early as November and last until as late as May, depending on conditions. The "front range", i.e. the 5000' peaks like Mt. Wilson that are closer to Los Angeles experience snow less often than the "back range" which are the 7000'-10000' peaks like Mt. Waterman and Mt. Baldy, which often have snow pack for months at a time. 
 

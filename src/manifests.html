@@ -1,0 +1,23 @@
+---
+pagination:
+    data: collections.post
+    size: 1
+    alias: post
+permalink: "manifests/{{ post.data.title | slug }}.webmanifest"
+---
+{
+    "background_color": "purple",
+    "description": "{{post.data.title}}",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "/static/img/fox-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "{{post.data.title}}",
+    "short_name": "TrailAngeles",
+    "start_url": "/posts/{{post.data.title | slug}}"
+  }
+  
