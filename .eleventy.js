@@ -71,7 +71,7 @@ module.exports = function (eleventyConfig) {
     "./src/admin/config.yml": "./admin/config.yml",
     "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
     "./src/static/js/netlify-cms-widget-simple-uuid.js": "./static/js/netlify-cms-widget-simple-uuid.js",
-    "./src/posts/sw.js": "./posts/sw.js",
+    "./src/sw.js": "./sw.js",
   });
 
   // Copy Image Folder to /_site

@@ -1,13 +1,13 @@
 let cacheName = 'offline-store'
 
-self.addEventListener('install', (e) => {
-  e.waitUntil(
-    caches.open(cacheName).then((cache) => cache.addAll([
-      '/static/css/style.css',
-      '/static/js/alpine.js'
-    ])),
-  );
-});
+// self.addEventListener('install', (e) => {
+//   e.waitUntil(
+//     caches.open(cacheName).then((cache) => cache.addAll([
+//       '/static/css/style.css',
+//       '/static/js/alpine.js'
+//     ])),
+//   );
+// });
 
 self.addEventListener("fetch", (e) => {
   e.respondWith(
