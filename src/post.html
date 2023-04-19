@@ -1,10 +1,14 @@
----
-prism: true
----
-{% extends "default.html" %}
+/*---
+layout: default
+pagination:
+    data: collections.postsmarkdown
+    size: 1
+    alias: post
+permalink: "posts/{{ post.data.title | slugify }}.html"
+---*/
 
 {% block head %}
-    <link rel="manifest" href="/manifests/{{title | slug}}.webmanifest">
+    <link rel="manifest" href="/manifests/{{post.data.title | slugify}}.webmanifest">
     <script type="text/javascript">
         // Register service worker to control making site work offline
         if ('serviceWorker' in navigator) {
@@ -60,16 +64,16 @@ prism: true
 <div class="bg-gray-200" foo="bar">
     <div class="container max-w-5xl px-6 pt-8 blog">
         <div class="pb-2 mb-5 border-b border-green-900">
-            <h1 class="text-5xl font-bold">{{title}}</h1>
+            <h1 class="text-5xl font-bold">{{post.data.title}}</h1>
             <button class="add-button">Add to home screen</button>
         </div>
         
         <article class="prose lg:prose-xl">
-            {{ content | safe }}
+            {{ post.content | safe }}
         </article>
 
         <div class="pt-5 border-t border-green-900">
-            <p class="text-base font-normal leading-6 text-gray-500">Last updated: <time>{{ date | readableDate }}</time> by {{author}}</p>
+            <p class="text-base font-normal leading-6 text-gray-500">Last updated: <time>{{ post.data.date | readableDate }}</time> by {{post.data.author}}</p>
         </div>
     </div>
 </div>

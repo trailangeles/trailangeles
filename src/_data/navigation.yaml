@@ -1,11 +1,9 @@
 items:
   - text: Home
     url: /
-  - text: Events
-    url: /events
   - text: Volunteer Groups
     url: /volunteer-groups
-  - text: Newsletter
-    url: /newsletter
+  - text: Blog
+    url: /posts
   - text: About
     url: /posts/about-us/

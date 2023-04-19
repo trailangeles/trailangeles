@@ -1,15 +1,23 @@
+/*---
+permalink: /sw.js
+---*/
 let cacheName = 'offline-store'
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(
+    caches.open(cacheName).then((cache) => cache.addAll([
+{% for post in collections.postsmarkdown %}
+      '/posts/{{post.data.title | slugify}}',
+{% endfor -%}
+    ])),
+  );
+});
+
 
 var cache = async (req, res) => {
   const cache = await caches.open(cacheName)
   console.log(`[Service Worker] Caching new resource: ${req.url}`)
   await cache.put(req, res.clone())
-  // var currentPage = req.referrer
-  // var cached = await cache.match(currentPage)
-  // if (!cached) {
-  //   console.log(`[Service Worker] Caching page: ${currentPage}`)
-  //   await cache.add(currentPage)
-  // }
   return res;
 }
 

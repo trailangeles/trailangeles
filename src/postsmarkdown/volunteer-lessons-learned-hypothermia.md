@@ -1,4 +1,4 @@
----
+/*---
 title: "Volunteer Lessons Learned: Hypothermia"
 description: Lessons learned in the field while we volunteer are valuable
   lessons, yet they are much more valuable if we share them with other
@@ -6,7 +6,7 @@ description: Lessons learned in the field while we volunteer are valuable
 author: Angeles National Forest Volunteer Newsletter
 path: Newsletter
 date: 2021-09-11T05:11:44.118Z
----
+---*/
 *From the August 2021 issue of the [Angeles National Forest Volunteer Newsletter](/newsletter).*
 
 Lessons learned in the field while we volunteer are valuable lessons, yet they are much more valuable if we share them with other volunteers so that we may all learn from them.

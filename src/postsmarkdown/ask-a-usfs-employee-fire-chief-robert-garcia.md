@@ -1,9 +1,9 @@
----
+/*---
 title: "Ask A USFS Employee: Fire Chief - Robert Garcia"
 description: From the October 2021 issue of the Angeles National Forest Volunteer Newsletter
 author: Angeles National Forest Volunteer Newsletter
 date: 2021-10-14T06:08:40.538Z
----
+---*/
 *From the October 2021 issue of the [Angeles National Forest Volunteer Newsletter](https://trailangeles.org/newsletter/)*
 
 We had the opportunity to talk with Fire Chief Robert Garcia, a 25-year veteran of the Forest Service who has been serving the Angeles National Forest in several capacities for decades, working within Engine and Hotshot crews, then getting tagged to take on a Superintendent role with the Little Tujunga Hotshots, becoming Battalion Chief and then Division Chief of the Los Angeles River Ranger District before becoming\

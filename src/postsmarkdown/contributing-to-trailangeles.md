@@ -1,9 +1,9 @@
----
+/*---
 title: Contributing to TrailAngeles
 description: How to add, edit or improve the information on the site
 author: Max
 date: 2021-08-12T22:06:17.661Z
----
+---*/
 All of the information on Trail Angeles is contributed by volunteers, and anyone can make a new edit. You might find some information is out of date, or there might be a trail missing, or maybe you took a great photo for a group that you'd like to upload.
 
 ## Editing the website

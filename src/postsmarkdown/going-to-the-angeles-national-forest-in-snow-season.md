@@ -1,10 +1,10 @@
----
+/*---
 title: Going To The Angeles National Forest In Snow Season
 description: A guide on how to visit safely and have fun
 author: Max
 date: 2022-11-07T17:08:35.091Z
 id: 5062f03b-b13d-4171-8d72-feeaac5a3e8f
----
+---*/
 The Angeles National Forest has a snow season that can start as early as November and last until as late as May, depending on conditions. The "front range", i.e. the 5000' peaks like Mt. Wilson that are closer to Los Angeles experience snow less often than the "back range" which are the 7000'-10000' peaks like Mt. Waterman and Mt. Baldy, which often have snow pack for months at a time. 
 
 L.A. County rises from sea level to over 10,000', meaning you can surf and ski in the same day. Winter activites you can enjoy in the San Gabriels include cross country skiing, snowshoeing, technical mountaineering, ice climbing, splitboarding, backcountry skiing, resort skiing, or just throwing chains on your trusty 1990s Honda civic and making a snowman with your kids. Accessing these areas in snow season safely requires knowing about a few things: **chains, weather, timing, and road closures**

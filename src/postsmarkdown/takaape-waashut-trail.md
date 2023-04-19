@@ -1,9 +1,9 @@
----
+/*---
 title: Takaape Waashut Trail
 description: A trail connecting native black walnut woodlands in Northeast Los Angeles
 author: Max
 date: 2022-10-25T23:39:28.506Z
----
+---*/
 T﻿he California Black Walnut tree *(Tongva: Takaape' Waashut, Spanish: Nogales, Scientific Name: Juglans Californica)* is endemic to southern California and is listed as a rare plant by the California Native Plant Society. 
 
 The Takaape' Waashut Trail connects walnut woodlands in Northeast Los Angeles.
