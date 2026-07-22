@@ -8,3 +8,5 @@ _site/
 package-lock.json
 .env
 *.pem
+# Local Netlify folder
+.netlify

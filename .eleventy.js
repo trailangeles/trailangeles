@@ -56,9 +56,11 @@ module.exports = function (eleventyConfig) {
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy({
     "./src/admin/config.yml": "./admin/config.yml",
-    "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js",
-    "./src/static/js/netlify-cms-widget-simple-uuid.js": "./static/js/netlify-cms-widget-simple-uuid.js"
+    "./node_modules/alpinejs/dist/alpine.js": "./static/js/alpine.js"
   });
+
+  // Copy our own static JS (suggest-edit.js, etc.) to /_site/static/js
+  eleventyConfig.addPassthroughCopy("./src/static/js");
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
