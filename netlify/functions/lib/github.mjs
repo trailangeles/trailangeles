@@ -55,12 +55,21 @@ export async function createSuggestionPR({ conf, collection, targetId, fields, e
   const octokit = await getInstallationOctokit();
 
   // 1. Current head of the base branch.
-  const { data: ref } = await octokit.rest.git.getRef({ owner, repo, ref: `heads/${base}` });
-  const baseSha = ref.object.sha;
+  const ref = await octokit.request("GET /repos/{owner}/{repo}/git/ref/{ref}", {
+    owner,
+    repo,
+    ref: `heads/${base}`,
+  });
+  const baseSha = ref.data.object.sha;
 
   // 2. Current file content (fetched live so we build on the latest data).
-  const { data: file } = await octokit.rest.repos.getContent({ owner, repo, path: conf.file, ref: base });
-  const original = Buffer.from(file.content, "base64").toString("utf8");
+  const file = await octokit.request("GET /repos/{owner}/{repo}/contents/{path}", {
+    owner,
+    repo,
+    path: conf.file,
+    ref: base,
+  });
+  const original = Buffer.from(file.data.content, "base64").toString("utf8");
   const data = JSON.parse(original);
   const arr = data[conf.arrayKey];
   if (!Array.isArray(arr)) throw new Error(`Unexpected shape in ${conf.file}`);
@@ -95,18 +104,23 @@ export async function createSuggestionPR({ conf, collection, targetId, fields, e
   const branch = `suggest/${collection}-${action}-${shortId}`;
   const title = `Suggested ${action}: ${conf.label} "${targetTitle}"`;
 
-  await octokit.rest.git.createRef({ owner, repo, ref: `refs/heads/${branch}`, sha: baseSha });
-  await octokit.rest.repos.createOrUpdateFileContents({
+  await octokit.request("POST /repos/{owner}/{repo}/git/refs", {
+    owner,
+    repo,
+    ref: `refs/heads/${branch}`,
+    sha: baseSha,
+  });
+  await octokit.request("PUT /repos/{owner}/{repo}/contents/{path}", {
     owner,
     repo,
     path: conf.file,
     branch,
     message: title,
     content: Buffer.from(updated).toString("base64"),
-    sha: file.sha,
+    sha: file.data.sha,
   });
 
-  const { data: pr } = await octokit.rest.pulls.create({
+  const pr = await octokit.request("POST /repos/{owner}/{repo}/pulls", {
     owner,
     repo,
     base,
@@ -114,5 +128,5 @@ export async function createSuggestionPR({ conf, collection, targetId, fields, e
     title,
     body: renderPrBody({ conf, action, targetTitle, targetId, changes, email }),
   });
-  return pr;
+  return pr.data;
 }
