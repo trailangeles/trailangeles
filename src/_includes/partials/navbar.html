@@ -14,7 +14,7 @@
         </button>
 
         <!--Menu-->
-        <div class="flex-grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.outside="isOpen = false" x-show="true" x-transition>
+        <div class="grow w-full text-center lg:flex lg:items-center lg:w-auto " :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" @click.outside="isOpen = false" x-show="true" x-transition>
 
             {% if navigation.items %}
                 <ul class="items-center justify-end flex-1 pt-6 lg:pt-0 list-reset lg:flex">

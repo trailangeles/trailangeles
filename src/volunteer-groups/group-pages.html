@@ -35,8 +35,8 @@ path: Volunteer Groups
     <div class="w-full">
         <div id="map" style="height: 400px; width: 100%;"></div>
     </div>
-    <div class="flex flex-col flex-grow flex-stretch">
-        <div class="flex-grow flex-shrink bg-green-700 p-7 flex-basis">
+    <div class="flex flex-col grow flex-stretch">
+        <div class="grow shrink bg-green-700 p-7 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">{{group.name}}</h3>
             <ul class="text-white">
                 <li><span>E-mail: <a class="text-white" href="mailto:{{ group.contactEmail }}">{{group.contactName}}</a></li>
@@ -45,7 +45,7 @@ path: Volunteer Groups
                 <li><a class="text-white underline hover:no-underline" href="{{ group.facebook }}">Facebook</a></li>
             </ul>
         </div>
-        <div class="flex-grow flex-shrink bg-green-800 p-7 flex-basis">
+        <div class="grow shrink bg-green-800 p-7 flex-basis">
             <h3 class="text-xl font-extrabold text-white uppercase">Places maintained</h3>
                 {% for groupplace in group.places %}
                 {% for place in places.places %}
