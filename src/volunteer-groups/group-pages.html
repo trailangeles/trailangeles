@@ -8,62 +8,131 @@ permalink: "volunteer-groups/{{ group.slug }}/"
 path: Volunteer Groups
 ---*/
 
-<div class="bg-white">
-    <div class="yellow-triangle-corner">
-    </div>
-    <div class="container mx-auto">
-        <div class="w-3/4 py-10 mx-auto">
-            <h2 class="pt-6 pb-6 text-3xl font-black text-green-900 uppercase md:text-4xl">Volunteer with {{ group.name }}</h2>
-            <div id="group-photo" class="w-full mb-12 bg-blue-500 md:w-9/12 h-96">
-                {% if group.photo != nil %}
-                    <img class="object-cover w-full h-96" src="{{group.photo}}">
-                {% else %}
-                    <div class="w-full bg-yellow-500 h-96"></div>
-                {% endif %}
-            </div>
-            <!-- <h5 class="pt-10 pb-10 font-black text-green-900 uppercase">Last Updated 00/00/00</h5> -->
-            <ol>
-                <li class="font-serif leading-loose text-green-900">{{ group.description | markdown | safe }}</li><br>
-                <li class="font-serif leading-loose text-green-900">{{ group.requirements }}</li>
-            </ol>
-        </div>
-    </div>
-    </div>
+<!-- Breadcrumb -->
+<div class="bg-white border-b border-gray-200">
+  <div class="container px-4 py-4 mx-auto">
+    <a href="/volunteer-groups/" class="inline-flex items-center gap-2 text-sm font-black tracking-wide text-green-700 uppercase hover:text-green-900">
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+      All volunteer groups
+    </a>
+  </div>
 </div>
 
-<div class="flex flex-col mt-2 bg-gray-100 flex-stretch md:flex-row">
-    <div class="w-full">
-        <div id="map" style="height: 400px; width: 100%;"></div>
-    </div>
-    <div class="flex flex-col grow flex-stretch">
-        <div class="grow shrink bg-green-700 p-7 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">{{group.name}}</h3>
-            <ul class="text-white">
-                <li><span>E-mail: <a class="text-white" href="mailto:{{ group.contactEmail }}">{{group.contactName}}</a></li>
-                <li><a class="text-white underline hover:no-underline" href="{{ group.website }}">Website</a></li>
-                <li><a class="text-white underline hover:no-underline" href="{{ group.instagram }}">Instagram</a></li>
-                <li><a class="text-white underline hover:no-underline" href="{{ group.facebook }}">Facebook</a></li>
-            </ul>
+<!-- Hero -->
+<header class="relative flex items-end overflow-hidden bg-green-900 h-72 md:h-96">
+  {% if group.photo %}
+    <img class="absolute inset-0 object-cover w-full h-full" src="{{ group.photo }}" alt="{{ group.name }}">
+  {% endif %}
+  <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(2,80,47,0.95) 0%, rgba(2,80,47,0.55) 45%, rgba(2,80,47,0.15) 100%);"></div>
+  <div class="relative w-full">
+    <div class="container px-4 pb-8 mx-auto md:pb-10">
+      <p class="mb-2 text-xs font-black tracking-widest text-yellow-200 uppercase md:text-sm">Volunteer group</p>
+      <h1 class="max-w-3xl text-4xl font-black leading-none tracking-tight text-white uppercase md:text-6xl">{{ group.name }}</h1>
+      {% if group.filters %}
+        <div class="flex flex-wrap gap-2 mt-5">
+          {% for groupfilter in group.filters %}
+          {% for filter in sortablefilters.filters %}
+          {% if groupfilter === filter.id %}
+            <span class="px-3 py-1 text-xs font-bold tracking-wide text-green-900 uppercase rounded-full bg-yellow-200">{{ filter.name }}</span>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
         </div>
-        <div class="grow shrink bg-green-800 p-7 flex-basis">
-            <h3 class="text-xl font-extrabold text-white uppercase">Places maintained</h3>
-                {% for groupplace in group.places %}
-                {% for place in places.places %}
-                {% if groupplace === place.id %}
-                    <a class="text-white" href="/places/{{place.slug}}">{{ place.name }} </span>
-                {% endif %}
-                {% endfor -%}
-                {% endfor -%}
-                    </div>
+      {% endif %}
     </div>
+  </div>
+</header>
+
+<!-- Body -->
+<div class="bg-gray-100">
+  <div class="container px-4 py-12 mx-auto lg:grid lg:grid-cols-3 lg:gap-10 lg:py-16">
+
+    <!-- Main column -->
+    <div class="lg:col-span-2">
+      <section class="p-6 bg-white shadow-sm rounded-2xl md:p-10">
+        <h2 class="mb-5 text-2xl font-black tracking-wide text-green-900 uppercase">About</h2>
+        <div class="font-serif leading-relaxed text-green-900 md:text-lg">
+          {{ group.description | markdown | safe }}
+        </div>
+        {% if group.requirements %}
+          <div class="p-5 mt-8 border-l-4 border-yellow-200 rounded-r-lg bg-gray-100">
+            <h3 class="mb-2 text-sm font-black tracking-widest text-green-700 uppercase">Good to know</h3>
+            <p class="font-serif leading-relaxed text-green-900">{{ group.requirements }}</p>
+          </div>
+        {% endif %}
+      </section>
+
+      {% if group.places %}
+      <section class="p-6 mt-8 bg-white shadow-sm rounded-2xl md:p-10">
+        <h2 class="mb-5 text-2xl font-black tracking-wide text-green-900 uppercase">Places maintained</h2>
+        <div class="flex flex-wrap gap-3">
+          {% for groupplace in group.places %}
+          {% for place in places.places %}
+          {% if groupplace === place.id %}
+            <a href="/places/{{ place.slug }}" class="inline-flex items-center gap-2 px-4 py-2 font-bold text-green-900 transition rounded-full bg-green-300/40 hover:bg-yellow-200">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              {{ place.name }}
+            </a>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+    </div>
+
+    <!-- Sidebar: get involved -->
+    <aside class="mt-8 lg:mt-0">
+      <div class="overflow-hidden shadow-sm rounded-2xl lg:sticky lg:top-6">
+        <div class="p-6 bg-green-800 md:p-8">
+          <h2 class="text-xl font-black tracking-wide text-white uppercase">Get involved</h2>
+          <p class="mt-2 font-serif text-green-300">Reach out to {{ group.name }} to start volunteering.</p>
+
+          {% if group.contactEmail %}
+            <a href="mailto:{{ group.contactEmail }}" class="flex items-center justify-center w-full gap-2 px-4 py-3 mt-6 font-black tracking-wide text-green-900 uppercase transition rounded-lg bg-yellow-200 hover:bg-white">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Email to volunteer
+            </a>
+            {% if group.contactName %}
+              <p class="mt-3 text-sm text-center text-green-300">Contact: <span class="text-white">{{ group.contactName }}</span></p>
+            {% endif %}
+          {% endif %}
+        </div>
+
+        {% if group.website or group.instagram or group.facebook %}
+          <div class="divide-y divide-green-800 bg-green-700">
+            {% if group.website %}
+              <a href="{{ group.website }}" target="_blank" rel="noopener" class="flex items-center gap-3 px-6 py-4 font-bold text-white transition hover:bg-green-800">
+                <svg class="w-5 h-5 text-yellow-200 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 010 18 15 15 0 010-18z"/></svg>
+                Website
+              </a>
+            {% endif %}
+            {% if group.instagram %}
+              <a href="{{ group.instagram }}" target="_blank" rel="noopener" class="flex items-center gap-3 px-6 py-4 font-bold text-white transition hover:bg-green-800">
+                <svg class="w-5 h-5 text-yellow-200 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.7 3.7 0 01-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+                Instagram
+              </a>
+            {% endif %}
+            {% if group.facebook %}
+              <a href="{{ group.facebook }}" target="_blank" rel="noopener" class="flex items-center gap-3 px-6 py-4 font-bold text-white transition hover:bg-green-800">
+                <svg class="w-5 h-5 text-yellow-200 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0022 12z"/></svg>
+                Facebook
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </aside>
+  </div>
 </div>
 
-<div class="bg-green-700">
-    <div class="container flex flex-col justify-between py-8 md:flex-row">
-        <div class="flex flex-col md:flex-row">
-        </div>
-    </div>
-</div>
+<!-- Map -->
+<section class="bg-white">
+  <div class="container px-4 py-12 mx-auto">
+    <h2 class="mb-6 text-2xl font-black tracking-wide text-green-900 uppercase">Where they work</h2>
+    <div id="map" class="w-full overflow-hidden shadow-sm rounded-2xl" style="height: 440px;"></div>
+  </div>
+</section>
 
 {% set editCollection = "orgs" %}
 {% set editTarget = group %}
@@ -74,7 +143,7 @@ path: Volunteer Groups
     // customize the center for each trail separately
     var map = L.map('map', { fullscreenControl: true }).setView([34.20486, -118.12827], 16)
     var gl = L.mapboxGL({
-        attribution: "\u003ca href=\"https://www.maptiler.com/copyright/\" target=\"_blank\"\u003e\u0026copy; MapTiler\u003c/a\u003e \u003ca href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\"\u003e\u0026copy; OpenStreetMap contributors\u003c/a\u003e",
+        attribution: "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
         style: 'https://api.maptiler.com/maps/5d346e94-c6a9-4c69-a2a2-47278fa23542/style.json?key=VK9en7fqcN8VTzfv5LVe'
     }).addTo(map)
 
@@ -101,10 +170,10 @@ path: Volunteer Groups
     {% endif %}
     {% endfor %}
     {% endfor %}
-    
+
     if (markers.length === 1) {
         map.setView([markers[0].getLatLng().lat, markers[0].getLatLng().lng], 11)
-    } else {
+    } else if (markers.length > 1) {
         let group = new L.featureGroup(markers)
         map.fitBounds(group.getBounds().pad(0.5))
     }
