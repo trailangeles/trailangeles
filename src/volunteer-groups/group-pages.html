@@ -23,11 +23,11 @@ path: Volunteer Groups
   {% if group.photo %}
     <img class="absolute inset-0 object-cover w-full h-full" src="{{ group.photo }}" alt="{{ group.name }}">
   {% endif %}
-  <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(2,80,47,0.95) 0%, rgba(2,80,47,0.55) 45%, rgba(2,80,47,0.15) 100%);"></div>
+  <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(2,80,47,0.8) 0%, rgba(2,80,47,0.25) 45%, rgba(2,80,47,0) 78%);"></div>
   <div class="relative w-full">
     <div class="container px-4 pb-8 mx-auto md:pb-10">
       <p class="mb-2 text-xs font-black tracking-widest text-yellow-200 uppercase md:text-sm">Volunteer group</p>
-      <h1 class="max-w-3xl text-4xl font-black leading-none tracking-tight text-white uppercase md:text-6xl">{{ group.name }}</h1>
+      <h1 class="max-w-3xl text-2xl font-black leading-tight tracking-tight text-white uppercase md:text-4xl">{{ group.name }}</h1>
       {% if group.filters %}
         <div class="flex flex-wrap gap-2 mt-5">
           {% for groupfilter in group.filters %}
