@@ -57,16 +57,16 @@ collections:
                   widget: markdown,
                   required: false,
                 }
-              - { label: ID, name: id, widget: id }
+              - { label: ID, name: id, widget: uuid }
               - {
                   label: Places,
                   name: places,
                   widget: relation,
                   collection: places-and-orgs,
                   file: "places",
-                  valueField: places.*.id,
-                  displayFields: [places.*.name],
-                  searchFields: [places.*.name],
+                  value_field: places.*.id,
+                  display_fields: [places.*.name],
+                  search_fields: [places.*.name],
                   multiple: true,
                   required: false,
                   options_length: 999,
@@ -78,9 +78,9 @@ collections:
                   widget: relation,
                   collection: events-and-filters,
                   file: "filters",
-                  valueField: filters.*.id,
-                  displayFields: [filters.*.name],
-                  searchFields: [filters.*.name],
+                  value_field: filters.*.id,
+                  display_fields: [filters.*.name],
+                  search_fields: [filters.*.name],
                   multiple: true,
                   required: false,
                   options_length: 999,
@@ -126,7 +126,7 @@ collections:
                   required: false,
                   hint: "View them here https://labs.mapbox.com/maki-icons/",
                 }
-              - { label: ID, name: id, widget: id }
+              - { label: ID, name: id, widget: uuid }
       - label: "Places"
         file: "src/_data/places.json"
         name: "places"
@@ -146,7 +146,7 @@ collections:
                   widget: string,
                   required: true,
                 }
-              - { label: ID, name: id, widget: id }
+              - { label: ID, name: id, widget: uuid }
               - {
                   label: Description,
                   name: description,
@@ -179,9 +179,9 @@ collections:
                   widget: relation,
                   collection: places-and-orgs,
                   file: "points",
-                  valueField: points.*.id,
-                  displayFields: [points.*.name],
-                  searchFields: [points.*.name],
+                  value_field: points.*.id,
+                  display_fields: [points.*.name],
+                  search_fields: [points.*.name],
                   multiple: true,
                   required: false,
                   options_length: 999,
@@ -193,9 +193,9 @@ collections:
                   widget: relation,
                   collection: events-and-filters,
                   file: "filters",
-                  valueField: filters.*.id,
-                  displayFields: [filters.*.name],
-                  searchFields: [filters.*.name],
+                  value_field: filters.*.id,
+                  display_fields: [filters.*.name],
+                  search_fields: [filters.*.name],
                   multiple: true,
                   required: false,
                   options_length: 999,
@@ -220,7 +220,7 @@ collections:
             fields:
               - { label: Name, name: name, widget: string }
               - { label: Description, name: description, widget: string }
-              - { label: ID, name: id, widget: id }
+              - { label: ID, name: id, widget: uuid }
       - file: "src/_data/events.json"
         label: "Events"
         name: "events"
@@ -236,7 +236,7 @@ collections:
               - { label: Date, name: date, widget: datetime }
               - { label: Description, name: description, widget: string }
               - { label: Link, name: link, widget: string }
-              - { label: ID, name: id, widget: id }
+              - { label: ID, name: id, widget: uuid }
   - label: "Settings"
     name: "settings"
     editor:
@@ -293,4 +293,4 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: ID, name: id, widget: id }
+      - { label: ID, name: id, widget: uuid }

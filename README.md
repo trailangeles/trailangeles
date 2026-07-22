@@ -16,7 +16,7 @@ If you are interested in the code of the website, read on!
 
 Based on https://github.com/surjithctly/neat-starter
 
-- [Netlify CMS](https://www.netlifycms.org/)
+- [Sveltia CMS](https://sveltiacms.app/) (the maintained successor to Netlify CMS)
 - [Eleventy](https://www.11ty.dev/)
 - [Alpine.js](https://github.com/alpinejs/alpine)
 - [Tailwind CSS](https://tailwindcss.com/)
@@ -25,7 +25,7 @@ Based on https://github.com/surjithctly/neat-starter
 
 ### How TrailAngeles works
 
-Every commit to the main branch triggers a build on Netlify, which runs `npm run build` and then deploys the site to TrailAngeles.org. There is also an admin interface at https://trailangeles.org/admin which is powered by Netlify CMS. Edits done through the Admin UI create GitHub commits. If the user is not a member of the TraiLAngeles GitHub Organization, their edits will create a Pull Request that can be merged by one of the maintainers of this repo. That way any GitHub user can use the user-friendly Admin UI to make content contributions.
+Every commit to the main branch triggers a build on Netlify, which runs `npm run build` and then deploys the site to TrailAngeles.org. There is also an admin interface at https://trailangeles.org/admin which is powered by Sveltia CMS (a drop-in, actively-maintained successor to the now-abandoned Netlify CMS). Edits done through the Admin UI create GitHub commits. If the user is not a member of the TraiLAngeles GitHub Organization, their edits will create a Pull Request that can be merged by one of the maintainers of this repo. That way any GitHub user can use the user-friendly Admin UI to make content contributions.
 
 All content is stored as JSON inside the `src/_data` folder, so edits to the content can be made directly via Git/GitHub and we also get version control for all content on the site.
 
@@ -33,7 +33,7 @@ The site is deployed via Netlify as a 100% static site which makes it essentiall
 
 #### Admin
 
-Our Admin UI is configured entirely via this file https://github.com/trailangeles/trailangeles/blob/master/src/admin/config.yml. This is a pretty cool part of Netlify CMS, you can build the Admin UI entirely from Yaml and the UI is built on page load using their Admin framework, meaning the only 'backend' requirement for our site is the Netlify Admin script tag.
+Our Admin UI is configured entirely via this file https://github.com/trailangeles/trailangeles/blob/master/src/admin/config.yml. This is a pretty cool part of Sveltia CMS (and the Netlify CMS format it is compatible with): you can build the Admin UI entirely from Yaml and the UI is built on page load, meaning the only 'backend' requirement for our site is a single CMS script tag.
 
 #### Maps
 
