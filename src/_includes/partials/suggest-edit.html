@@ -1,0 +1,77 @@
+{# Reusable public "Suggest an edit" form.
+   Set `editCollection` (e.g. "orgs") and `editTarget` (the record object)
+   before including. Posts changed fields to /api/submit-edit, which opens a PR. #}
+
+<style>[x-cloak]{display:none !important}</style>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="/static/js/suggest-edit.js"></script>
+
+{% set fieldDefs = [
+  { name: "name", label: "Name", type: "text" },
+  { name: "contactName", label: "Contact name", type: "text" },
+  { name: "contactEmail", label: "Contact email", type: "text" },
+  { name: "website", label: "Website", type: "text" },
+  { name: "facebook", label: "Facebook URL", type: "text" },
+  { name: "instagram", label: "Instagram URL", type: "text" },
+  { name: "description", label: "Description", type: "textarea" }
+] %}
+
+{% set cfg = {
+  collection: editCollection,
+  targetId: editTarget.id,
+  initial: {
+    name: editTarget.name or "",
+    contactName: editTarget.contactName or "",
+    contactEmail: editTarget.contactEmail or "",
+    website: editTarget.website or "",
+    facebook: editTarget.facebook or "",
+    instagram: editTarget.instagram or "",
+    description: editTarget.description or ""
+  }
+} %}
+
+<div class="container mx-auto my-16">
+  <div class="w-3/4 mx-auto" x-data="suggestEdit({{ cfg | dump | escape }})">
+    <button type="button" @click="open = !open"
+      class="px-6 py-3 font-black text-white uppercase transition bg-green-700 rounded hover:bg-green-800"
+      x-text="open ? 'Cancel' : 'Suggest an edit'"></button>
+
+    <form x-ref="form" x-show="open" x-cloak @submit.prevent="submit()"
+      class="p-6 mt-4 bg-gray-100 rounded-lg">
+      <p class="mb-6 font-serif text-green-900">
+        See something out of date? Suggest a correction below. A maintainer reviews
+        every suggestion before it goes live — <strong>no GitHub or any account needed</strong>.
+      </p>
+
+      <template x-if="submitted">
+        <p class="p-4 font-bold text-green-800 bg-green-100 rounded" x-text="message"></p>
+      </template>
+
+      <div x-show="!submitted">
+        {% for f in fieldDefs %}
+          <label class="block mt-4 mb-1 font-bold text-green-900">{{ f.label }}</label>
+          {% if f.type == "textarea" %}
+            <textarea x-model="fields.{{ f.name }}" rows="5"
+              class="w-full p-2 text-green-900 bg-white border border-green-300 rounded"></textarea>
+          {% else %}
+            <input type="text" x-model="fields.{{ f.name }}"
+              class="w-full p-2 text-green-900 bg-white border border-green-300 rounded">
+          {% endif %}
+        {% endfor %}
+
+        <label class="block mt-4 mb-1 font-bold text-green-900">Your email (optional)</label>
+        <input type="email" x-model="email" placeholder="So a maintainer can follow up"
+          class="w-full p-2 text-green-900 bg-white border border-green-300 rounded">
+
+        <div class="my-4 cf-turnstile" data-sitekey="{{ turnstile.sitekey }}" data-action="turnstile-spin-v2"></div>
+
+        <button type="submit" :disabled="submitting"
+          class="px-6 py-3 font-black text-white uppercase bg-green-700 rounded hover:bg-green-800 disabled:opacity-50"
+          x-text="submitting ? 'Submitting…' : 'Submit suggestion'"></button>
+
+        <p x-show="message && !submitted" x-text="message"
+          :class="error ? 'text-red-700' : 'text-green-700'" class="mt-3 font-bold"></p>
+      </div>
+    </form>
+  </div>
+</div>

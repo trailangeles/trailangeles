@@ -62,9 +62,12 @@ path: Volunteer Groups
     <div class="container flex flex-col justify-between py-8 md:flex-row">
         <div class="flex flex-col md:flex-row">
         </div>
-        <a href="/posts/contributing-to-trailangeles/" target="_blank" class="self-start p-3 px-8 text-lg leading-7 tracking-wide text-left text-white align-baseline bg-yellow-500 flex-end font-extralight lg:text-center">Suggest an Edit</button>
     </div>
 </div>
+
+{% set editCollection = "orgs" %}
+{% set editTarget = group %}
+{% include "partials/suggest-edit.html" %}
 
 
 <script>

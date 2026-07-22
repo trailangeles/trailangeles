@@ -25,6 +25,8 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
+    "@netlify/blobs": "^10.7.9",
+    "@octokit/app": "^16.1.2",
     "autoprefixer": "^10.1.0",
     "postcss": "^8.2.1"
   }
