@@ -197,35 +197,6 @@ h3 {
   -ms-user-select: none;
 }
 
-.splide__arrow--prev {
-  display: none;
-  right: 4em;
-  width: 0;
-  height: 0;
-  top: 40%;
-  position: absolute;
-  z-index: 1000;
-  transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-}
-
-.splide__arrow--next {
-  display: none;
-  width: 0;
-  height: 0;
-  top: 40%;
-  position: absolute;
-  right: 4.5em;
-  z-index: 1000;
-}
-
-.splide__arrow--next svg,
-.splide__arrow--prev svg {
-  display: none;
-  stroke: rgb(255, 230, 123);
-  fill: rgb(255, 230, 123);
-}
-
 .glide--swipeable {
   cursor: grab;
   cursor: -moz-grab;
@@ -324,7 +295,7 @@ h3 {
   width: 100vw;
   margin-left: 0;
   padding-left: 0;
-  text-shadow: 1px 1px black;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 3px rgba(0, 0, 0, 0.85);
 }
 
 .blog .prose h2 {
