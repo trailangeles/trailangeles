@@ -9,8 +9,7 @@ module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
-  // Merge data instead of overriding
-  eleventyConfig.setDataDeepMerge(true);
+  // (Eleventy 3 always deep-merges data; setDataDeepMerge was removed.)
 
   eleventyConfig.addGlobalData("permalink", () => {
     return (data) => `${data.page.filePathStem}.${data.page.outputFileExtension}`;
