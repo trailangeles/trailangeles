@@ -1,10 +1,12 @@
-<div class="pt-8 pb-8 bg-green-700 lg:py-12">
-  <div class="container flex flex-col lg:justify-between subscriber-background">
-    <div>
-      <h1 class="pr-8 text-4xl font-black text-white uppercase lg:p-0 lg:text-7xl lg:table-caption">
-        Get monthly trail updates
-      </h2>
+<section class="bg-green-800">
+  <div class="container px-4 mx-auto py-14 md:py-20">
+    <div class="max-w-2xl">
+      <p class="mb-2 text-sm font-black tracking-widest text-yellow-200 uppercase">Newsletter</p>
+      <h2 class="text-3xl font-black leading-tight text-white uppercase md:text-5xl">Get monthly trail updates</h2>
+      <p class="mt-4 font-serif text-green-300 md:text-lg">Trail conditions, volunteer opportunities, and news from the Angeles National Forest — straight to your inbox.</p>
+      <div class="mt-6">
+        {% include "./email-subscriber.html" %}
+      </div>
     </div>
-    {% include "./email-subscriber.html" %}
   </div>
-</div>
+</section>
