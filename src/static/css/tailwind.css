@@ -243,10 +243,6 @@ h3 {
   bottom: 3rem;
 }
 
-.hidden {
-  display: none;
-}
-
 .selected-filter {
   background-color: rgb(255, 230, 123);
 }
