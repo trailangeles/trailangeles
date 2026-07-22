@@ -52,16 +52,16 @@
           <label class="block mt-4 mb-1 font-bold text-green-900">{{ f.label }}</label>
           {% if f.type == "textarea" %}
             <textarea x-model="fields.{{ f.name }}" rows="5"
-              class="w-full p-2 border border-green-300 rounded"></textarea>
+              class="w-full p-2 text-green-900 bg-white border border-green-300 rounded"></textarea>
           {% else %}
             <input type="text" x-model="fields.{{ f.name }}"
-              class="w-full p-2 border border-green-300 rounded">
+              class="w-full p-2 text-green-900 bg-white border border-green-300 rounded">
           {% endif %}
         {% endfor %}
 
         <label class="block mt-4 mb-1 font-bold text-green-900">Your email (optional)</label>
         <input type="email" x-model="email" placeholder="So a maintainer can follow up"
-          class="w-full p-2 border border-green-300 rounded">
+          class="w-full p-2 text-green-900 bg-white border border-green-300 rounded">
 
         <div class="my-4 cf-turnstile" data-sitekey="{{ turnstile.sitekey }}" data-action="turnstile-spin-v2"></div>
 
