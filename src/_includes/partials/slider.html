@@ -1,12 +1,16 @@
-<div class="relative overflow-hidden">
-  <video class="object-cover w-full" autoplay="autoplay" muted loop playsinline>
+<section class="relative overflow-hidden">
+  <video class="object-cover w-full h-[70vh] min-h-[26rem]" autoplay="autoplay" muted loop playsinline>
     <source src="/static/img/winter-san-gabriels.webm" type="video/mp4" />
   </video>
   <!-- Scrim to keep the white text legible over the bright video -->
-  <div class="absolute inset-0 bg-black bg-opacity-40" aria-hidden="true"></div>
-  <div class="z-10 center-container">
-    <h2 class="pt-10 text-lg font-extrabold text-center text-yellow-200 uppercase lg:pt-20 lg:text-2xl md:text-xl offset-underline">Trail Angeles</h2>
-    <p class="w-3/4 pt-4 pb-12 font-serif text-sm leading-tight text-center text-white md:text-base md:pt-4 lg:pt-4 lg:w-1/2 md:text-large" style="margin: 0 auto;">This site was created by volunteers for volunteers, hikers and anyone who uses the Angeles National Forest. Much of the forest is maintained through volunteer efforts. We welcome you to volunteer to keep our forest accessible to everyone.</p>
-    <a href="/posts/" class="px-4 py-2 text-lg font-light leading-7 tracking-wide text-left text-green-800 bg-yellow-200 md:px-6 md:py-3 lg:text-center">Learn more</a>
+  <div class="absolute inset-0 bg-black/45" aria-hidden="true"></div>
+  <div class="z-10 px-4 center-container">
+    <p class="mb-3 text-sm font-black tracking-widest text-yellow-200 uppercase md:text-base">Angeles National Forest</p>
+    <h1 class="max-w-3xl text-4xl font-black leading-none tracking-tight text-white uppercase md:text-6xl">Trail Angeles</h1>
+    <p class="max-w-xl mt-5 font-serif leading-relaxed text-center text-white md:text-lg">Created by volunteers, for volunteers, hikers, and everyone who uses the Angeles National Forest. Help keep our forest accessible to all.</p>
+    <div class="flex flex-col gap-3 mt-8 sm:flex-row sm:justify-center">
+      <a href="/volunteer-groups/" style="text-shadow: none;" class="inline-flex items-center justify-center px-6 py-3 font-black tracking-wide text-green-900 uppercase transition border-2 border-transparent rounded-lg bg-yellow-200 hover:bg-white">Find a volunteer group</a>
+      <a href="/posts/about-us" style="text-shadow: none;" class="inline-flex items-center justify-center px-6 py-3 font-black tracking-wide text-white uppercase transition border-2 border-white rounded-lg hover:bg-white hover:text-green-900">Learn more</a>
+    </div>
   </div>
-</div>
+</section>

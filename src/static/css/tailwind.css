@@ -1,11 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../../tailwind.config.js";
+
+/* Preserve the pre-v4 default border color (Tailwind v4 defaults to currentColor) */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, #f2f2f2);
+  }
+}
 
 /*Your Custom CSS Goes here*/
 
 h1 {
-  @apply text-4xl font-black lg:text-7xl;
+  @apply text-4xl font-black;
+}
+@media (min-width: 1024px) {
+  h1 {
+    @apply text-7xl;
+  }
 }
 
 h2 {
@@ -226,10 +241,6 @@ h3 {
 
 .glide__content_bottom {
   bottom: 3rem;
-}
-
-.hidden {
-  display: none;
 }
 
 .selected-filter {

@@ -2,6 +2,10 @@
   publish = "_site"
   command = "npm run build"
 
+[build.environment]
+  # Eleventy 3 needs Node >= 18 and Tailwind 4 needs Node >= 20.
+  NODE_VERSION = "20"
+
 [functions]
   directory = "netlify/functions"
   node_bundler = "esbuild"
