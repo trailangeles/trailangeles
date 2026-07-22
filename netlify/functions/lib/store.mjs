@@ -1,25 +1,8 @@
-// Netlify Blobs storage for pending edit drafts and rate-limit counters.
-//
-// Drafts live between the "submit" step (which emails a magic link) and the
-// "confirm" step (which opens the PR). A draft is deleted as soon as it is
-// consumed, so each magic link works exactly once.
+// Netlify Blobs storage for rate-limit counters.
 
 import { getStore } from "@netlify/blobs";
 
-const DRAFTS = "edit-drafts";
 const RATE = "edit-rate";
-
-export async function putDraft(id, draft) {
-  await getStore(DRAFTS).setJSON(id, draft);
-}
-
-export async function getDraft(id) {
-  return getStore(DRAFTS).get(id, { type: "json" });
-}
-
-export async function deleteDraft(id) {
-  await getStore(DRAFTS).delete(id);
-}
 
 // Fixed-window rate limiter. Returns { allowed, count, reset }.
 export async function hitRateLimit(key, { max, windowSec }) {

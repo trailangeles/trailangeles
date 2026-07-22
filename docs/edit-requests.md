@@ -2,24 +2,20 @@
 
 This lets **anyone — with no GitHub account** — suggest edits to site content
 through friendly forms. Each suggestion becomes a GitHub Pull Request that a
-maintainer reviews and merges. Abuse is limited by email verification (a
-one-time magic link) plus per-email / per-IP rate limiting.
+maintainer reviews and merges. Abuse is prevented by a **Cloudflare Turnstile**
+bot check plus per-IP rate limiting. An email may be provided but is optional
+and unverified (recorded on the PR as contact info).
 
 ## How it works
 
 ```
-Public form (prefilled from src/_data/*.json)
-        │  user enters an edit + their email
+Public form (prefilled from src/_data/*.json) with a Turnstile widget
+        │  user enters an edit, passes the bot check, submits
         ▼
 POST /api/submit-edit   (netlify/functions/submit-edit.mjs)
+        │  • verifies the Turnstile token server-side (lib/turnstile.mjs)
         │  • validates against the server-side allow-list (lib/schema.mjs)
-        │  • stores a draft in Netlify Blobs
-        │  • emails a one-time magic link (Resend)
-        ▼
-User clicks the magic link
-        ▼
-GET /api/confirm-edit    (netlify/functions/confirm-edit.mjs)
-        │  • verifies the signed token, loads the draft
+        │  • rate-limits per IP (lib/store.mjs, Netlify Blobs)
         │  • GitHub App opens a branch + commit + PR (lib/github.mjs)
         ▼
 Maintainer reviews the PR (with a Netlify Deploy Preview) and merges
@@ -40,16 +36,16 @@ from Google Calendar by the hourly GCal Import action.
 - Uncheck "Webhook active" (not needed).
 - Create it, then **Generate a private key** (downloads a `.pem`).
 - **Install** the App on the `trailangeles/trailangeles` repo.
-- Note the **App ID** (app settings page) and the **Installation ID** (the
-  number at the end of the installation URL:
-  `.../installations/<INSTALLATION_ID>`).
+- Note the **App ID** and the **Installation ID** (the number at the end of the
+  installation URL: `.../installations/<INSTALLATION_ID>`).
 
-### 2. Set up Resend (email)
+### 2. Create a Cloudflare Turnstile widget
 
-- Create a Resend account and **verify the `trailangeles.org` domain**
-  (add the SPF/DKIM DNS records it gives you — required for delivery).
-- Create an API key.
-- Pick a verified `From` address, e.g. `edits@trailangeles.org`.
+- Cloudflare dashboard → Turnstile → **Add widget**.
+- Domains: `trailangeles.org`, plus `localhost` / `127.0.0.1` for local dev.
+- Mode: **Managed**.
+- Copy the **Sitekey** (public — goes in the form HTML) and the **Secret key**
+  (server-side — goes in the env as `TURNSTILE_SECRET`).
 
 ### 3. Add environment variables
 
@@ -61,12 +57,11 @@ local `.env` for `netlify dev`). See [`.env.example`](../.env.example).
 | `GH_APP_ID` | App ID from step 1 |
 | `GH_APP_INSTALLATION_ID` | Installation ID from step 1 |
 | `GH_APP_PRIVATE_KEY` | Contents of the `.pem` (literal `\n` newlines are fine) |
-| `MAGIC_LINK_SECRET` | Any long random string |
-| `RESEND_API_KEY` | From step 2 |
-| `EMAIL_FROM` | e.g. `TrailAngeles <edits@trailangeles.org>` |
+| `TURNSTILE_SECRET` | Secret key from step 2 |
 
 Optional: `GH_REPO` (default `trailangeles/trailangeles`), `GH_BRANCH`
-(default `main`).
+(default `main`). The Turnstile **sitekey** is public and lives in the form HTML,
+not in env.
 
 ## Local development
 
@@ -75,19 +70,14 @@ npm install
 netlify dev        # serves the site + functions at http://localhost:8888
 ```
 
-Test the API directly:
-
-```bash
-curl -X POST http://localhost:8888/api/submit-edit \
-  -H 'content-type: application/json' \
-  -d '{"collection":"filters","fields":{"name":"family-friendly","description":"Good for kids"},"email":"you@example.com"}'
-```
-
-You'll receive a magic-link email; clicking it opens the PR.
+The form submits `{ collection, targetId, fields, email?, turnstileToken }` to
+`/api/submit-edit`; a valid Turnstile token is required (use a Turnstile testing
+sitekey/secret for local runs).
 
 ## Notes
 
 - The bot re-serializes JSON with 2-space indentation (matching the repo). The
   PR body also lists each changed field in plain language, so reviewers can see
   exactly what changed without reading the raw diff.
-- Magic links expire after 30 minutes and work exactly once.
+- Turnstile — not email — is the abuse gate, so contributors don't need a
+  working email or any account to submit.

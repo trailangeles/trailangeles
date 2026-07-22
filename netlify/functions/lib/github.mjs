@@ -34,8 +34,9 @@ function renderPrBody({ conf, action, targetTitle, targetId, changes, email }) {
     .join("\n");
   const header = action === "new" ? "| Field | Value |" : "| Field | Change |";
 
+  const contact = email ? ` Contact (unverified): **${email}**.` : "";
   return [
-    `> Submitted via the TrailAngeles public edit form by **${email}** (email verified).`,
+    `> Submitted via the TrailAngeles public edit form (passed a Turnstile bot check).${contact}`,
     "",
     `**Collection:** ${conf.label}`,
     action === "new" ? `**New record:** ${targetTitle}` : `**Editing:** ${targetTitle} (\`${targetId}\`)`,
@@ -44,7 +45,7 @@ function renderPrBody({ conf, action, targetTitle, targetId, changes, email }) {
     "|---|---|",
     rows,
     "",
-    "_Please review the change above before merging. This PR was opened by an automated bot on behalf of a verified email; the submitter does not have write access._",
+    "_Please review the change above before merging. This PR was opened by an automated bot on behalf of an anonymous contributor who does not have write access._",
   ].join("\n");
 }
 

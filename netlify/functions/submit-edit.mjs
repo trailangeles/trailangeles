@@ -1,14 +1,17 @@
 // POST /api/submit-edit
 //
-// Step 1 of the public edit flow: validate the suggestion, stash it as a draft,
-// and email the submitter a one-time magic link. No PR is created yet — that
-// happens in confirm-edit once the email is verified.
+// The public edit flow. A submission is accepted only if its Cloudflare
+// Turnstile token passes server-side verification (bot protection) and the
+// payload validates against the server-side allow-list. On success a pull
+// request is opened immediately via the GitHub App for a maintainer to review.
+//
+// An optional email may be included; it is recorded on the PR as unverified
+// contact info (Turnstile, not email, is what gates abuse here).
 
-import crypto from "node:crypto";
 import { validateSubmission } from "./lib/schema.mjs";
-import { signToken } from "./lib/token.mjs";
-import { putDraft, hitRateLimit } from "./lib/store.mjs";
-import { sendMagicLink } from "./lib/email.mjs";
+import { hitRateLimit } from "./lib/store.mjs";
+import { verifyTurnstile } from "./lib/turnstile.mjs";
+import { createSuggestionPR } from "./lib/github.mjs";
 
 export const config = { path: "/api/submit-edit" };
 
@@ -24,38 +27,43 @@ export default async (req, context) => {
     return json({ error: "Invalid request." }, 400);
   }
 
-  const { collection, targetId = null, fields, email } = payload || {};
-  if (!email || typeof email !== "string" || !EMAIL_RE.test(email)) {
-    return json({ error: "A valid email address is required." }, 400);
-  }
+  const { collection, targetId = null, fields, email = "", turnstileToken } = payload || {};
 
+  // 1. Bot protection: verify the Turnstile token first.
+  const ip = context?.ip || req.headers.get("x-nf-client-connection-ip") || undefined;
+  const bot = await verifyTurnstile(turnstileToken, ip);
+  if (!bot.ok) return json({ error: "Bot check failed. Please reload and try again." }, 403);
+
+  // 2. Validate the suggestion against the allow-list.
   const v = validateSubmission({ collection, targetId, fields });
   if (!v.ok) return json({ error: "We couldn't accept that suggestion.", details: v.errors }, 400);
 
-  if (!process.env.MAGIC_LINK_SECRET) return json({ error: "Server is not configured." }, 500);
+  const contactEmail = typeof email === "string" && EMAIL_RE.test(email) ? email : "";
 
-  // Rate limit per email and per IP (fixed 1-hour window).
-  const ip = context?.ip || req.headers.get("x-nf-client-connection-ip") || "unknown";
-  const perEmail = await hitRateLimit(`email:${email.toLowerCase()}`, { max: 5, windowSec: 3600 });
-  const perIp = await hitRateLimit(`ip:${ip}`, { max: 15, windowSec: 3600 });
-  if (!perEmail.allowed || !perIp.allowed) {
-    return json({ error: "Too many suggestions from here. Please try again later." }, 429);
-  }
+  // 3. Rate limit per IP (fixed 1-hour window) as defence in depth.
+  const perIp = await hitRateLimit(`ip:${ip || "unknown"}`, { max: 15, windowSec: 3600 });
+  if (!perIp.allowed) return json({ error: "Too many suggestions from here. Please try again later." }, 429);
 
-  const draftId = crypto.randomUUID();
-  await putDraft(draftId, { collection, targetId, fields: v.cleaned, email, ip, ts: Date.now() });
-
-  const token = signToken({ d: draftId, e: email }, process.env.MAGIC_LINK_SECRET, 1800);
-  const baseUrl = process.env.DEPLOY_PRIME_URL || process.env.URL || new URL(req.url).origin;
-  const link = `${baseUrl}/api/confirm-edit?token=${encodeURIComponent(token)}`;
-
+  // 4. Open the pull request.
+  let pr;
   try {
-    await sendMagicLink({ to: email, link, label: v.conf.label, action: targetId ? "edit" : "new" });
+    pr = await createSuggestionPR({
+      conf: v.conf,
+      collection,
+      targetId,
+      fields: v.cleaned,
+      email: contactEmail,
+    });
   } catch (e) {
-    return json({ error: "We couldn't send the confirmation email. Please try again later." }, 502);
+    return json({ error: e.message || "Could not create the pull request." }, 502);
   }
 
-  return json({ ok: true, message: "Check your email to confirm and submit your suggestion." });
+  return json({
+    ok: true,
+    prNumber: pr.number,
+    prUrl: pr.html_url,
+    message: "Thanks! Your suggestion was submitted for review.",
+  });
 };
 
 function json(obj, status = 200) {
