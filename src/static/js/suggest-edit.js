@@ -60,22 +60,33 @@ window.suggestEdit = function (config) {
             turnstileToken: token,
           }),
         });
-        var data = await res.json();
-        if (!res.ok || !data.ok) {
-          this.error = true;
-          this.message = (data && data.error) || "Something went wrong. Please try again.";
-          if (window.turnstile) window.turnstile.reset();
-        } else {
+
+        // This endpoint returns 200 only on success; errors use a non-2xx
+        // status with a JSON { error } body. Parse defensively so a missing or
+        // odd body can't turn a real success into a false failure.
+        var data = {};
+        try {
+          data = await res.json();
+        } catch (parseErr) {
+          data = {};
+        }
+
+        if (res.ok) {
           this.submitted = true;
           this.message =
-            "Thank you! Your suggestion was submitted for review (pull request #" +
-            data.prNumber +
-            "). A maintainer will take a look soon.";
+            "Thank you! Your suggestion was submitted for review" +
+            (data.prNumber ? " (pull request #" + data.prNumber + ")" : "") +
+            ". A maintainer will take a look soon.";
+        } else {
+          this.error = true;
+          this.message = (data && data.error) || "Sorry, something went wrong. Please try again.";
+          if (window.turnstile) window.turnstile.reset();
         }
       } catch (e) {
         this.error = true;
         this.message = "Network error. Please try again.";
         if (window.turnstile) window.turnstile.reset();
+        if (window.console) console.error("submit-edit failed:", e);
       } finally {
         this.submitting = false;
       }
